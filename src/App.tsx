@@ -47,8 +47,8 @@ function App() {
         <main>
           <Hero />
           <About />
-          {/* <Skills />
-          <Experience />
+          <Skills />
+          {/* <Experience />
           <Portfolio />
           <Services />
           <Blog />
