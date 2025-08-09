@@ -171,9 +171,9 @@ const Hero: React.FC = () => {
                 {/* Stats */}
                 <div className="grid grid-cols-3 gap-4 mt-2 pt-6 border-t border-white/20">
                   {[
-                    { value: '50+', label: 'Projects' },
-                    { value: '30+', label: 'Clients' },
-                    { value: '3+', label: 'Years' }
+                    { value: '10+', label: 'Projects' },
+                    { value: '3+', label: 'Years' },
+                    { value: '7+', label: 'Technologies Mastered' }
                   ].map((stat, i) => (
                     <div key={i} className="text-center">
                       <div className="text-2xl font-bold text-blue-500 dark:text-white">{stat.value}</div>
@@ -220,8 +220,8 @@ const Hero: React.FC = () => {
         className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-20"
       >
         <div className="flex flex-col items-center gap-2">
-          <span className="text-white/70 text-sm">Scroll to explore</span>
-          <ChevronDownIcon className="w-6 h-6 text-white/70" />
+          <span className="text-black dark:text-white/70 text-sm">Scroll to explore</span>
+          <ChevronDownIcon className="w-6 h-6 text-black dark:text-white/70" />
         </div>
       </motion.div>
     </section>
