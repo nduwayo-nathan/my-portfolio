@@ -5,11 +5,11 @@ import Navbar from './components/Navbar';
 import Hero from './components/sections/Hero';
 import About from './components/sections/About';
 import Skills from './components/sections/Skills';
-import Experience from './components/sections/Experience';
-import Portfolio from './components/sections/Portfolio';
+// import Experience from './components/sections/Experience';
+// import Portfolio from './components/sections/Portfolio';
 import Services from './components/sections/Services';
 import Testimonials from './components/sections/Testimonials';
-import Blog from './components/sections/Blog';
+// import Blog from './components/sections/Blog';
 import Contact from './components/sections/Contact';
 import Footer from './components/Footer';
 import LoadingScreen from './components/LoadingScreen';
@@ -49,14 +49,14 @@ function App() {
           <About />
           <Skills />
           {/* <Experience />
-          <Portfolio />
+          <Portfolio /> */}
           <Services />
-          <Blog />
+          {/* <Blog /> */}
           <Contact />
-          <Testimonials /> */}
+          <Testimonials />
         </main>
         
-        {/* <Footer /> */}
+        <Footer />
       </div>
     </div>
   );

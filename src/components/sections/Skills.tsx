@@ -117,9 +117,9 @@ const Skills: React.FC = () => {
           
           <div className="flex flex-wrap justify-center gap-4">
             {[
-              'JavaScript', 'TypeScript', 'React', 'Vue.js', 'Node.js','Tailwind CSS', 'Python',
-              'MongoDB', 'PostgreSQL', 'AWS', 'Docker', 'Git', 'GraphQL','Angular',
-              'Next.js', 'Express.js', 'Tailwind CSS', 'Jest', 'Redux', 'Firebase'
+              'JavaScript', 'TypeScript', 'React','Node.js','Tailwind CSS', 'Python',
+              'MongoDB', 'PostgreSQL','Docker', 'Git','Angular',
+              'Next.js', 'Express.js', 'Tailwind CSS', 'Jest', 'Redux'
             ].map((tech, index) => (
               <motion.span
                 key={tech}
