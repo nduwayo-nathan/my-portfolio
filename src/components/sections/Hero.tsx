@@ -1,27 +1,36 @@
-import React, { useEffect, useRef } from 'react';
-import { motion } from 'framer-motion';
+import React, { useState, useEffect, useRef } from "react";
+import { motion } from "framer-motion";
 import {
   ChevronDownIcon,
   PlayIcon,
   EnvelopeIcon,
-  ArrowDownTrayIcon
-} from '@heroicons/react/24/outline';
-import { ReactTyped } from 'react-typed';
-import { gsap } from 'gsap';
-import profile from "../assets/images/profile.png"
+  ArrowDownTrayIcon,
+} from "@heroicons/react/24/outline";
+import { ReactTyped } from "react-typed";
+import { gsap } from "gsap";
+import profile from "../assets/images/naythan.png";
+import { Linkedin, Github, Twitter, Mail } from "lucide-react";
+import my_cv from "../assets/docs/NDUWAYO_Nathana_CV.pdf"; // Adjust the path as necessary
 
 const Hero: React.FC = () => {
-  const videoRef = useRef<HTMLVideoElement>(null);
   const heroRef = useRef<HTMLDivElement>(null);
   const profileRef = useRef<HTMLDivElement>(null);
+  const [showCVModal, setShowCVModal] = useState(false);
 
   // Entry animations
   useEffect(() => {
     if (heroRef.current) {
       gsap.fromTo(
-        heroRef.current.querySelectorAll('.hero-animate'),
+        heroRef.current.querySelectorAll(".hero-animate"),
         { y: 100, opacity: 0 },
-        { y: 0, opacity: 1, duration: 1.2, stagger: 0.2, ease: 'power3.out', delay: 0.5 }
+        {
+          y: 0,
+          opacity: 1,
+          duration: 1.2,
+          stagger: 0.2,
+          ease: "power3.out",
+          delay: 0.5,
+        }
       );
     }
 
@@ -29,14 +38,23 @@ const Hero: React.FC = () => {
       gsap.fromTo(
         profileRef.current,
         { x: 100, opacity: 0, scale: 0.8 },
-        { x: 0, opacity: 1, scale: 1, duration: 1.5, ease: 'power3.out', delay: 0.8 }
+        {
+          x: 0,
+          opacity: 1,
+          scale: 1,
+          duration: 1.5,
+          ease: "power3.out",
+          delay: 0.8,
+        }
       );
     }
   }, []);
 
   return (
-    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
-     
+    <section
+      id="home"
+      className="relative min-h-screen flex items-center justify-center overflow-hidden"
+    >
       {/* Main content */}
       <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
         <div className="grid lg:grid-cols-2 gap-12 items-center min-h-screen py-20">
@@ -56,7 +74,6 @@ const Hero: React.FC = () => {
             <div className="hero-animate">
               <h1 className="text-5xl md:text-7xl font-bold text-blue-400 dark:text-white mb-6 leading-tight">
                 <span className="block">Hi, I'm</span>
-               
               </h1>
             </div>
 
@@ -64,12 +81,12 @@ const Hero: React.FC = () => {
               <div className="text-2xl md:text-4xl font-light text-blue-400 mb-8 h-16">
                 <ReactTyped
                   strings={[
-                    'Full Stack Developer',
-                    'Frontend Specialist',
-                    'Backend Engineer',
-                    'UI/UX Designer',
-                    'Mobile Developer',
-                    'Cloud Architect'
+                    "Full Stack Developer",
+                    "Frontend Specialist",
+                    "Backend Engineer",
+                    "UI/UX Designer",
+                    "Mobile Developer",
+                    "Cloud Architect",
                   ]}
                   typeSpeed={80}
                   backSpeed={50}
@@ -80,32 +97,36 @@ const Hero: React.FC = () => {
 
             <div className="hero-animate">
               <p className="text-xl text-gray-600 mb-12 max-w-2xl leading-relaxed">
-                Crafting exceptional digital experiences with cutting-edge technology and innovative design solutions.
-                Transforming ideas into powerful, scalable applications.
+                Crafting exceptional digital experiences with cutting-edge
+                technology and innovative design solutions. Transforming ideas
+                into powerful, scalable applications.
               </p>
             </div>
 
             {/* Action buttons */}
             <div className="hero-animate flex flex-col sm:flex-row gap-6">
-              <motion.button
-                whileHover={{
-                  scale: 1.05,
-                  boxShadow: '0 20px 40px rgba(59, 130, 246, 0.4)'
-                }}
-                whileTap={{ scale: 0.95 }}
-                className="group flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-full font-semibold text-lg shadow-lg hover:shadow-xl transition-all duration-300"
-              >
-                <PlayIcon className="w-5 h-5 group-hover:scale-110 transition-transform" />
-                View My Work
-              </motion.button>
+              <a href="/#portfolio">
+                <motion.button
+                  whileHover={{
+                    scale: 1.05,
+                    boxShadow: "0 20px 40px rgba(59, 130, 246, 0.4)",
+                  }}
+                  whileTap={{ scale: 0.95 }}
+                  className="group flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-full font-semibold text-lg shadow-lg hover:shadow-xl transition-all duration-300"
+                >
+                  <PlayIcon className="w-5 h-5 group-hover:scale-110 transition-transform" />
+                  View My Work
+                </motion.button>
+              </a>
 
               <motion.button
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
+                onClick={() => setShowCVModal(true)}
                 className="group flex items-center gap-3 px-8 py-4 border-2 border-gray-400 dark:border-white/30 text-blue-400 dark:text-white rounded-full font-semibold text-lg backdrop-blur-sm hover:bg-white/10 transition-all duration-300"
               >
                 <ArrowDownTrayIcon className="w-5 h-5 group-hover:scale-110 transition-transform" />
-                Download CV
+                View My CV
               </motion.button>
             </div>
 
@@ -114,10 +135,14 @@ const Hero: React.FC = () => {
               <span className="text-gray-400 text-sm">Follow me:</span>
               <div className="flex gap-4">
                 {[
-                  { icon: '💼', href: '#', label: 'LinkedIn' },
-                  { icon: '🐙', href: '#', label: 'GitHub' },
-                  { icon: '🐦', href: '#', label: 'Twitter' },
-                  { icon: '📧', href: '#', label: 'Email' }
+                  {
+                    icon: <Linkedin size={20} />,
+                    href: "#",
+                    label: "LinkedIn",
+                  },
+                  { icon: <Github size={20} />, href: "#", label: "GitHub" },
+                  { icon: <Twitter size={20} />, href: "#", label: "Twitter" },
+                  { icon: <Mail size={20} />, href: "#", label: "Email" },
                 ].map((social, index) => (
                   <motion.a
                     key={index}
@@ -125,7 +150,7 @@ const Hero: React.FC = () => {
                     whileHover={{ scale: 1.2, y: -2 }}
                     whileTap={{ scale: 0.9 }}
                     aria-label={social.label}
-                    className="w-12 h-12 bg-black/20 dark:bg-white/10 backdrop-blur-sm rounded-full flex items-center justify-center text-xl hover:bg-white/20 transition-all duration-300 border border-white/20"
+                    className="w-12 h-12 text-teal-500 bg-black/20 dark:bg-white/10 backdrop-blur-sm rounded-full flex items-center justify-center text-xl hover:bg-gray-500/20 dark:hover:bg-white/20 transition-all duration-300 border border-white/20"
                   >
                     {social.icon}
                   </motion.a>
@@ -161,22 +186,29 @@ const Hero: React.FC = () => {
 
                 {/* Info */}
                 <div className="text-center space-y-4">
-                  <h3 className="text-2xl font-bold dark:text-white text-black">NDUWAYO Nathan</h3>
-                  <p className="text-blue-400 font-medium">Full Stack Developer</p>
+                  <h3 className="text-2xl font-bold dark:text-white text-black">
+                    NDUWAYO Nathan
+                  </h3>
+                  <p className="text-blue-400 font-medium">
+                    Full Stack Developer
+                  </p>
                   <p className="text-gray-600 dark:text-gray-300 text-sm leading-relaxed">
-                    3+ years of experience building scalable web applications and mobile solutions
+                    3+ years of experience building scalable web applications
+                    and mobile solutions
                   </p>
                 </div>
 
                 {/* Stats */}
                 <div className="grid grid-cols-3 gap-4 mt-2 pt-6 border-t border-white/20">
                   {[
-                    { value: '10+', label: 'Projects' },
-                    { value: '3+', label: 'Years' },
-                    { value: '7+', label: 'Technologies Mastered' }
+                    { value: "10+", label: "Projects" },
+                    { value: "3+", label: "Years" },
+                    { value: "7+", label: "Technologies Mastered" },
                   ].map((stat, i) => (
                     <div key={i} className="text-center">
-                      <div className="text-2xl font-bold text-blue-500 dark:text-white">{stat.value}</div>
+                      <div className="text-2xl font-bold text-blue-500 dark:text-white">
+                        {stat.value}
+                      </div>
                       <div className="text-xs text-gray-400">{stat.label}</div>
                     </div>
                   ))}
@@ -213,6 +245,41 @@ const Hero: React.FC = () => {
         </div>
       </div>
 
+      {/* CV Modal */}
+      {showCVModal && (
+        <div className="fixed inset-0 bg-black/90 z-50 flex items-center justify-center h-screen   ">
+          <div className="relative bg-white dark:bg-gray-800 rounded-xl max-w-4xl w-full max-h-[90vh]  overflow-auto">
+            <button 
+              onClick={() => setShowCVModal(false)}
+              className="absolute top-4 right-4 p-2 rounded-full bg-gray-200 dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </button>
+            
+            <div className="p-0">
+              {/* Replace with your actual CV content - could be an iframe or image */}
+              <iframe 
+                src={my_cv}
+                className="w-full h-[84vh] border-0"
+                title="Nathan's CV"
+              />
+              <div className=" p-2 flex justify-center bg-slate-400">
+                <a 
+                  href={my_cv}
+                  download="Nathan-Nduwayo-CV.pdf"
+                  className="flex items-center gap-1 px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors"
+                >
+                  <ArrowDownTrayIcon className="w-5 h-5" />
+                  Download Full CV
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
+
       {/* Scroll indicator */}
       <motion.div
         animate={{ y: [0, 10, 0] }}
@@ -220,7 +287,9 @@ const Hero: React.FC = () => {
         className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-20"
       >
         <div className="flex flex-col items-center gap-2">
-          <span className="text-black dark:text-white/70 text-sm">Scroll to explore</span>
+          <span className="text-black dark:text-white/70 text-sm">
+            Scroll to explore
+          </span>
           <ChevronDownIcon className="w-6 h-6 text-black dark:text-white/70" />
         </div>
       </motion.div>
