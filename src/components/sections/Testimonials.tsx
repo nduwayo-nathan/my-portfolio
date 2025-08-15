@@ -1,29 +1,30 @@
-import React, { useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
-import { ChevronLeft, ChevronRight, Star, Quote } from 'lucide-react';
-import verygoodprof from '../assets/images/vergood.png';
+import React, { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import { ChevronLeft, ChevronRight, Star, Quote } from "lucide-react";
+import verygoodprof from "../assets/images/vergood.png";
+import avatar from "../assets/images/avatar.png";
 
 const Testimonials: React.FC = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const testimonials = [
     {
-      name: 'Muhirwa Verygood',
-      role: 'Software Engineer',
-      company: '',
-      image:`${verygoodprof}`,
+      name: "Muhirwa Verygood",
+      role: "Software Engineer",
+      company: "",
+      image: `${verygoodprof}`,
       rating: 5,
-      text:"Nathan built a great website that did more than we asked for. He paid close attention to every detail and knew exactly what he was doing. Working with him was easy and everything went smoothly",
-      phone: '+250795100416',
+      text: "Nathan built a great website that did more than we asked for. He paid close attention to every detail and knew exactly what he was doing. Working with him was easy and everything went smoothly",
+      phone: "+250795100416",
     },
     {
-      name: 'Fils Alliance Dieudonne',
-      role: 'Software Developer',
-      company: '',
-      image: 'https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&fit=crop',
+      name: "Fils Alliance Dieudonne",
+      role: "Software Developer",
+      company: "",
+      image:`${avatar}`,
       rating: 4,
-      text: 'Working with Nathan was a game-changer for our startup. He built a scalable platform smoothly. Highly recommended!',
-      phone: '+250785940012',
+      text: "Working with Nathan was a game-changer for our startup. He built a scalable platform smoothly. Highly recommended!",
+      phone: "+250785940012",
     },
   ];
 
@@ -32,7 +33,9 @@ const Testimonials: React.FC = () => {
   };
 
   const prevTestimonial = () => {
-    setCurrentIndex((prev) => (prev - 1 + testimonials.length) % testimonials.length);
+    setCurrentIndex(
+      (prev) => (prev - 1 + testimonials.length) % testimonials.length
+    );
   };
 
   return (
@@ -44,7 +47,9 @@ const Testimonials: React.FC = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl font-bold text-teal-400 mb-4">Client Testimonials</h2>
+          <h2 className="text-4xl font-bold text-teal-400 mb-4">
+            Client Testimonials
+          </h2>
           <p className="text-gray-500 text-lg">
             What clients say about working with me
           </p>
@@ -64,7 +69,10 @@ const Testimonials: React.FC = () => {
                 <Quote className="w-8 h-8 text-teal-600 dark:text-teal-400 mr-4" />
                 <div className="flex gap-1">
                   {[...Array(testimonials[currentIndex].rating)].map((_, i) => (
-                    <Star key={i} className="w-5 h-5 text-orange-500 dark:text-yellow-400 fill-current" />
+                    <Star
+                      key={i}
+                      className="w-5 h-5 text-orange-500 dark:text-yellow-400 fill-current"
+                    />
                   ))}
                 </div>
               </div>
@@ -109,7 +117,7 @@ const Testimonials: React.FC = () => {
                   key={index}
                   onClick={() => setCurrentIndex(index)}
                   className={`w-3 h-3 rounded-full transition-all duration-300 ${
-                    index === currentIndex ? 'bg-teal-400' : 'bg-gray-600'
+                    index === currentIndex ? "bg-teal-400" : "bg-gray-600"
                   }`}
                 />
               ))}

@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import React, { useEffect, useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 
 interface LoadingScreenProps {
   onComplete: () => void;
@@ -10,10 +10,10 @@ const LoadingScreen: React.FC<LoadingScreenProps> = ({ onComplete }) => {
   const [currentText, setCurrentText] = useState(0);
 
   const loadingTexts = [
-    'Initializing...',
-    'Loading Portfolio...',
-    'Preparing Experience...',
-    'Almost Ready...',
+    "Initializing...",
+    "Loading Portfolio...",
+    "Preparing Experience...",
+    "Almost Ready...",
   ];
 
   useEffect(() => {
@@ -48,20 +48,20 @@ const LoadingScreen: React.FC<LoadingScreenProps> = ({ onComplete }) => {
         <div className="text-center">
           {/* Animated Logo */}
           <motion.div
-            animate={{ 
+            animate={{
               rotate: 360,
-              scale: [1, 1.1, 1]
+              scale: [1, 1.1, 1],
             }}
-            transition={{ 
+            transition={{
               rotate: { duration: 2, repeat: Infinity, ease: "linear" },
-              scale: { duration: 2, repeat: Infinity }
+              scale: { duration: 2, repeat: Infinity },
             }}
             className="w-24 h-24 mx-auto mb-8 relative"
           >
             <div className="w-full h-full border-4 border-blue-500/30 border-t-blue-500 rounded-full"></div>
             <div className="absolute inset-2 border-4 border-purple-500/30 border-b-purple-500 rounded-full"></div>
           </motion.div>
-          
+
           {/* Brand Name */}
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
@@ -71,7 +71,7 @@ const LoadingScreen: React.FC<LoadingScreenProps> = ({ onComplete }) => {
           >
             NDUWAYO Nathan
           </motion.h1>
-          
+
           {/* Loading Text */}
           <motion.p
             key={currentText}
@@ -82,7 +82,7 @@ const LoadingScreen: React.FC<LoadingScreenProps> = ({ onComplete }) => {
           >
             {loadingTexts[currentText]}
           </motion.p>
-          
+
           {/* Progress Bar */}
           <div className="w-80 h-2 bg-gray-800 rounded-full overflow-hidden mx-auto mb-4">
             <motion.div
@@ -92,7 +92,7 @@ const LoadingScreen: React.FC<LoadingScreenProps> = ({ onComplete }) => {
               transition={{ duration: 0.1 }}
             />
           </div>
-          
+
           {/* Progress Percentage */}
           <motion.p
             animate={{ opacity: [0.5, 1, 0.5] }}

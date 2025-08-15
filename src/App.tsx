@@ -5,11 +5,10 @@ import Navbar from './components/Navbar';
 import Hero from './components/sections/Hero';
 import About from './components/sections/About';
 import Skills from './components/sections/Skills';
-// import Experience from './components/sections/Experience';
-// import Portfolio from './components/sections/Portfolio';
+import Experience from './components/sections/Experience';
+import Portfolio from './components/sections/Portfolio';
 import Services from './components/sections/Services';
 import Testimonials from './components/sections/Testimonials';
-// import Blog from './components/sections/Blog';
 import Contact from './components/sections/Contact';
 import Footer from './components/Footer';
 import LoadingScreen from './components/LoadingScreen';
@@ -39,19 +38,18 @@ function App() {
   }
 
   return (
-    <div className={`${theme === 'dark' ? 'dark' : ''}`}>
-      <div className="bg-white dark:bg-gray-900 transition-colors duration-300">
+    <div className={`min-h-screen ${theme}`}>
+      <div  className={`bg-white dark:bg-gray-900 transition-colors duration-300 ${theme}`}>
         <ScrollProgress />
         <Navbar />
         
-        <main>
+        <main className={theme}>
           <Hero />
           <About />
           <Skills />
-          {/* <Experience />
-          <Portfolio /> */}
+          <Experience />
+          <Portfolio /> 
           <Services />
-          {/* <Blog /> */}
           <Contact />
           <Testimonials />
         </main>

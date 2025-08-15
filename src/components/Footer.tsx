@@ -1,31 +1,31 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { HeartIcon } from "@heroicons/react/24/solid";
-import { Mail, Phone, MapPin, Github, Linkedin, Twitter, } from "lucide-react";
+import { Mail, Phone, MapPin, Github, Linkedin, Twitter } from "lucide-react";
 
 const Footer: React.FC = () => {
   const socialLinks = [
-  {
-    name: "GitHub",
-    href: "https://github.com/nduwayo-nathan",
-    icon: <Github className="w-5 h-5 text-gray-200" />,
-  },
-  {
-    name: "LinkedIn",
-    href: "https://www.linkedin.com/in/nduwayo-n-b333bb261",
-    icon: <Linkedin className="w-5 h-5 text-blue-600" />,
-  },
-  {
-    name: "Twitter",
-    href: "#",
-    icon: <Twitter className="w-5 h-5 text-sky-500" />,
-  },
-  {
-    name: "Email",
-    href: "mailto:nduwayonath5@gmail.com",
-    icon: <Mail className="w-5 h-5 text-red-500" />,
-  },
-];
+    {
+      name: "GitHub",
+      href: "https://github.com/nduwayo-nathan",
+      icon: <Github className="w-5 h-5 text-gray-200" />,
+    },
+    {
+      name: "LinkedIn",
+      href: "https://www.linkedin.com/in/nduwayo-n-b333bb261",
+      icon: <Linkedin className="w-5 h-5 text-blue-600" />,
+    },
+    {
+      name: "Twitter",
+      href: "#",
+      icon: <Twitter className="w-5 h-5 text-sky-500" />,
+    },
+    {
+      name: "Email",
+      href: "mailto:nduwayonath5@gmail.com",
+      icon: <Mail className="w-5 h-5 text-red-500" />,
+    },
+  ];
 
   return (
     <footer className="bg-gray-900 text-white py-12">

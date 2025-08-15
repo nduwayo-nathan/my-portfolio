@@ -6,7 +6,9 @@
 @tailwind utilities;
 
 
-
+::-webkit-scrollbar {
+  display: none;
+}
 
 /* Base Styles */
 * {
@@ -24,6 +26,7 @@ body {
   line-height: 1.6;
   color: #333;
   overflow-x: hidden;
+  
 }
 
 /* Custom Scrollbar */

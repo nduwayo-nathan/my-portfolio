@@ -1,21 +1,21 @@
-import React, { useState, useEffect } from 'react';
-import { motion } from 'framer-motion';
-import { useInView } from 'react-intersection-observer';
-import axios from 'axios';
-import { 
-  Mail, 
-  Phone, 
-  MapPin, 
-  Send, 
-  MessageCircle, 
-  Linkedin, 
+import React, { useState } from "react";
+import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+import axios from "axios";
+import {
+  Mail,
+  Phone,
+  MapPin,
+  Send,
+  MessageCircle,
+  Linkedin,
   Github,
   Twitter,
   Instagram,
   Clock,
   CheckCircle,
-  AlertCircle
-} from 'lucide-react';
+  AlertCircle,
+} from "lucide-react";
 
 const Contact: React.FC = () => {
   const [ref, inView] = useInView({
@@ -24,156 +24,185 @@ const Contact: React.FC = () => {
   });
 
   const [formData, setFormData] = useState({
-    firstName: '',
-    lastName: '',
-    email: '',
-    phone: '',
-    subject: '',
-    message: '',
-    budget: '',
-    timeline: ''
+    firstName: "",
+    lastName: "",
+    email: "",
+    phone: "",
+    subject: "",
+    message: "",
+    budget: "",
+    timeline: "",
   });
 
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
-  const [error, setError] = useState('');
+  const [error, setError] = useState("");
   const [errors, setErrors] = useState<Record<string, string>>({});
 
-  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
+  const handleInputChange = (
+    e: React.ChangeEvent<
+      HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement
+    >
+  ) => {
     setFormData({
       ...formData,
-      [e.target.name]: e.target.value
+      [e.target.name]: e.target.value,
     });
     // Clear error when user starts typing
     if (errors[e.target.name]) {
-      setErrors(prev => {
-        const newErrors = {...prev};
+      setErrors((prev) => {
+        const newErrors = { ...prev };
         delete newErrors[e.target.name];
         return newErrors;
       });
     }
   };
 
-  const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000'; 
-
+  const API_URL = import.meta.env.VITE_API_URL || "http://localhost:5000";
 
   const handleSubmit = async (e: React.FormEvent) => {
-  e.preventDefault();
-  setIsSubmitting(true);
-  setError('');
-  setErrors({});
+    e.preventDefault();
+    setIsSubmitting(true);
+    setError("");
+    setErrors({});
 
-  try {
-    const { data } = await axios.post(
-      `${API_URL}/api/contact`,
-      formData,
-      {
-        headers: { 'Content-Type': 'application/json' },
+    try {
+      const { data } = await axios.post(`${API_URL}/api/contact`, formData, {
+        headers: { "Content-Type": "application/json" },
+      });
+
+      // Handle validation errors from backend
+      if (data.errors) {
+        setErrors(data.errors);
+        return;
       }
-    );
 
-    // Handle validation errors from backend
-    if (data.errors) {
-      setErrors(data.errors);
-      return;
-    }
+      setIsSubmitted(true);
+      resetForm();
+    } catch (err: any) {
+      console.error("Submission error:", err);
 
-    setIsSubmitted(true);
-    resetForm();
-  } catch (err: any) {
-    console.error('Submission error:', err);
-
-    if (err.response && err.response.data) {
-      // If backend returned validation or error message
-      const respData = err.response.data;
-      if (respData.errors) {
-        setErrors(respData.errors);
-      } else if (respData.message) {
-        setError(respData.message);
+      if (err.response && err.response.data) {
+        // If backend returned validation or error message
+        const respData = err.response.data;
+        if (respData.errors) {
+          setErrors(respData.errors);
+        } else if (respData.message) {
+          setError(respData.message);
+        } else {
+          setError("Failed to send message. Please try again later.");
+        }
       } else {
-        setError('Failed to send message. Please try again later.');
+        setError("Failed to send message. Please try again later.");
       }
-    } else {
-      setError('Failed to send message. Please try again later.');
+    } finally {
+      setIsSubmitting(false);
     }
-  } finally {
-    setIsSubmitting(false);
-  }
-};
-
+  };
 
   const resetForm = () => {
     setFormData({
-      firstName: '',
-      lastName: '',
-      email: '',
-      phone: '',
-      subject: '',
-      message: '',
-      budget: '',
-      timeline: ''
+      firstName: "",
+      lastName: "",
+      email: "",
+      phone: "",
+      subject: "",
+      message: "",
+      budget: "",
+      timeline: "",
     });
   };
 
   const contactInfo = [
     {
       icon: Mail,
-      label: 'Email',
-      value: 'nduwayonathan5@gmail.com',
-      href: 'mailto:nduwayonathan5@gmail.com',
-      color: 'from-blue-500 to-cyan-500'
+      label: "Email",
+      value: "nduwayonathan5@gmail.com",
+      href: "mailto:nduwayonathan5@gmail.com",
+      color: "from-blue-500 to-cyan-500",
     },
     {
       icon: Phone,
-      label: 'Phone',
-      value: '+250 790 774 445',
-      href: 'tel:+250790774445',
-      color: 'from-green-500 to-teal-500'
+      label: "Phone",
+      value: "+250 790 774 445",
+      href: "tel:+250790774445",
+      color: "from-green-500 to-teal-500",
     },
     {
       icon: MapPin,
-      label: 'Location',
-      value: 'Kigali, Rwanda',
-      href: '#',
-      color: 'from-purple-500 to-pink-500'
+      label: "Location",
+      value: "Kigali, Rwanda",
+      href: "#",
+      color: "from-purple-500 to-pink-500",
     },
     {
       icon: Clock,
-      label: 'Availability',
-      value: 'All days-Saturday',
-      href: '#',
-      color: 'from-orange-500 to-red-500'
-    }
+      label: "Availability",
+      value: "All days-Saturday",
+      href: "#",
+      color: "from-orange-500 to-red-500",
+    },
   ];
 
   const socialLinks = [
-    { icon: Linkedin, label: 'LinkedIn', href: 'https://www.linkedin.com/in/nduwayo-n-b333bb261', color: 'hover:text-blue-600' },
-    { icon: Github, label: 'GitHub', href: 'https://github.com/nduwayo-nathan', color: 'hover:text-gray-900 dark:hover:text-white' },
-    { icon: Twitter, label: 'Twitter', href: 'https://twitter.com/nduwayo_nathan', color: 'hover:text-blue-400' },
-    { icon: Instagram, label: 'Instagram', href: 'https://www.instagram.com/naythan____', color: 'hover:text-pink-600' },
-    { icon: MessageCircle, label: 'WhatsApp', href: 'https://wa.me/250790774445', color: 'hover:text-green-600' }
+    {
+      icon: Linkedin,
+      label: "LinkedIn",
+      href: "https://www.linkedin.com/in/nduwayo-n-b333bb261",
+      color: "hover:text-blue-600",
+    },
+    {
+      icon: Github,
+      label: "GitHub",
+      href: "https://github.com/nduwayo-nathan",
+      color: "hover:text-gray-900 dark:hover:text-white",
+    },
+    {
+      icon: Twitter,
+      label: "Twitter",
+      href: "https://twitter.com/nduwayo_nathan",
+      color: "hover:text-blue-400",
+    },
+    {
+      icon: Instagram,
+      label: "Instagram",
+      href: "https://www.instagram.com/naythan____",
+      color: "hover:text-pink-600",
+    },
+    {
+      icon: MessageCircle,
+      label: "WhatsApp",
+      href: "https://wa.me/250790774445",
+      color: "hover:text-green-600",
+    },
   ];
 
   const budgetOptions = [
-    'Under $200',
-    '$200 - $500',
-    '$500 - $1,000',
-    '$1,500 - $2,000',
-    '$2,000+'
+    "Under $200",
+    "$200 - $500",
+    "$500 - $1,000",
+    "$1,500 - $2,000",
+    "$2,000+",
   ];
 
   const timelineOptions = [
-    'ASAP',
-    '1-2 weeks',
-    '1 month',
-    '2-3 months',
-    '3+ months'
+    "ASAP",
+    "1-2 weeks",
+    "1 month",
+    "2-3 months",
+    "3+ months",
   ];
 
-  const renderFormField = (name: string, label: string, type = 'text', required = true, isTextarea = false) => (
+  const renderFormField = (
+    name: string,
+    label: string,
+    type = "text",
+    required = true,
+    isTextarea = false
+  ) => (
     <div>
       <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
-        {label} {required && '*'}
+        {label} {required && "*"}
       </label>
       {isTextarea ? (
         <textarea
@@ -183,7 +212,9 @@ const Contact: React.FC = () => {
           required={required}
           rows={6}
           className={`w-full px-4 py-3 bg-gray-50 dark:bg-gray-700 border ${
-            errors[name] ? 'border-red-500' : 'border-gray-300 dark:border-gray-600'
+            errors[name]
+              ? "border-red-500"
+              : "border-gray-300 dark:border-gray-600"
           } rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors resize-none`}
           placeholder={`Enter your ${label.toLowerCase()}`}
         />
@@ -195,19 +226,26 @@ const Contact: React.FC = () => {
           onChange={handleInputChange}
           required={required}
           className={`w-full px-4 py-3 bg-gray-50 dark:bg-gray-700 border ${
-            errors[name] ? 'border-red-500' : 'border-gray-300 dark:border-gray-600'
+            errors[name]
+              ? "border-red-500"
+              : "border-gray-300 dark:border-gray-600"
           } rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors`}
           placeholder={`Enter your ${label.toLowerCase()}`}
         />
       )}
       {errors[name] && (
-        <p className="mt-1 text-sm text-red-500 dark:text-red-400">{errors[name]}</p>
+        <p className="mt-1 text-sm text-red-500 dark:text-red-400">
+          {errors[name]}
+        </p>
       )}
     </div>
   );
 
   return (
-    <section id="contact" className="py-20 bg-gray-50 dark:bg-gray-900 transition-colors duration-300">
+    <section
+      id="contact"
+      className="py-20 bg-gray-50 dark:bg-gray-900 transition-colors duration-300"
+    >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 50 }}
@@ -221,7 +259,8 @@ const Contact: React.FC = () => {
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-blue-600 to-purple-600 mx-auto mb-8"></div>
           <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-            Ready to bring your ideas to life? Let's discuss your project and create something amazing together.
+            Ready to bring your ideas to life? Let's discuss your project and
+            create something amazing together.
           </p>
         </motion.div>
 
@@ -238,7 +277,7 @@ const Contact: React.FC = () => {
               <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-8">
                 Get In Touch
               </h3>
-              
+
               <div className="space-y-6 mb-8">
                 {contactInfo.map((item, index) => (
                   <motion.a
@@ -247,17 +286,23 @@ const Contact: React.FC = () => {
                     whileHover={{ x: 5 }}
                     className="flex items-center gap-4 p-4 rounded-xl hover:bg-gray-50 dark:hover:bg-gray-700 transition-all duration-300 group"
                   >
-                    <div className={`w-12 h-12 bg-gradient-to-r ${item.color} rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300`}>
+                    <div
+                      className={`w-12 h-12 bg-gradient-to-r ${item.color} rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300`}
+                    >
                       <item.icon className="w-6 h-6 text-white" />
                     </div>
                     <div>
-                      <p className="text-sm text-gray-500 dark:text-gray-400">{item.label}</p>
-                      <p className="font-semibold text-gray-900 dark:text-white">{item.value}</p>
+                      <p className="text-sm text-gray-500 dark:text-gray-400">
+                        {item.label}
+                      </p>
+                      <p className="font-semibold text-gray-900 dark:text-white">
+                        {item.value}
+                      </p>
                     </div>
                   </motion.a>
                 ))}
               </div>
-              
+
               <div className="border-t border-gray-200 dark:border-gray-700 pt-8">
                 <h4 className="text-lg font-semibold text-gray-900 dark:text-white mb-6">
                   Follow Me
@@ -293,7 +338,7 @@ const Contact: React.FC = () => {
               <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-8">
                 Send Me a Message
               </h3>
-              
+
               {isSubmitted ? (
                 <motion.div
                   initial={{ opacity: 0, scale: 0.8 }}
@@ -305,23 +350,24 @@ const Contact: React.FC = () => {
                     Message Sent Successfully!
                   </h4>
                   <p className="text-gray-600 dark:text-gray-300">
-                    Thank you for reaching out. I'll get back to you within 24 hours.
+                    Thank you for reaching out. I'll get back to you within 24
+                    hours.
                   </p>
                 </motion.div>
               ) : (
                 <form onSubmit={handleSubmit} className="space-y-6">
                   <div className="grid md:grid-cols-2 gap-6">
-                    {renderFormField('firstName', 'First Name')}
-                    {renderFormField('lastName', 'Last Name')}
+                    {renderFormField("firstName", "First Name")}
+                    {renderFormField("lastName", "Last Name")}
                   </div>
-                  
+
                   <div className="grid md:grid-cols-2 gap-6">
-                    {renderFormField('email', 'Email', 'email')}
-                    {renderFormField('phone', 'Phone', 'tel', false)}
+                    {renderFormField("email", "Email", "email")}
+                    {renderFormField("phone", "Phone", "tel", false)}
                   </div>
-                  
-                  {renderFormField('subject', 'Subject')}
-                  
+
+                  {renderFormField("subject", "Subject")}
+
                   <div className="grid md:grid-cols-2 gap-6">
                     <div>
                       <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
@@ -335,7 +381,9 @@ const Contact: React.FC = () => {
                       >
                         <option value="">Select budget range</option>
                         {budgetOptions.map((option) => (
-                          <option key={option} value={option}>{option}</option>
+                          <option key={option} value={option}>
+                            {option}
+                          </option>
                         ))}
                       </select>
                     </div>
@@ -351,21 +399,23 @@ const Contact: React.FC = () => {
                       >
                         <option value="">Select timeline</option>
                         {timelineOptions.map((option) => (
-                          <option key={option} value={option}>{option}</option>
+                          <option key={option} value={option}>
+                            {option}
+                          </option>
                         ))}
                       </select>
                     </div>
                   </div>
-                  
-                  {renderFormField('message', 'Message', 'text', true, true)}
-                  
+
+                  {renderFormField("message", "Message", "text", true, true)}
+
                   {error && (
                     <div className="flex items-center gap-2 p-4 bg-red-50 dark:bg-red-900/20 rounded-lg">
                       <AlertCircle className="w-5 h-5 text-red-500 dark:text-red-400" />
                       <p className="text-red-500 dark:text-red-400">{error}</p>
                     </div>
                   )}
-                  
+
                   <motion.button
                     type="submit"
                     disabled={isSubmitting}

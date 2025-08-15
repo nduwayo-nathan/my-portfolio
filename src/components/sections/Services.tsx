@@ -9,11 +9,8 @@ import {
   Palette,
   Cloud,
   Search,
-  Shield,
   Zap,
-  Users,
-  BarChart3,
-  Wrench,
+  Users
 } from "lucide-react";
 
 const Services: React.FC = () => {

@@ -1,32 +1,36 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect } from "react";
 
-export type Theme = 'light' | 'dark';
+type Theme = "light" | "dark";
 
 export const useTheme = () => {
-  const [theme, setTheme] = useState<Theme>(() => {
-    if (typeof window !== 'undefined') {
-      const saved = localStorage.getItem('portfolio-theme') as Theme;
-      return saved || 'dark';
-    }
-    return 'dark';
-  });
+  const [theme, setTheme] = useState<Theme>("light");
+  const [isMounted, setIsMounted] = useState(false);
 
   useEffect(() => {
-    const root = window.document.documentElement;
-    
-    // Remove previous theme classes
-    root.classList.remove('light', 'dark');
-    
-    // Add current theme class
-    root.classList.add(theme);
-    
-    // Save to localStorage
-    localStorage.setItem('portfolio-theme', theme);
-  }, [theme]);
+    const savedTheme = localStorage.getItem("theme") as Theme | null;
+    const systemPrefersDark = window.matchMedia(
+      "(prefers-color-scheme: dark)"
+    ).matches;
+    const initialTheme = savedTheme || (systemPrefersDark ? "dark" : "light");
+
+    document.documentElement.classList.remove("light", "dark");
+    document.documentElement.classList.add(initialTheme);
+
+    setTheme(initialTheme);
+    setIsMounted(true);
+  }, []);
+
+  useEffect(() => {
+    if (isMounted) {
+      localStorage.setItem("theme", theme);
+      document.documentElement.classList.remove("light", "dark");
+      document.documentElement.classList.add(theme);
+    }
+  }, [theme, isMounted]);
 
   const toggleTheme = () => {
-    setTheme(prevTheme => prevTheme === 'light' ? 'dark' : 'light');
+    setTheme((prev) => (prev === "light" ? "dark" : "light"));
   };
 
-  return { theme, setTheme, toggleTheme };
+  return { theme, toggleTheme, isMounted };
 };

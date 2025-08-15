@@ -10,7 +10,7 @@ import { ReactTyped } from "react-typed";
 import { gsap } from "gsap";
 import profile from "../assets/images/naythan.png";
 import { Linkedin, Github, Twitter, Mail } from "lucide-react";
-import my_cv from "../assets/docs/NDUWAYO_Nathana_CV.pdf"; // Adjust the path as necessary
+import my_cv from "../assets/docs/NDUWAYO_Nathana_CV.pdf";
 
 const Hero: React.FC = () => {
   const heroRef = useRef<HTMLDivElement>(null);
@@ -82,11 +82,10 @@ const Hero: React.FC = () => {
                 <ReactTyped
                   strings={[
                     "Full Stack Developer",
-                    "Frontend Specialist",
+                    "Frontend Developer",
                     "Backend Engineer",
                     "UI/UX Designer",
                     "Mobile Developer",
-                    "Cloud Architect",
                   ]}
                   typeSpeed={80}
                   backSpeed={50}
@@ -249,24 +248,35 @@ const Hero: React.FC = () => {
       {showCVModal && (
         <div className="fixed inset-0 bg-black/90 z-50 flex items-center justify-center h-screen   ">
           <div className="relative bg-white dark:bg-gray-800 rounded-xl max-w-4xl w-full max-h-[90vh]  overflow-auto">
-            <button 
+            <button
               onClick={() => setShowCVModal(false)}
               className="absolute top-4 right-4 p-2 rounded-full bg-gray-200 dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600"
             >
-              <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M6 18L18 6M6 6l12 12"
+                />
               </svg>
             </button>
-            
+
             <div className="p-0">
-              {/* Replace with your actual CV content - could be an iframe or image */}
-              <iframe 
+              {/*cv download*/}
+              <iframe
                 src={my_cv}
                 className="w-full h-[84vh] border-0"
                 title="Nathan's CV"
               />
               <div className=" p-2 flex justify-center bg-slate-400">
-                <a 
+                <a
                   href={my_cv}
                   download="Nathan-Nduwayo-CV.pdf"
                   className="flex items-center gap-1 px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors"
@@ -286,7 +296,7 @@ const Hero: React.FC = () => {
         transition={{ duration: 2, repeat: Infinity }}
         className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-20"
       >
-        <div className="flex flex-col items-center gap-2">
+        <div className="flex flex-col items-center gap-2 mt-20">
           <span className="text-black dark:text-white/70 text-sm">
             Scroll to explore
           </span>

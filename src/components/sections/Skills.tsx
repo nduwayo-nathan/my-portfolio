@@ -1,39 +1,39 @@
-import React from 'react';
-import { motion } from 'framer-motion';
+import React from "react";
+import { motion } from "framer-motion";
 
 const Skills: React.FC = () => {
   const skillCategories = [
     {
-      title: 'Frontend Development',
+      title: "Frontend Development",
       skills: [
-        { name: 'React', level: 95, color: 'from-blue-500 to-cyan-500' },
-        { name: 'TypeScript', level: 90, color: 'from-blue-600 to-blue-800' },
-        { name: 'Angular', level: 85, color: 'from-green-500 to-green-700' },
-        { name: 'Next.js', level: 88, color: 'from-gray-700 to-gray-900' },
-        { name: 'Tailwind CSS', level: 92, color: 'from-teal-500 to-teal-700' },
+        { name: "React", level: 95, color: "from-blue-500 to-cyan-500" },
+        { name: "TypeScript", level: 90, color: "from-blue-600 to-blue-800" },
+        { name: "Angular", level: 85, color: "from-green-500 to-green-700" },
+        { name: "Next.js", level: 88, color: "from-gray-700 to-gray-900" },
+        { name: "Tailwind CSS", level: 92, color: "from-teal-500 to-teal-700" },
       ],
     },
     {
-      title: 'Backend Development',
+      title: "Backend Development",
       skills: [
-        { name: 'Node.js', level: 90, color: 'from-green-600 to-green-800' },
-        { name: 'Python', level: 85, color: 'from-yellow-500 to-yellow-700' },
-        { name: 'Express.js', level: 90, color: 'from-gray-600 to-gray-800' },
-        { name: 'MongoDB', level: 82, color: 'from-green-500 to-green-700' },
-        { name: 'Springboot', level: 85, color: 'from-blue-600 to-blue-800' },
-        { name: 'PostgreSQL', level: 80, color: 'from-indigo-600 to-blue-800' },
+        { name: "Node.js", level: 90, color: "from-green-600 to-green-800" },
+        { name: "Python", level: 85, color: "from-yellow-500 to-yellow-700" },
+        { name: "Express.js", level: 90, color: "from-gray-600 to-gray-800" },
+        { name: "MongoDB", level: 82, color: "from-green-500 to-green-700" },
+        { name: "Springboot", level: 85, color: "from-blue-600 to-blue-800" },
+        { name: "PostgreSQL", level: 80, color: "from-indigo-600 to-blue-800" },
       ],
     },
     {
-      title: 'Tools & Technologies',
+      title: "Tools & Technologies",
       skills: [
-        { name: 'Git', level: 92, color: 'from-orange-500 to-red-500' },
-        { name: 'Docker', level: 78, color: 'from-blue-500 to-blue-700' },
-        { name: 'Jest', level: 85, color: 'from-red-500 to-red-700' },
-        { name: 'Figma', level: 88, color: 'from-pink-500 to-purple-500' },
-        { name: 'Kubernetes', level: 70, color: 'from-blue-600 to-blue-900' },
-        { name: 'Postman', level: 90, color: 'from-orange-500 to-orange-700' },
-        { name: 'Blender', level: 65, color: 'from-indigo-600 to-purple-700' },
+        { name: "Git", level: 92, color: "from-orange-500 to-red-500" },
+        { name: "Docker", level: 78, color: "from-blue-500 to-blue-700" },
+        { name: "Jest", level: 85, color: "from-red-500 to-red-700" },
+        { name: "Figma", level: 88, color: "from-pink-500 to-purple-500" },
+        { name: "Kubernetes", level: 70, color: "from-blue-600 to-blue-900" },
+        { name: "Postman", level: 90, color: "from-orange-500 to-orange-700" },
+        { name: "Blender", level: 65, color: "from-indigo-600 to-purple-700" },
       ],
     },
   ];
@@ -54,7 +54,8 @@ const Skills: React.FC = () => {
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-blue-600 to-purple-600 mx-auto mb-8"></div>
           <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-            A comprehensive toolkit of modern technologies and frameworks to build exceptional digital experiences
+            A comprehensive toolkit of modern technologies and frameworks to
+            build exceptional digital experiences
           </p>
         </motion.div>
 
@@ -72,7 +73,7 @@ const Skills: React.FC = () => {
               <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-8 text-center">
                 {category.title}
               </h3>
-              
+
               <div className="space-y-6">
                 {category.skills.map((skill, skillIndex) => (
                   <div key={skillIndex} className="space-y-3">
@@ -84,7 +85,7 @@ const Skills: React.FC = () => {
                         {skill.level}%
                       </span>
                     </div>
-                    
+
                     <div className="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-3 overflow-hidden">
                       <motion.div
                         initial={{ width: 0 }}
@@ -114,12 +115,25 @@ const Skills: React.FC = () => {
           <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-8">
             Technology Stack
           </h3>
-          
+
           <div className="flex flex-wrap justify-center gap-4">
             {[
-              'JavaScript', 'TypeScript', 'React','Node.js','Tailwind CSS', 'Python',
-              'MongoDB', 'PostgreSQL','Docker', 'Git','Angular',
-              'Next.js', 'Express.js', 'Tailwind CSS', 'Jest', 'Redux'
+              "JavaScript",
+              "TypeScript",
+              "React",
+              "Node.js",
+              "Tailwind CSS",
+              "Python",
+              "MongoDB",
+              "PostgreSQL",
+              "Docker",
+              "Git",
+              "Angular",
+              "Next.js",
+              "Express.js",
+              "Tailwind CSS",
+              "Jest",
+              "Redux",
             ].map((tech, index) => (
               <motion.span
                 key={tech}
