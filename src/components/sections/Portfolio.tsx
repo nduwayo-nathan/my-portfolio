@@ -306,127 +306,128 @@ const Portfolio: React.FC = () => {
   ];
 
   const certificates = [
-    {
-      id: 1,
-      title: "AWS Certified Developer",
-      issuer: "Amazon Web Services",
-      date: "June 2023",
-      description:
-        "Demonstrated ability to develop and maintain applications on AWS platform.",
-      image: `${Developing_Back_End_Apps_with_Nodejs_and_ExpressImg}`,
-      certificateFile: `${Developing_Back_End_Apps_with_Nodejs_and_Express}`,
-      icon: Award,
-      color: "from-amber-500 to-yellow-500",
-    },
-    {
-      id: 2,
-      title: "AWS Certified Developer",
-      issuer: "Amazon Web Services",
-      date: "June 2023",
-      description:
-        "Demonstrated ability to develop and maintain applications on AWS platform.",
-      image: `${NodeandExpressEssentials_BadgeImg}`,
-      certificateFile: `${NodeandExpressEssentials_Badge}`,
-      icon: Award,
-      color: "from-amber-500 to-yellow-500",
-    },
-    {
-      id: 3,
-      title: "AWS Certified Developer",
-      issuer: "Amazon Web Services",
-      date: "June 2023",
-      description:
-        "Demonstrated ability to develop and maintain applications on AWS platform.",
-      image: `${climate_science_crash_cource}`,
-      certificateFile: `${climate_science_crash_cource}`,
-      icon: Award,
-      color: "from-amber-500 to-yellow-500",
-    },
-    {
-      id: 4,
-      title: "AWS Certified Developer",
-      issuer: "Amazon Web Services",
-      date: "June 2023",
-      description:
-        "Demonstrated ability to develop and maintain applications on AWS platform.",
-      image: `${climate_science_semi_finalImg}`,
-      certificateFile: `${climate_science_semi_final}`,
-      icon: Award,
-      color: "from-amber-500 to-yellow-500",
-    },
-    {
-      id: 5,
-      title: "AWS Certified Developer",
-      issuer: "Amazon Web Services",
-      date: "June 2023",
-      description:
-        "Demonstrated ability to develop and maintain applications on AWS platform.",
-      image: `${Technology_for_Emergencies_T4E_ETT_EPR_Certificate_of_CompletionImg}`,
-      certificateFile: `${Technology_for_Emergencies_T4E_ETT_EPR_Certificate_of_Completion}`,
-      icon: Award,
-      color: "from-amber-500 to-yellow-500",
-    },
-    {
-      id: 6,
-      title: "AWS Certified Developer",
-      issuer: "Amazon Web Services",
-      date: "June 2023",
-      description:
-        "Demonstrated ability to develop and maintain applications on AWS platform.",
-      image: `${Technology_for_Emergencies_T4E_ETT_MGT_Certificate_of_CompletionImg}`,
-      certificateFile: `${Technology_for_Emergencies_T4E_ETT_MGT_Certificate_of_Completion}`,
-      icon: Award,
-      color: "from-amber-500 to-yellow-500",
-    },
-    {
-      id: 7,
-      title: "AWS Certified Developer",
-      issuer: "Amazon Web Services",
-      date: "June 2023",
-      description:
-        "Demonstrated ability to develop and maintain applications on AWS platform.",
-      image: `${Technology_for_Emergencies_T4E_ETT_MSS_Certificate_of_CompletionImg}`,
-      certificateFile: `${Technology_for_Emergencies_T4E_ETT_MSS_Certificate_of_Completion}`,
-      icon: Award,
-      color: "from-amber-500 to-yellow-500",
-    },
-    {
-      id: 8,
-      title: "AWS Certified Developer",
-      issuer: "Amazon Web Services",
-      date: "June 2023",
-      description:
-        "Demonstrated ability to develop and maintain applications on AWS platform.",
-      image: `${Technology_for_Emergencies_T4E_ETT_POWER_Certificate_of_CompletionImg}`,
-      certificateFile: `${Technology_for_Emergencies_T4E_ETT_POWER_Certificate_of_Completion}`,
-      icon: Award,
-      color: "from-amber-500 to-yellow-500",
-    },
-    {
-      id: 9,
-      title: "AWS Certified Developer",
-      issuer: "Amazon Web Services",
-      date: "June 2023",
-      description:
-        "Demonstrated ability to develop and maintain applications on AWS platform.",
-      image: `${Technology_for_Emergencies_T4E_Certificate_of_CompletionImg}`,
-      certificateFile: `${Technology_for_Emergencies_T4E_Certificate_of_Completion}`,
-      icon: Award,
-      color: "from-amber-500 to-yellow-500",
-    },
-    {
-      id: 10,
-      title: "AWS Certified Developer",
-      issuer: "Amazon Web Services",
-      date: "June 2023",
-      description:
-        "Demonstrated ability to develop and maintain applications on AWS platform.",
-      image: `${Spring_MVC_Spring_Boot_and_Rest_ControllersImg}`,
-      certificateFile: `${Spring_MVC_Spring_Boot_and_Rest_Controllers}`,
-      icon: Award,
-      color: "from-amber-500 to-yellow-500",
-    },
-  ];
+  {
+    id: 1,
+    title: "Developing Back-End Apps with Node.js and Express",
+    issuer: "Coursera / IBM",
+    date: "April 2024",
+    description:
+      "Completed training in designing and building scalable back-end applications using Node.js and Express, including API development and integration.",
+    image: `${Developing_Back_End_Apps_with_Nodejs_and_ExpressImg}`,
+    certificateFile: `${Developing_Back_End_Apps_with_Nodejs_and_Express}`,
+    icon: Award,
+    color: "from-amber-500 to-yellow-500",
+  },
+  {
+    id: 2,
+    title: "Node and Express Essentials",
+    issuer: "Coursera / IBM",
+    date: "April 2024",
+    description:
+      "Learned core concepts of Node.js and Express, covering middleware, routing, and REST API creation for dynamic web applications.",
+    image: `${NodeandExpressEssentials_BadgeImg}`,
+    certificateFile: `${NodeandExpressEssentials_Badge}`,
+    icon: Award,
+    color: "from-amber-500 to-yellow-500",
+  },
+  {
+    id: 3,
+    title: "Climate Science Crash Course",
+    issuer: "ClimateScience",
+    date: "March 2023",
+    description:
+      "Gained foundational knowledge on climate change, environmental science, and global sustainability challenges.",
+    image: `${climate_science_crash_cource}`,
+    certificateFile: `${climate_science_crash_cource}`,
+    icon: Award,
+    color: "from-emerald-500 to-green-500",
+  },
+  {
+    id: 4,
+    title: "Climate Science Olympiad – Semi Finalist",
+    issuer: "ClimateScience",
+    date: "August 2024",
+    description:
+      "Achieved Semi-Finalist status in the Climate Science Olympiad, showcasing problem-solving skills in environmental and sustainability issues.",
+    image: `${climate_science_semi_finalImg}`,
+    certificateFile: `${climate_science_semi_final}`,
+    icon: Award,
+    color: "from-emerald-500 to-green-500",
+  },
+  {
+    id: 5,
+    title: "Technology for Emergencies – ETT EPR",
+    issuer: "UNICEF",
+    date: "Frebruary 2024",
+    description:
+      "Completed the Emergency Preparedness Response (EPR) module, focusing on technology solutions for emergency situations.",
+    image: `${Technology_for_Emergencies_T4E_ETT_EPR_Certificate_of_CompletionImg}`,
+    certificateFile: `${Technology_for_Emergencies_T4E_ETT_EPR_Certificate_of_Completion}`,
+    icon: Award,
+    color: "from-sky-500 to-blue-500",
+  },
+  {
+    id: 6,
+    title: "Technology for Emergencies – ETT MGT",
+    issuer: "UNICEF",
+    date: "February 2024",
+    description:
+      "Trained in emergency management technologies, focusing on coordination and deployment during crises.",
+    image: `${Technology_for_Emergencies_T4E_ETT_MGT_Certificate_of_CompletionImg}`,
+    certificateFile: `${Technology_for_Emergencies_T4E_ETT_MGT_Certificate_of_Completion}`,
+    icon: Award,
+    color: "from-sky-500 to-blue-500",
+  },
+  {
+    id: 7,
+    title: "Technology for Emergencies – ETT MSS",
+    issuer: "UNICEF",
+    date: "Februal 2024",
+    description:
+      "Focused on mobile and satellite communication solutions for emergency and disaster response operations.",
+    image: `${Technology_for_Emergencies_T4E_ETT_MSS_Certificate_of_CompletionImg}`,
+    certificateFile: `${Technology_for_Emergencies_T4E_ETT_MSS_Certificate_of_Completion}`,
+    icon: Award,
+    color: "from-sky-500 to-blue-500",
+  },
+  {
+    id: 8,
+    title: "Technology for Emergencies – ETT Power",
+    issuer: "UNICEF",
+    date: "February 2024",
+    description:
+      "Learned about emergency power systems and technologies for humanitarian field operations.",
+    image: `${Technology_for_Emergencies_T4E_ETT_POWER_Certificate_of_CompletionImg}`,
+    certificateFile: `${Technology_for_Emergencies_T4E_ETT_POWER_Certificate_of_Completion}`,
+    icon: Award,
+    color: "from-sky-500 to-blue-500",
+  },
+  {
+    id: 9,
+    title: "Technology for Emergencies – Core Training",
+    issuer: "UNICEF",
+    date: "February 2024",
+    description:
+      "Comprehensive training on technology applications in humanitarian aid, emergency preparedness, and disaster response.",
+    image: `${Technology_for_Emergencies_T4E_Certificate_of_CompletionImg}`,
+    certificateFile: `${Technology_for_Emergencies_T4E_Certificate_of_Completion}`,
+    icon: Award,
+    color: "from-sky-500 to-blue-500",
+  },
+  {
+    id: 10,
+    title: "Spring MVC, Spring Boot, and REST Controllers",
+    issuer: "Coursera / Meta",
+    date: "April 2024",
+    description:
+      "Acquired skills in developing Spring MVC and Spring Boot applications, with a focus on building and managing RESTful APIs.",
+    image: `${Spring_MVC_Spring_Boot_and_Rest_ControllersImg}`,
+    certificateFile: `${Spring_MVC_Spring_Boot_and_Rest_Controllers}`,
+    icon: Award,
+    color: "from-purple-500 to-pink-500",
+  },
+];
+
 
   const filteredProjects =
     activeFilter === "All"
