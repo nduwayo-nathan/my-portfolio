@@ -9,7 +9,7 @@ import {
 import { ReactTyped } from "react-typed";
 import { gsap } from "gsap";
 import profile from "../assets/images/naythan.png";
-import { Linkedin, Github, Twitter, Mail } from "lucide-react";
+import { Linkedin, Github, Twitter, Mail, Instagram } from "lucide-react";
 import my_cv from "../assets/docs/NDUWAYO_Nathana_CV.pdf";
 
 const Hero: React.FC = () => {
@@ -142,6 +142,8 @@ const Hero: React.FC = () => {
                   { icon: <Github size={20} />, href: "https://github.com/nduwayo-nathan", label: "GitHub" },
                   { icon: <Twitter size={20} />, href: "https://x.com/Pro_Naythan", label: "Twitter" },
                   { icon: <Mail size={20} />, href: "mailto:nduwayonath5@gmail.com", label: "Email" },
+                  { icon: < Instagram size={20} />, href: "https://www.instagram.com/naythan____", label: "Instagram" },
+
                 ].map((social, index) => (
                   <motion.a
                     key={index}

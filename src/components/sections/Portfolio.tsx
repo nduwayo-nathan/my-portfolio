@@ -810,6 +810,8 @@ const Portfolio: React.FC = () => {
 
                         <div className="flex gap-4">
                           <a
+                           target="_blank"
+                           rel="noopener noreferrer"
                             href={project.githubUrl}
                             className="flex items-center gap-2 px-6 py-3 border border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-300 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors"
                           >
