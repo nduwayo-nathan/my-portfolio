@@ -22,7 +22,6 @@ const Navbar: React.FC = () => {
     { name: "Experience", href: "#experience" },
     { name: "Portfolio", href: "#portfolio" },
     { name: "Services", href: "#services" },
-    { name: "Blog", href: "#blog" },
     { name: "Contact", href: "#contact" },
   ];
 
