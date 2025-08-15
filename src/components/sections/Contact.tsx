@@ -211,7 +211,7 @@ const Contact: React.FC = () => {
           onChange={handleInputChange}
           required={required}
           rows={6}
-          className={`w-full px-4 py-3 bg-gray-50 dark:bg-gray-700 border ${
+          className={`w-full px-4 py-3 bg-gray-50 dark:bg-gray-700 border dark:text-white ${
             errors[name]
               ? "border-red-500"
               : "border-gray-300 dark:border-gray-600"
@@ -369,15 +369,15 @@ const Contact: React.FC = () => {
                   {renderFormField("subject", "Subject")}
 
                   <div className="grid md:grid-cols-2 gap-6">
-                    <div>
-                      <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+                    <div className=" dark:text-white">
+                      <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2 ">
                         Budget Range
                       </label>
                       <select
                         name="budget"
                         value={formData.budget}
                         onChange={handleInputChange}
-                        className="w-full px-4 py-3 bg-gray-50 dark:bg-gray-700 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors"
+                        className="w-full px-4 py-3 bg-gray-50 dark:bg-gray-600 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors"
                       >
                         <option value="">Select budget range</option>
                         {budgetOptions.map((option) => (
@@ -395,7 +395,7 @@ const Contact: React.FC = () => {
                         name="timeline"
                         value={formData.timeline}
                         onChange={handleInputChange}
-                        className="w-full px-4 py-3 bg-gray-50 dark:bg-gray-700 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors"
+                        className="w-full px-4 py-3 bg-gray-50 dark:text-white dark:bg-gray-700 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors"
                       >
                         <option value="">Select timeline</option>
                         {timelineOptions.map((option) => (
