@@ -136,16 +136,18 @@ const Hero: React.FC = () => {
                 {[
                   {
                     icon: <Linkedin size={20} />,
-                    href: "#",
+                    href: "https://www.linkedin.com/in/nduwayo-n-b333bb261",
                     label: "LinkedIn",
                   },
-                  { icon: <Github size={20} />, href: "#", label: "GitHub" },
-                  { icon: <Twitter size={20} />, href: "#", label: "Twitter" },
-                  { icon: <Mail size={20} />, href: "#", label: "Email" },
+                  { icon: <Github size={20} />, href: "https://github.com/nduwayo-nathan", label: "GitHub" },
+                  { icon: <Twitter size={20} />, href: "https://x.com/Pro_Naythan", label: "Twitter" },
+                  { icon: <Mail size={20} />, href: "mailto:nduwayonath5@gmail.com", label: "Email" },
                 ].map((social, index) => (
                   <motion.a
                     key={index}
                     href={social.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     whileHover={{ scale: 1.2, y: -2 }}
                     whileTap={{ scale: 0.9 }}
                     aria-label={social.label}

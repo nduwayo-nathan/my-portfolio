@@ -17,7 +17,7 @@ const Footer: React.FC = () => {
     },
     {
       name: "Twitter",
-      href: "#",
+      href: "https://x.com/Pro_Naythan",
       icon: <Twitter className="w-5 h-5 text-sky-500" />,
     },
     {
@@ -50,6 +50,8 @@ const Footer: React.FC = () => {
                 (link) => (
                   <li key={link}>
                     <a
+                      target="_blank"
+                      rel="noopener noreferrer"
                       href={`#${link.toLowerCase()}`}
                       className="text-gray-400 hover:text-blue-400 transition-colors duration-200"
                     >
