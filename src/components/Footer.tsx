@@ -28,45 +28,24 @@ const Footer: React.FC = () => {
   ];
 
   return (
-    <footer className="bg-gray-900 text-white py-12">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid md:grid-cols-3 gap-8 mb-8">
+    <footer className="bg-white dark:bg-gray-900 text-gray-900 dark:text-white py-12">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 items-center justify-items-center">
+        <div className="grid md:grid-cols-2 place-items-center gap-8 mb-8 ">
           {/* Brand */}
-          <div>
-            <h3 className="text-2xl font-bold mb-4 bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
+          <div >
+            <h3 className="text-2xl font-bold mb-4 bg-gradient-to-r from-blue-600 dark:from-blue-400 to-purple-600 dark:to-purple-400 bg-clip-text text-transparent">
               NDUWAYO Nathan
             </h3>
-            <p className="text-gray-400 leading-relaxed">
+            <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
               Full Stack Developer passionate about creating exceptional digital
               experiences with modern technologies and innovative solutions.
             </p>
           </div>
 
-          {/* Quick Links */}
-          <div>
-            <h4 className="text-lg font-semibold mb-4">Quick Links</h4>
-            <ul className="space-y-2">
-              {["About", "Skills", "Portfolio", "Services", "Contact"].map(
-                (link) => (
-                  <li key={link}>
-                    <a
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      href={`#${link.toLowerCase()}`}
-                      className="text-gray-400 hover:text-blue-400 transition-colors duration-200"
-                    >
-                      {link}
-                    </a>
-                  </li>
-                )
-              )}
-            </ul>
-          </div>
-
           {/* Contact Info */}
           <div>
-            <h4 className="text-lg font-semibold mb-4">Get In Touch</h4>
-            <div className="space-y-2 text-gray-400">
+            <h4 className="text-lg font-semibold mb-4 text-gray-900 dark:text-white">Get In Touch</h4>
+            <div className="space-y-2 text-gray-600 dark:text-gray-400">
               <p className="flex items-center gap-2">
                 <Mail className="w-5 h-5 text-blue-500" />
                 nduwayonath5@gmail.com
@@ -91,7 +70,7 @@ const Footer: React.FC = () => {
               href={social.href}
               whileHover={{ scale: 1.2, y: -2 }}
               whileTap={{ scale: 0.9 }}
-              className="w-12 h-12 bg-gray-800 rounded-full flex items-center justify-center text-xl hover:bg-gradient-to-r hover:from-blue-600 hover:to-purple-600 transition-all duration-300"
+              className="w-12 h-12 bg-gray-100 dark:bg-gray-800 rounded-full flex items-center justify-center text-xl hover:bg-gradient-to-r hover:from-blue-600 hover:to-purple-600 hover:text-white transition-all duration-300"
             >
               {social.icon}
             </motion.a>
@@ -99,8 +78,8 @@ const Footer: React.FC = () => {
         </div>
 
         {/* Copyright */}
-        <div className="border-t border-gray-800 pt-8 text-center">
-          <p className="text-gray-400 flex items-center justify-center gap-2">
+        <div className="border-t border-gray-200 dark:border-gray-800 pt-8 text-center">
+          <p className="text-gray-600 dark:text-gray-400 flex items-center justify-center gap-2">
             Made with <HeartIcon className="w-5 h-5 text-red-500" /> by NDUWAYO
             Nathan
             <span className="mx-2">•</span>© 2025 All rights reserved
