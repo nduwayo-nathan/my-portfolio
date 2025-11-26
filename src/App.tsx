@@ -38,12 +38,12 @@ function App() {
   }
 
   return (
-    <div className={`min-h-screen ${theme}`}>
-      <div  className={`bg-white dark:bg-gray-900 transition-colors duration-300 ${theme}`}>
+    <div className="min-h-screen">
+      <div className="bg-white dark:bg-gray-900 transition-colors duration-300">
         <ScrollProgress />
         <Navbar />
         
-        <main className={theme}>
+        <main>
           <Hero />
           <About />
           <Skills />

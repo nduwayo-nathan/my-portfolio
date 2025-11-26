@@ -23,22 +23,22 @@ const ThemeToggle = () => {
     >
       <motion.div
         key="moon"
-        initial={{ scale: theme === "dark" ? 1 : 0 }}
-        animate={{ scale: theme === "dark" ? 1 : 0 }}
-        transition={{ duration: 0.2 }}
-        className="absolute"
-      >
-        <Moon className="w-5 h-5 text-gray-700 dark:text-yellow-400" />
-      </motion.div>
-
-      <motion.div
-        key="sun"
         initial={{ scale: theme === "light" ? 1 : 0 }}
         animate={{ scale: theme === "light" ? 1 : 0 }}
         transition={{ duration: 0.2 }}
         className="absolute"
       >
-        <Sun className="w-5 h-5 text-yellow-500" />
+        <Moon className="w-5 h-5 text-gray-600 dark:text-gray-300" />
+      </motion.div>
+
+      <motion.div
+        key="sun"
+        initial={{ scale: theme === "dark" ? 1 : 0 }}
+        animate={{ scale: theme === "dark" ? 1 : 0 }}
+        transition={{ duration: 0.2 }}
+        className="absolute"
+      >
+        <Sun className="w-5 h-5 text-yellow-500 dark:text-yellow-400" />
       </motion.div>
     </motion.button>
   );

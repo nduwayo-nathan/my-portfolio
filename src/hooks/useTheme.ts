@@ -6,6 +6,14 @@ export const useTheme = () => {
   const [theme, setTheme] = useState<Theme>("light");
   const [isMounted, setIsMounted] = useState(false);
 
+  const applyTheme = (newTheme: Theme) => {
+    if (newTheme === "dark") {
+      document.documentElement.classList.add("dark");
+    } else {
+      document.documentElement.classList.remove("dark");
+    }
+  };
+
   useEffect(() => {
     const savedTheme = localStorage.getItem("theme") as Theme | null;
     const systemPrefersDark = window.matchMedia(
@@ -13,9 +21,7 @@ export const useTheme = () => {
     ).matches;
     const initialTheme = savedTheme || (systemPrefersDark ? "dark" : "light");
 
-    document.documentElement.classList.remove("light", "dark");
-    document.documentElement.classList.add(initialTheme);
-
+    applyTheme(initialTheme);
     setTheme(initialTheme);
     setIsMounted(true);
   }, []);
@@ -23,8 +29,7 @@ export const useTheme = () => {
   useEffect(() => {
     if (isMounted) {
       localStorage.setItem("theme", theme);
-      document.documentElement.classList.remove("light", "dark");
-      document.documentElement.classList.add(theme);
+      applyTheme(theme);
     }
   }, [theme, isMounted]);
 
