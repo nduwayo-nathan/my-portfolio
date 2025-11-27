@@ -59,7 +59,7 @@ const Hero: React.FC = () => {
       <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
         <div className="grid lg:grid-cols-2 gap-12 items-center min-h-screen py-20">
           {/* Left column */}
-          <div ref={heroRef} className="space-y-8">
+          <div ref={heroRef} className="space-y-8 text-center lg:text-left">
             <motion.div
               initial={{ opacity: 0, scale: 0.8 }}
               animate={{ opacity: 1, scale: 1 }}
@@ -103,15 +103,15 @@ const Hero: React.FC = () => {
             </div>
 
             {/* Action buttons */}
-            <div className="hero-animate flex flex-col sm:flex-row gap-6">
-              <a href="/#portfolio">
+            <div className="hero-animate flex flex-col sm:flex-row gap-6 justify-center lg:justify-start w-full">
+              <a href="/#portfolio" className="w-full sm:w-auto">
                 <motion.button
                   whileHover={{
                     scale: 1.05,
                     boxShadow: "0 20px 40px rgba(59, 130, 246, 0.4)",
                   }}
                   whileTap={{ scale: 0.95 }}
-                  className="group flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-full font-semibold text-lg shadow-lg hover:shadow-xl transition-all duration-300"
+                  className="group flex items-center justify-center gap-3 px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-full font-semibold text-lg shadow-lg hover:shadow-xl transition-all duration-300 w-full"
                 >
                   <PlayIcon className="w-5 h-5 group-hover:scale-110 transition-transform" />
                   View My Work
@@ -122,7 +122,7 @@ const Hero: React.FC = () => {
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 onClick={() => setShowCVModal(true)}
-                className="group flex items-center gap-3 px-8 py-4 border-2 border-gray-400 dark:border-white/30 text-blue-400 dark:text-white rounded-full font-semibold text-lg backdrop-blur-sm hover:bg-white/10 transition-all duration-300"
+                className="group flex items-center justify-center gap-3 px-8 py-4 border-2 border-gray-400 dark:border-white/30 text-blue-400 dark:text-white rounded-full font-semibold text-lg backdrop-blur-sm hover:bg-white/10 transition-all duration-300 w-full sm:w-auto"
               >
                 <ArrowDownTrayIcon className="w-5 h-5 group-hover:scale-110 transition-transform" />
                 View My CV
@@ -130,7 +130,7 @@ const Hero: React.FC = () => {
             </div>
 
             {/* Social links */}
-            <div className="hero-animate flex items-center gap-6 pt-8">
+            <div className="hero-animate flex items-center gap-6 pt-8 justify-center lg:justify-start">
               <span className="text-gray-400 text-sm">Follow me:</span>
               <div className="flex gap-4">
                 {[
@@ -298,7 +298,7 @@ const Hero: React.FC = () => {
       <motion.div
         animate={{ y: [0, 10, 0] }}
         transition={{ duration: 2, repeat: Infinity }}
-        className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-20"
+        className="absolute bottom-4 left-1/2 transform -translate-x-1/2 z-20"
       >
         <div className="flex flex-col items-center gap-2 mt-20">
           <span className="text-black dark:text-white/70 text-sm">
