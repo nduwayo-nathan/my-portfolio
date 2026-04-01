@@ -1,9 +1,12 @@
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
+import { useTranslation } from "react-i18next";
 import ThemeToggle from "./ThemeToggle";
+import LanguageSwitcher from "./LanguageSwitcher";
 
 const Navbar: React.FC = () => {
+  const { t } = useTranslation();
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
@@ -16,13 +19,12 @@ const Navbar: React.FC = () => {
   }, []);
 
   const navItems = [
-    { name: "Home", href: "#home" },
-    { name: "About", href: "#about" },
-    { name: "Skills", href: "#skills" },
-    { name: "Experience", href: "#experience" },
-    { name: "Portfolio", href: "#portfolio" },
-    { name: "Services", href: "#services" },
-    { name: "Contact", href: "#contact" },
+    { name: t('nav.home'), href: "#home" },
+    { name: t('nav.about'), href: "#about" },
+    { name: t('nav.skills'), href: "#skills" },
+    { name: t('nav.experience'), href: "#experience" },
+    { name: t('nav.portfolio'), href: "#portfolio" },
+    { name: t('nav.contact'), href: "#contact" },
   ];
 
   return (
@@ -39,9 +41,10 @@ const Navbar: React.FC = () => {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <motion.div whileHover={{ scale: 1.05 }} className="flex-shrink-0">
-            <h1 className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-              NDUWAYO
-            </h1>
+            <div className="flex items-center gap-">
+              <img src="/logo.svg" alt="logo" className="w-28 h-28 -mx-9  brightness-50  dark:invert" />
+              <h1 className="text-2xl font-bold mt-4 text-blue-600">athan</h1>
+            </div>
           </motion.div>
 
           {/* Desktop Navigation */}
@@ -61,8 +64,9 @@ const Navbar: React.FC = () => {
             </div>
           </div>
 
-          {/* Theme Toggle & Mobile Menu Button */}
+          {/* Language Switcher, Theme Toggle & Mobile Menu Button */}
           <div className="flex items-center space-x-4">
+            <LanguageSwitcher />
             <ThemeToggle />
             <div className="md:hidden">
               <button

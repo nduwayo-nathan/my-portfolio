@@ -1,9 +1,11 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 import { HeartIcon } from "@heroicons/react/24/solid";
 import { Mail, Phone, MapPin, Github, Linkedin, Twitter } from "lucide-react";
 
 const Footer: React.FC = () => {
+  const { t } = useTranslation();
   const socialLinks = [
     {
       name: "GitHub",
@@ -33,18 +35,17 @@ const Footer: React.FC = () => {
         <div className="grid md:grid-cols-2 place-items-center gap-8 mb-8 ">
           {/* Brand */}
           <div >
-            <h3 className="text-2xl font-bold mb-4 bg-gradient-to-r from-blue-600 dark:from-blue-400 to-purple-600 dark:to-purple-400 bg-clip-text text-transparent">
+            <h3 className="text-2xl font-bold mb-4 text-blue-600 dark:text-blue-400">
               NDUWAYO Nathan
             </h3>
             <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
-              Full Stack Developer passionate about creating exceptional digital
-              experiences with modern technologies and innovative solutions.
+              {t('footer.description')}
             </p>
           </div>
 
           {/* Contact Info */}
           <div>
-            <h4 className="text-lg font-semibold mb-4 text-gray-900 dark:text-white">Get In Touch</h4>
+            <h4 className="text-lg font-semibold mb-4 text-gray-900 dark:text-white">{t('footer.getInTouch')}</h4>
             <div className="space-y-2 text-gray-600 dark:text-gray-400">
               <p className="flex items-center gap-2">
                 <Mail className="w-5 h-5 text-blue-500" />
@@ -70,7 +71,7 @@ const Footer: React.FC = () => {
               href={social.href}
               whileHover={{ scale: 1.2, y: -2 }}
               whileTap={{ scale: 0.9 }}
-              className="w-12 h-12 bg-gray-100 dark:bg-gray-800 rounded-full flex items-center justify-center text-xl hover:bg-gradient-to-r hover:from-blue-600 hover:to-purple-600 hover:text-white transition-all duration-300"
+              className="w-12 h-12 bg-gray-100 dark:bg-gray-800 rounded-full flex items-center justify-center text-xl hover:bg-blue-600 hover:text-white transition-all duration-300"
             >
               {social.icon}
             </motion.a>
@@ -80,9 +81,9 @@ const Footer: React.FC = () => {
         {/* Copyright */}
         <div className="border-t border-gray-200 dark:border-gray-800 pt-8 text-center">
           <p className="text-gray-600 dark:text-gray-400 flex items-center justify-center gap-2">
-            Made with <HeartIcon className="w-5 h-5 text-red-500" /> by NDUWAYO
+            {t('footer.madeWith')} <HeartIcon className="w-5 h-5 text-red-500" /> {t('footer.by')} NDUWAYO
             Nathan
-            <span className="mx-2">•</span>© 2025 All rights reserved
+            <span className="mx-2">•</span>© 2025 {t('footer.allRightsReserved')}
           </p>
         </div>
       </div>

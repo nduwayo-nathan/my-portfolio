@@ -1,10 +1,13 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 const Skills: React.FC = () => {
+  const { t } = useTranslation();
+  
   const skillCategories = [
     {
-      title: "Frontend Development",
+      title: t('skills.categories.frontend'),
       skills: [
         { name: "React", level: 95, color: "from-blue-500 to-cyan-500" },
         { name: "TypeScript", level: 90, color: "from-blue-600 to-blue-800" },
@@ -14,7 +17,7 @@ const Skills: React.FC = () => {
       ],
     },
     {
-      title: "Backend Development",
+      title: t('skills.categories.backend'),
       skills: [
         { name: "Node.js", level: 90, color: "from-green-600 to-green-800" },
         { name: "Python", level: 85, color: "from-yellow-500 to-yellow-700" },
@@ -25,7 +28,7 @@ const Skills: React.FC = () => {
       ],
     },
     {
-      title: "Tools & Technologies",
+      title: t('skills.categories.tools'),
       skills: [
         { name: "Git", level: 92, color: "from-orange-500 to-red-500" },
         { name: "Docker", level: 78, color: "from-blue-500 to-blue-700" },
@@ -50,12 +53,11 @@ const Skills: React.FC = () => {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6">
-            Skills & Expertise
+            {t('skills.title')}
           </h2>
-          <div className="w-24 h-1 bg-gradient-to-r from-blue-600 to-purple-600 mx-auto mb-8"></div>
+          <div className="w-24 h-1 bg-blue-600 mx-auto mb-8"></div>
           <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-            A comprehensive toolkit of modern technologies and frameworks to
-            build exceptional digital experiences
+            {t('skills.subtitle')}
           </p>
         </motion.div>
 
@@ -92,7 +94,7 @@ const Skills: React.FC = () => {
                         whileInView={{ width: `${skill.level}%` }}
                         viewport={{ once: true }}
                         transition={{ duration: 1.5, delay: skillIndex * 0.1 }}
-                        className={`h-full bg-gradient-to-r ${skill.color} rounded-full relative`}
+                        className={`h-full bg-blue-600 rounded-full relative`}
                       >
                         <div className="absolute inset-0 bg-white/20 animate-pulse"></div>
                       </motion.div>
@@ -113,7 +115,7 @@ const Skills: React.FC = () => {
           className="mt-20 text-center"
         >
           <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-8">
-            Technology Stack
+            {t('skills.technologyStack')}
           </h3>
 
           <div className="flex flex-wrap justify-center gap-4">
@@ -142,7 +144,7 @@ const Skills: React.FC = () => {
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.05 }}
                 whileHover={{ scale: 1.1, y: -5 }}
-                className="px-6 py-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-full font-medium shadow-lg hover:shadow-xl transition-all duration-300 cursor-pointer"
+                className="px-6 py-3 border-2 border-blue-600 bg-blue-600/10 text-blue-600 dark:text-white rounded-full font-medium shadow-lg hover:bg-blue-600/20 hover:shadow-xl transition-all duration-300 cursor-pointer"
               >
                 {tech}
               </motion.span>

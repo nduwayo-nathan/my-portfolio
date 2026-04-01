@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import { useTranslation } from "react-i18next";
 import {
   Code,
   Smartphone,
@@ -14,6 +15,7 @@ import {
 } from "lucide-react";
 
 const Services: React.FC = () => {
+  const { t } = useTranslation();
   const [ref, inView] = useInView({
     triggerOnce: true,
     threshold: 0.1,
@@ -22,80 +24,74 @@ const Services: React.FC = () => {
   const services = [
     {
       icon: Globe,
-      title: "Web Development",
-      description:
-        "Custom web applications built with modern frameworks and best practices for optimal performance and user experience.",
+      title: t('services.webDevelopment.title'),
+      description: t('services.webDevelopment.description'),
       features: [
-        "React/Vue.js Development",
-        "Responsive Design",
-        "Progressive Web Apps",
-        "Performance Optimization",
+        t('services.webDevelopment.features.0'),
+        t('services.webDevelopment.features.1'),
+        t('services.webDevelopment.features.2'),
+        t('services.webDevelopment.features.3'),
       ],
       color: "from-blue-500 to-cyan-500",
       price: "Starting at $2,500",
     },
     {
       icon: Smartphone,
-      title: "Mobile Development",
-      description:
-        "Cross-platform mobile applications that deliver native performance and seamless user experiences across iOS and Android.",
+      title: t('services.mobileDevelopment.title'),
+      description: t('services.mobileDevelopment.description'),
       features: [
-        "React Native",
-        "Flutter Development",
-        "App Store Deployment",
-        "Push Notifications",
+        t('services.mobileDevelopment.features.0'),
+        t('services.mobileDevelopment.features.1'),
+        t('services.mobileDevelopment.features.2'),
+        t('services.mobileDevelopment.features.3'),
       ],
       color: "from-purple-500 to-pink-500",
     },
     {
       icon: Database,
-      title: "Backend Development",
-      description:
-        "Scalable server-side solutions with robust APIs, database design, and cloud infrastructure management.",
+      title: t('services.backendDevelopment.title'),
+      description: t('services.backendDevelopment.description'),
       features: [
-        "RESTful APIs",
-        "Database Design",
-        "Authentication Systems",
-        "Cloud Integration",
+        t('services.backendDevelopment.features.0'),
+        t('services.backendDevelopment.features.1'),
+        t('services.backendDevelopment.features.2'),
+        t('services.backendDevelopment.features.3'),
       ],
       color: "from-green-500 to-teal-500",
     },
     {
       icon: Palette,
-      title: "UI/UX Design",
-      description:
-        "User-centered design approach creating intuitive interfaces that enhance user engagement and satisfaction.",
+      title: t('services.uiuxDesign.title'),
+      description: t('services.uiuxDesign.description'),
       features: [
-        "User Research",
-        "Wireframing",
-        "Prototyping",
-        "Design Systems",
+        t('services.uiuxDesign.features.0'),
+        t('services.uiuxDesign.features.1'),
+        t('services.uiuxDesign.features.2'),
+        t('services.uiuxDesign.features.3'),
       ],
       color: "from-orange-500 to-red-500",
     },
     {
       icon: Cloud,
-      title: "Cloud Solutions",
-      description:
-        "Comprehensive cloud infrastructure setup, deployment automation, and scalable architecture design.",
+      title: t('services.cloudSolutions.title'),
+      description: t('services.cloudSolutions.description'),
       features: [
-        "AWS/GCP Setup",
-        "CI/CD Pipelines",
-        "Docker Containers",
-        "Monitoring & Analytics",
+        t('services.cloudSolutions.features.0'),
+        t('services.cloudSolutions.features.1'),
+        t('services.cloudSolutions.features.2'),
+        t('services.cloudSolutions.features.3'),
       ],
       color: "from-indigo-500 to-purple-500",
     },
     {
       icon: Search,
-      title: "SEO Optimization",
-      description:
-        "Technical SEO implementation and optimization strategies to improve search engine rankings and visibility.",
+      title: t('services.seoOptimization.title'),
+      description: t('services.seoOptimization.description'),
       features: [
-        "Technical SEO Audit",
-        "Performance Optimization",
-        "Schema Markup",
-        "Analytics Setup",
+        t('services.seoOptimization.features.0'),
+        t('services.seoOptimization.features.1'),
+        t('services.seoOptimization.features.2'),
+        t('services.seoOptimization.features.3'),
       ],
       color: "from-yellow-500 to-orange-500",
     },
@@ -104,30 +100,26 @@ const Services: React.FC = () => {
   const processSteps = [
     {
       step: "01",
-      title: "Discovery & Planning",
-      description:
-        "Understanding your requirements, goals, and target audience to create a comprehensive project roadmap.",
+      title: t('services.process.discovery.title'),
+      description: t('services.process.discovery.description'),
       icon: Users,
     },
     {
       step: "02",
-      title: "Design & Prototyping",
-      description:
-        "Creating wireframes, mockups, and interactive prototypes to visualize the final product.",
+      title: t('services.process.design.title'),
+      description: t('services.process.design.description'),
       icon: Palette,
     },
     {
       step: "03",
-      title: "Development & Testing",
-      description:
-        "Building the solution with clean, maintainable code and thorough testing for quality assurance.",
+      title: t('services.process.development.title'),
+      description: t('services.process.development.description'),
       icon: Code,
     },
     {
       step: "04",
-      title: "Deployment & Support",
-      description:
-        "Launching your project and providing ongoing maintenance and support for optimal performance.",
+      title: t('services.process.deployment.title'),
+      description: t('services.process.deployment.description'),
       icon: Zap,
     },
   ];
@@ -146,12 +138,11 @@ const Services: React.FC = () => {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6">
-            Services & Solutions
+            {t('services.title')}
           </h2>
-          <div className="w-24 h-1 bg-gradient-to-r from-blue-600 to-purple-600 mx-auto mb-8"></div>
+          <div className="w-24 h-1 bg-blue-600 mx-auto mb-8"></div>
           <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-            Comprehensive development services to transform your ideas into
-            powerful digital solutions
+            {t('services.subtitle')}
           </p>
         </motion.div>
 
@@ -170,7 +161,7 @@ const Services: React.FC = () => {
               className="group relative bg-white dark:bg-gray-800 p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300"
             >
               <div
-                className={`w-16 h-16 bg-gradient-to-r ${service.color} rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300`}
+                className="w-16 h-16 bg-blue-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300"
               >
                 <service.icon className="w-8 h-8 text-white" />
               </div>
@@ -186,9 +177,7 @@ const Services: React.FC = () => {
               <ul className="space-y-3 mb-6">
                 {service.features.map((feature, featureIndex) => (
                   <li key={featureIndex} className="flex items-center gap-3">
-                    <div
-                      className={`w-2 h-2 bg-gradient-to-r ${service.color} rounded-full`}
-                    ></div>
+                    <div className="w-2 h-2 bg-blue-600 rounded-full"></div>
                     <span className="text-gray-600 dark:text-gray-300 text-sm">
                       {feature}
                     </span>
@@ -197,15 +186,13 @@ const Services: React.FC = () => {
               </ul>
               <a href="#contact">
                 <button
-                  className={`px-6 py-2 bg-gradient-to-r ${service.color} text-white rounded-lg hover:shadow-lg transition-all duration-300 transform hover:scale-105`}
+                  className="px-6 py-2 border-2 border-blue-600 bg-blue-600/10 text-blue-600 dark:text-white rounded-lg hover:bg-blue-600/20 transition-all duration-300 transform hover:scale-105"
                 >
-                  Get Quote
+                  {t('services.getQuote')}
                 </button>
               </a>
               {/* Hover Effect */}
-              <div
-                className={`absolute inset-0 bg-gradient-to-r ${service.color} opacity-0 group-hover:opacity-5 rounded-2xl transition-opacity duration-300 pointer-events-none`}
-              ></div>
+              <div className="absolute inset-0 bg-blue-600 opacity-0 group-hover:opacity-5 rounded-2xl transition-opacity duration-300 pointer-events-none"></div>
             </motion.div>
           ))}
         </div>
@@ -219,11 +206,10 @@ const Services: React.FC = () => {
           className="text-center mb-16"
         >
           <h3 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-6">
-            My Development Process
+            {t('services.processTitle')}
           </h3>
           <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-            A proven methodology that ensures successful project delivery from
-            concept to launch
+            {t('services.processSubtitle')}
           </p>
         </motion.div>
 
@@ -238,7 +224,7 @@ const Services: React.FC = () => {
               className="relative text-center"
             >
               <div className="relative mb-6">
-                <div className="w-20 h-20 bg-gradient-to-r from-blue-600 to-purple-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                <div className="w-20 h-20 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-4">
                   <step.icon className="w-10 h-10 text-white" />
                 </div>
                 <div className="absolute -top-4 right-20 w-8 h-8 bg-white dark:bg-gray-800 rounded-full flex items-center justify-center border-2 border-blue-600">
@@ -258,7 +244,7 @@ const Services: React.FC = () => {
 
               {/* Connection Line */}
               {index < processSteps.length - 1 && (
-                <div className="hidden lg:block absolute top-10 left-full w-full h-0.5 bg-gradient-to-r from-blue-600 to-purple-600 transform -translate-x-1/2"></div>
+                <div className="hidden lg:block absolute top-10 left-full w-full h-0.5 bg-blue-600 transform -translate-x-1/2"></div>
               )}
             </motion.div>
           ))}
@@ -272,26 +258,25 @@ const Services: React.FC = () => {
           transition={{ duration: 0.8 }}
           className="text-center mt-20"
         >
-          <div className="bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl p-12">
+          <div className="bg-blue-600 rounded-2xl p-12">
             <h3 className="text-3xl md:text-4xl font-bold text-white mb-6">
-              Ready to Start Your Project?
+              {t('services.cta.title')}
             </h3>
             <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
-              Let's discuss your ideas and create something amazing together.
-              Get a free consultation today.
+              {t('services.cta.description')}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               {/* Free Consultation */}
               <a href="#contact">
-                <button className="px-8 py-4 bg-white text-blue-600 rounded-lg font-semibold  hover:text-white hover:bg-blue-600  transition-colors hover:border-2 hover:border-white">
-                  Get Free Consultation
+                <button className="px-8 py-4 border-2 border-white bg-white/10 text-white rounded-lg font-semibold hover:bg-white/20 transition-colors">
+                  {t('services.cta.consultation')}
                 </button>
               </a>
 
               {/* View Portfolio*/}
               <a href="#portfolio">
                 <button className="px-8 py-4 border-2 border-white text-white rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition-colors">
-                  View Portfolio
+                  {t('services.cta.viewPortfolio')}
                 </button>
               </a>
             </div>

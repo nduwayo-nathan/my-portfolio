@@ -1,29 +1,31 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { useTranslation } from "react-i18next";
 import { ChevronLeft, ChevronRight, Star, Quote } from "lucide-react";
 import verygoodprof from "../assets/images/vergood.png";
 import avatar from "../assets/images/avatar.png";
 
 const Testimonials: React.FC = () => {
+  const { t } = useTranslation();
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const testimonials = [
     {
       name: "Muhirwa Verygood",
-      role: "Software Engineer",
+      role: t('testimonials.clients.muhirwa.role'),
       company: "",
       image: `${verygoodprof}`,
       rating: 5,
-      text: "Nathan built a great website that did more than we asked for. He paid close attention to every detail and knew exactly what he was doing. Working with him was easy and everything went smoothly",
+      text: t('testimonials.clients.muhirwa.text'),
       phone: "+250795100416",
     },
     {
       name: "Fils Alliance Dieudonne",
-      role: "Software Developer",
+      role: t('testimonials.clients.fils.role'),
       company: "",
       image:`${avatar}`,
       rating: 4,
-      text: "Working with Nathan was a game-changer for our startup. He built a scalable platform smoothly. Highly recommended!",
+      text: t('testimonials.clients.fils.text'),
       phone: "+250785940012",
     },
   ];
@@ -48,10 +50,10 @@ const Testimonials: React.FC = () => {
           className="text-center mb-16"
         >
           <h2 className="text-4xl font-bold text-teal-400 mb-4">
-            Client Testimonials
+            {t('testimonials.title')}
           </h2>
           <p className="text-gray-500 text-lg">
-            What clients say about working with me
+            {t('testimonials.subtitle')}
           </p>
         </motion.div>
 

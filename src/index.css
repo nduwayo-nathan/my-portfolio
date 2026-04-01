@@ -37,12 +37,12 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(45deg, #3b82f6, #8b5cf6);
+  background: #3b82f6;
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: linear-gradient(45deg, #2563eb, #7c3aed);
+  background: #2563eb;
 }
 
 /* Dark mode scrollbar */
@@ -87,12 +87,7 @@ body {
 
 /* Text Gradient */
 .text-gradient {
-  background: linear-gradient(45deg, #3b82f6, #8b5cf6, #ec4899);
-  background-size: 200% 200%;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  animation: gradient-shift 3s ease infinite;
+  color: #3b82f6;
 }
 
 /* Glassmorphism */
@@ -161,4 +156,13 @@ textarea:focus {
     background: white !important;
     color: black !important;
   }
+}
+
+/* Hide Stripe badge */
+.__PrivateStripeElement iframe {
+  z-index: 9999 !important;
+}
+
+.StripeElement {
+  z-index: 1 !important;
 }

@@ -13,11 +13,12 @@ import Contact from './components/sections/Contact';
 import Footer from './components/Footer';
 import LoadingScreen from './components/LoadingScreen';
 import ScrollProgress from './components/ScrollProgress';
+import BuyMeCoffee from './components/sections/BuyMeCoffee';
 import { useTheme } from './hooks/useTheme';
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
-  const { theme } = useTheme();
+  useTheme();
 
   useEffect(() => {
     AOS.init({
@@ -42,6 +43,7 @@ function App() {
       <div className="bg-white dark:bg-gray-900 transition-colors duration-300">
         <ScrollProgress />
         <Navbar />
+        <BuyMeCoffee />
         
         <main>
           <Hero />

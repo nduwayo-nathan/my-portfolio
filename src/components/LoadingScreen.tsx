@@ -1,19 +1,21 @@
 import React, { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 interface LoadingScreenProps {
   onComplete: () => void;
 }
 
 const LoadingScreen: React.FC<LoadingScreenProps> = ({ onComplete }) => {
+  const { t } = useTranslation();
   const [progress, setProgress] = useState(0);
   const [currentText, setCurrentText] = useState(0);
 
   const loadingTexts = [
-    "Initializing...",
-    "Loading Portfolio...",
-    "Preparing Experience...",
-    "Almost Ready...",
+    t('loading.initializing'),
+    t('loading.loadingPortfolio'),
+    t('loading.preparingExperience'),
+    t('loading.almostReady'),
   ];
 
   useEffect(() => {
@@ -40,11 +42,13 @@ const LoadingScreen: React.FC<LoadingScreenProps> = ({ onComplete }) => {
 
   return (
     <AnimatePresence>
+      
       <motion.div
         initial={{ opacity: 1 }}
         exit={{ opacity: 0 }}
-        className="fixed inset-0 bg-gradient-to-br from-gray-900 via-blue-900 to-purple-900 flex items-center justify-center z-50"
+        className="fixed inset-0 bg-blue-900 flex items-center justify-center z-50"
       >
+       
         <div className="text-center">
           {/* Animated Logo */}
           <motion.div
@@ -60,7 +64,15 @@ const LoadingScreen: React.FC<LoadingScreenProps> = ({ onComplete }) => {
           >
             <div className="w-full h-full border-4 border-blue-500/30 border-t-blue-500 rounded-full"></div>
             <div className="absolute inset-2 border-4 border-purple-500/30 border-b-purple-500 rounded-full"></div>
+            <motion.div
+              animate={{ rotate: -360 }}
+              transition={{ duration: 2, repeat: Infinity, ease: "linear" }}
+              className="absolute inset-0 flex items-center justify-center"
+            >
+              <img src="/logo.svg" alt="logo" className="w-40 h-40" />
+            </motion.div>
           </motion.div>
+          
 
           {/* Brand Name */}
           <motion.h1
@@ -86,7 +98,7 @@ const LoadingScreen: React.FC<LoadingScreenProps> = ({ onComplete }) => {
           {/* Progress Bar */}
           <div className="w-80 h-2 bg-gray-800 rounded-full overflow-hidden mx-auto mb-4">
             <motion.div
-              className="h-full bg-gradient-to-r from-blue-500 to-purple-500 rounded-full"
+              className="h-full bg-blue-500 rounded-full"
               initial={{ width: 0 }}
               animate={{ width: `${progress}%` }}
               transition={{ duration: 0.1 }}

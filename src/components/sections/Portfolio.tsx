@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import { useTranslation } from "react-i18next";
 import { Github, Play, Palette, Award, X } from "lucide-react";
 
 import Spring_MVC_Spring_Boot_and_Rest_ControllersImg from "../assets/docs/Spring_MVC_Spring_Boot_and_Rest_Controllers.png";
@@ -35,6 +36,7 @@ import subscription from "../assets/images/subscribe.png";
 import aimlink from "../assets/images/aimalink.png";
 
 const Portfolio: React.FC = () => {
+  const { t } = useTranslation();
   const [ref, inView] = useInView({
     triggerOnce: true,
     threshold: 0.1,
@@ -47,15 +49,19 @@ const Portfolio: React.FC = () => {
   );
   const [showCertificates, setShowCertificates] = useState(false);
 
-  const filters = ["All", "Web App", "API", "AI, IOT, Robotics & Automation"];
+  const filters = [
+    { key: "All", label: t('portfolio.filters.all') },
+    { key: "Web App", label: t('portfolio.filters.webApp') },
+    { key: "API", label: t('portfolio.filters.api') },
+    { key: "AI, IOT, Robotics & Automation", label: t('portfolio.filters.aiIot') }
+  ];
 
   const projects = [
     {
       id: 1,
       title: "Aimalink",
       category: "Web App",
-      description:
-        "A user-friendly platform facilitating easy blood donation processes, built with React and Vite.",
+      description: t('portfolio.projectDescriptions.aimalink'),
       longDescription:
         "Aimalink is a web application designed to streamline the blood donation process, connecting donors with recipients efficiently. The platform allows users to register as donors, request blood, and track donation history. Built with React and Vite, it ensures a responsive and fast user experience. The application aims to simplify the process of blood donation, making it more accessible and organized.",
       image: `${aimlink}`,
@@ -76,8 +82,7 @@ const Portfolio: React.FC = () => {
       id: 2,
       title: "Quiz App (Spring Boot Backend)",
       category: "API",
-      description:
-        "A backend quiz management system built with Spring Boot, providing APIs for quiz creation, participation, and scoring.",
+      description: t('portfolio.projectDescriptions.quizApp'),
       longDescription:
         "This project is a backend-only quiz application developed with Spring Boot. It offers RESTful API endpoints for managing quizzes, storing questions, validating answers, and tracking user scores. The application is designed for modularity and scalability, making it easy to integrate with any frontend framework or mobile app. Ideal for e-learning platforms, trivia games, and assessment tools.",
       image: `${quizImg}`,
@@ -106,8 +111,7 @@ const Portfolio: React.FC = () => {
       id: 3,
       title: "ZamaniVault",
       category: "Web App",
-      description:
-        "An immersive digital platform for preserving and exploring African history, culture, and heritage.",
+      description: t('portfolio.projectDescriptions.zamaniVault'),
       longDescription:
         "ZamaniVault is an innovative platform dedicated to preserving, exploring, and celebrating African history, culture, and heritage through immersive multimedia content. It offers an extensive library of videos, books, artifacts, and educational materials, enhanced by AI-powered recommendations and personalized learning paths. Designed to engage users through secure, interactive, and culturally rich experiences.",
       image: `${zamanImg}`,
@@ -131,8 +135,7 @@ const Portfolio: React.FC = () => {
       id: 4,
       title: "Subscription Management (Django)",
       category: "Web App",
-      description:
-        "A Django-based subscription management system for handling user plans and access control.",
+      description: t('portfolio.projectDescriptions.subscriptionManagement'),
       longDescription:
         "A web application built with Django that allows users to manage subscription plans. It includes functionality for selecting plans, managing user access based on subscription level, and rendering plan-based content. Designed with a modular architecture for easy integration into larger systems. Ideal for SaaS platforms, content-gated websites, or membership services.",
       image: `${subscription}`,
@@ -155,8 +158,7 @@ const Portfolio: React.FC = () => {
       id: 5,
       title: "Small Chat App",
       category: "Web App",
-      description:
-        "A lightweight real-time chat application using modern web technologies.",
+      description: t('portfolio.projectDescriptions.smallChatApp'),
       longDescription:
         "This is a simple, real-time web chat application enabling users to exchange messages instantly in chat rooms. Built using JavaScript and WebSocket technology, it features basic message broadcasting, multiple user support, and seamless real-time communication. Ideal as a foundation for learning real-time messaging and expanding into more sophisticated chat systems.",
       image: `${chatImg}`,
@@ -176,8 +178,7 @@ const Portfolio: React.FC = () => {
       id: 6,
       title: "Banking System (Spring Boot)",
       category: "API",
-      description:
-        "A secure and scalable banking system backend built with Spring Boot and PostgreSQL.",
+      description: t('portfolio.projectDescriptions.bankingSystem'),
       longDescription:
         "This backend application provides core banking functionalities such as account management, transaction processing, and user authentication. Developed using Spring Boot and PostgreSQL, it ensures data integrity and security. The system is designed to handle financial operations efficiently, making it suitable for integration with frontend applications or as a standalone service in a microservices architecture.",
       image: `${banking_system}`,
@@ -206,8 +207,7 @@ const Portfolio: React.FC = () => {
       id: 7,
       title: "Auto Parking System",
       category: "AI, IOT, Robotics & Automation",
-      description:
-        "Smart parking system with automatic license plate detection and vehicle entry/exit automation.",
+      description: t('portfolio.projectDescriptions.autoParkingSystem'),
       longDescription:
         "An intelligent IoT-based parking management system that uses AI-powered license plate recognition to automate vehicle access. Features include real-time slot availability tracking, automated gate control, secure payment integration, and detailed parking analytics. Built with computer vision and cloud integration for scalability and reliability.",
       image: `${barrier}`,
@@ -235,8 +235,7 @@ const Portfolio: React.FC = () => {
       id: 8,
       title: "KinyaVoice",
       category: "AI, IOT, Robotics & Automation",
-      description:
-        "An intelligent Kinyarwanda-speaking voice assistant for real-time human-computer interaction.",
+      description: t('portfolio.projectDescriptions.kinyaVoice'),
       longDescription:
         "KinyaVoice is an advanced voice assistant designed to understand and speak Kinyarwanda, developed as part of the Intelligent Robotics course. It integrates cutting-edge speech recognition, contextual understanding, and natural language processing to enable seamless, real-time interactions in Kinyarwanda. Applications include education, accessibility, customer service, and home automation.",
       image: `${text_to_speech}`,
@@ -263,8 +262,7 @@ const Portfolio: React.FC = () => {
       id: 9,
       title: "YOLO Car Plate Annotations",
       category: "AI, IOT, Robotics & Automation",
-      description:
-        "Annotated dataset of car plates in YOLO format for training object detection models.",
+      description: t('portfolio.projectDescriptions.yoloCarPlate'),
       longDescription:
         "This project provides a high-quality annotated dataset for car plate detection in the YOLO (You Only Look Once) format. The labels are compatible with YOLO-based object detection models such as YOLOv3, YOLOv4, and YOLOv5, allowing developers to train models out of the box. Each annotation is optimized for accuracy, ensuring precise bounding boxes for license plates in various lighting and angle conditions. Ideal for AI-powered traffic monitoring, automated parking systems, and law enforcement applications.",
       image: `${carplate}`,
@@ -286,8 +284,7 @@ const Portfolio: React.FC = () => {
       id: 11,
       title: "Car Driving Game (Pygame)",
       category: "AI, IOT, Robotics & Automation",
-      description:
-        "A simple 2D car driving game built with Pygame, complete with obstacles and sound effects.",
+      description: t('portfolio.projectDescriptions.carDrivingGame'),
       longDescription:
         "This is the first Python game I created, built using Pygame. Players navigate a car along a scrolling road, avoiding obstacles while collecting items and reacting to collisions. The game features sprite-based graphics, sound effects for collection and collisions, and basic but engaging gameplay mechanics. A fun introduction to game development using Pygame.",
       image: `${pygameImg}`,
@@ -308,11 +305,9 @@ const Portfolio: React.FC = () => {
   const certificates = [
   {
     id: 1,
-    title: "Developing Back-End Apps with Node.js and Express",
+    titleKey: "nodeExpress",
     issuer: "Coursera / IBM",
     date: "April 2024",
-    description:
-      "Completed training in designing and building scalable back-end applications using Node.js and Express, including API development and integration.",
     image: `${Developing_Back_End_Apps_with_Nodejs_and_ExpressImg}`,
     certificateFile: `${Developing_Back_End_Apps_with_Nodejs_and_Express}`,
     icon: Award,
@@ -320,11 +315,9 @@ const Portfolio: React.FC = () => {
   },
   {
     id: 2,
-    title: "Node and Express Essentials",
+    titleKey: "nodeEssentials",
     issuer: "Coursera / IBM",
     date: "April 2024",
-    description:
-      "Learned core concepts of Node.js and Express, covering middleware, routing, and REST API creation for dynamic web applications.",
     image: `${NodeandExpressEssentials_BadgeImg}`,
     certificateFile: `${NodeandExpressEssentials_Badge}`,
     icon: Award,
@@ -332,100 +325,84 @@ const Portfolio: React.FC = () => {
   },
   {
     id: 3,
-    title: "Climate Science Crash Course",
-    issuer: "ClimateScience",
-    date: "March 2023",
-    description:
-      "Gained foundational knowledge on climate change, environmental science, and global sustainability challenges.",
-    image: `${climate_science_crash_cource}`,
-    certificateFile: `${climate_science_crash_cource}`,
-    icon: Award,
-    color: "from-emerald-500 to-green-500",
-  },
-  {
-    id: 4,
-    title: "Climate Science Olympiad – Semi Finalist",
-    issuer: "ClimateScience",
-    date: "August 2024",
-    description:
-      "Achieved Semi-Finalist status in the Climate Science Olympiad, showcasing problem-solving skills in environmental and sustainability issues.",
-    image: `${climate_science_semi_finalImg}`,
-    certificateFile: `${climate_science_semi_final}`,
-    icon: Award,
-    color: "from-emerald-500 to-green-500",
-  },
-  {
-    id: 5,
-    title: "Technology for Emergencies – ETT EPR",
-    issuer: "UNICEF",
-    date: "Frebruary 2024",
-    description:
-      "Completed the Emergency Preparedness Response (EPR) module, focusing on technology solutions for emergency situations.",
-    image: `${Technology_for_Emergencies_T4E_ETT_EPR_Certificate_of_CompletionImg}`,
-    certificateFile: `${Technology_for_Emergencies_T4E_ETT_EPR_Certificate_of_Completion}`,
-    icon: Award,
-    color: "from-sky-500 to-blue-500",
-  },
-  {
-    id: 6,
-    title: "Technology for Emergencies – ETT MGT",
-    issuer: "UNICEF",
-    date: "February 2024",
-    description:
-      "Trained in emergency management technologies, focusing on coordination and deployment during crises.",
-    image: `${Technology_for_Emergencies_T4E_ETT_MGT_Certificate_of_CompletionImg}`,
-    certificateFile: `${Technology_for_Emergencies_T4E_ETT_MGT_Certificate_of_Completion}`,
-    icon: Award,
-    color: "from-sky-500 to-blue-500",
-  },
-  {
-    id: 7,
-    title: "Technology for Emergencies – ETT MSS",
-    issuer: "UNICEF",
-    date: "Februal 2024",
-    description:
-      "Focused on mobile and satellite communication solutions for emergency and disaster response operations.",
-    image: `${Technology_for_Emergencies_T4E_ETT_MSS_Certificate_of_CompletionImg}`,
-    certificateFile: `${Technology_for_Emergencies_T4E_ETT_MSS_Certificate_of_Completion}`,
-    icon: Award,
-    color: "from-sky-500 to-blue-500",
-  },
-  {
-    id: 8,
-    title: "Technology for Emergencies – ETT Power",
-    issuer: "UNICEF",
-    date: "February 2024",
-    description:
-      "Learned about emergency power systems and technologies for humanitarian field operations.",
-    image: `${Technology_for_Emergencies_T4E_ETT_POWER_Certificate_of_CompletionImg}`,
-    certificateFile: `${Technology_for_Emergencies_T4E_ETT_POWER_Certificate_of_Completion}`,
-    icon: Award,
-    color: "from-sky-500 to-blue-500",
-  },
-  {
-    id: 9,
-    title: "Technology for Emergencies – Core Training",
-    issuer: "UNICEF",
-    date: "February 2024",
-    description:
-      "Comprehensive training on technology applications in humanitarian aid, emergency preparedness, and disaster response.",
-    image: `${Technology_for_Emergencies_T4E_Certificate_of_CompletionImg}`,
-    certificateFile: `${Technology_for_Emergencies_T4E_Certificate_of_Completion}`,
-    icon: Award,
-    color: "from-sky-500 to-blue-500",
-  },
-  {
-    id: 10,
-    title: "Spring MVC, Spring Boot, and REST Controllers",
-    issuer: "Coursera / Meta",
-    date: "April 2024",
-    description:
-      "Acquired skills in developing Spring MVC and Spring Boot applications, with a focus on building and managing RESTful APIs.",
+    titleKey: "springMvc",
+    issuer: "Coursera",
+    date: "March 2024",
     image: `${Spring_MVC_Spring_Boot_and_Rest_ControllersImg}`,
     certificateFile: `${Spring_MVC_Spring_Boot_and_Rest_Controllers}`,
     icon: Award,
-    color: "from-purple-500 to-pink-500",
+    color: "from-green-500 to-blue-500",
   },
+  {
+    id: 4,
+    titleKey: "climateCrash",
+    issuer: "Climate Science Institute",
+    date: "February 2024",
+    image: `${climate_science_crash_cource}`,
+    certificateFile: `${climate_science_crash_cource}`,
+    icon: Award,
+    color: "from-blue-500 to-cyan-500",
+  },
+  {
+    id: 5,
+    titleKey: "climateOlympiad",
+    issuer: "Climate Science Olympiad",
+    date: "January 2024",
+    image: `${climate_science_semi_finalImg}`,
+    certificateFile: `${climate_science_semi_final}`,
+    icon: Award,
+    color: "from-purple-500 to-indigo-500",
+  },
+  {
+    id: 6,
+    titleKey: "t4eEpr",
+    issuer: "Technology for Emergencies",
+    date: "December 2023",
+    image: `${Technology_for_Emergencies_T4E_ETT_EPR_Certificate_of_CompletionImg}`,
+    certificateFile: `${Technology_for_Emergencies_T4E_ETT_EPR_Certificate_of_Completion}`,
+    icon: Award,
+    color: "from-red-500 to-pink-500",
+  },
+  {
+    id: 7,
+    titleKey: "t4eMgt",
+    issuer: "Technology for Emergencies",
+    date: "December 2023",
+    image: `${Technology_for_Emergencies_T4E_ETT_MGT_Certificate_of_CompletionImg}`,
+    certificateFile: `${Technology_for_Emergencies_T4E_ETT_MGT_Certificate_of_Completion}`,
+    icon: Award,
+    color: "from-orange-500 to-red-500",
+  },
+  {
+    id: 8,
+    titleKey: "t4eMss",
+    issuer: "Technology for Emergencies",
+    date: "December 2023",
+    image: `${Technology_for_Emergencies_T4E_ETT_MSS_Certificate_of_CompletionImg}`,
+    certificateFile: `${Technology_for_Emergencies_T4E_ETT_MSS_Certificate_of_Completion}`,
+    icon: Award,
+    color: "from-teal-500 to-green-500",
+  },
+  {
+    id: 9,
+    titleKey: "t4ePower",
+    issuer: "Technology for Emergencies",
+    date: "December 2023",
+    image: `${Technology_for_Emergencies_T4E_ETT_POWER_Certificate_of_CompletionImg}`,
+    certificateFile: `${Technology_for_Emergencies_T4E_ETT_POWER_Certificate_of_Completion}`,
+    icon: Award,
+    color: "from-cyan-500 to-blue-500",
+  },
+  {
+    id: 10,
+    titleKey: "t4eMain",
+    issuer: "Technology for Emergencies",
+    date: "December 2023",
+    image: `${Technology_for_Emergencies_T4E_Certificate_of_CompletionImg}`,
+    certificateFile: `${Technology_for_Emergencies_T4E_Certificate_of_Completion}`,
+    icon: Award,
+    color: "from-indigo-500 to-purple-500",
+  }
 ];
 
 
@@ -449,12 +426,11 @@ const Portfolio: React.FC = () => {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6">
-            My Work & Achievements
+            {t('portfolio.title')}
           </h2>
-          <div className="w-24 h-1 bg-gradient-to-r from-blue-600 to-purple-600 mx-auto mb-8"></div>
+          <div className="w-24 h-1 bg-blue-600 mx-auto mb-8"></div>
           <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-            Showcasing innovative solutions, cutting-edge technologies, and
-            professional certifications
+            {t('portfolio.subtitle')}
           </p>
         </motion.div>
 
@@ -465,21 +441,21 @@ const Portfolio: React.FC = () => {
               onClick={() => setShowCertificates(false)}
               className={`px-6 py-2 rounded-full font-medium transition-all ${
                 !showCertificates
-                  ? "bg-gradient-to-r from-blue-600 to-purple-600 text-white"
+                  ? "bg-blue-600 text-white"
                   : "text-gray-700 dark:text-gray-300"
               }`}
             >
-              Projects
+              {t('portfolio.projects')}
             </button>
             <button
               onClick={() => setShowCertificates(true)}
               className={`px-6 py-2 rounded-full font-medium transition-all ${
                 showCertificates
-                  ? "bg-gradient-to-r from-blue-600 to-purple-600 text-white"
+                  ? "bg-blue-600 text-white"
                   : "text-gray-700 dark:text-gray-300"
               }`}
             >
-              Certificates
+              {t('portfolio.certificatesTab')}
             </button>
           </div>
         </div>
@@ -496,15 +472,15 @@ const Portfolio: React.FC = () => {
             >
               {filters.map((filter) => (
                 <button
-                  key={filter}
-                  onClick={() => setActiveFilter(filter)}
+                  key={filter.key}
+                  onClick={() => setActiveFilter(filter.key)}
                   className={`px-6 py-3 rounded-full font-medium transition-all duration-300 ${
-                    activeFilter === filter
-                      ? "bg-gradient-to-r from-blue-600 to-purple-600 text-white shadow-lg"
+                    activeFilter === filter.key
+                      ? "bg-blue-600 text-white shadow-lg"
                       : "bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700"
                   }`}
                 >
-                  {filter}
+                  {filter.label}
                 </button>
               ))}
             </motion.div>
@@ -530,7 +506,7 @@ const Portfolio: React.FC = () => {
                         alt={project.title}
                         className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"
                       />
-                      <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+                      <div className="absolute inset-0 bg-black/60"></div>
 
                       {/* Play Button Overlay */}
                       <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
@@ -542,9 +518,12 @@ const Portfolio: React.FC = () => {
                       {/* Category Badge */}
                       <div className="absolute top-4 left-4">
                         <span
-                          className={`px-3 py-1 bg-gradient-to-r ${project.color} text-white rounded-full text-sm font-medium`}
+                          className="px-3 py-1 bg-blue-600 text-white rounded-full text-sm font-medium"
                         >
-                          {project.category}
+                          {project.category === 'Web App' ? t('portfolio.categories.webApp') : 
+                           project.category === 'API' ? t('portfolio.categories.api') : 
+                           project.category === 'AI, IOT, Robotics & Automation' ? t('portfolio.categories.aiIot') : 
+                           project.category}
                         </span>
                       </div>
 
@@ -590,7 +569,7 @@ const Portfolio: React.FC = () => {
                           className="flex items-center gap-2 px-4 py-2 border border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-300 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors text-sm"
                         >
                           <Github className="w-4 h-4" />
-                          Code
+                          {t('portfolio.code')}
                         </a>
                       </div>
                     </div>
@@ -618,13 +597,13 @@ const Portfolio: React.FC = () => {
                     alt={certificate.title}
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent/20"></div>
+                  <div className="absolute inset-0 bg-black/80"></div>
                   <div className="absolute top-4 right-4">
                     <certificate.icon className="w-8 h-8 text-white" />
                   </div>
                   <div className="absolute bottom-4 left-4">
                     <span
-                      className={`px-3 py-1 bg-gradient-to-r ${certificate.color} text-white rounded-full text-sm font-medium`}
+                      className="px-3 py-1 bg-blue-600 text-white rounded-full text-sm font-medium"
                     >
                       {certificate.issuer}
                     </span>
@@ -632,18 +611,18 @@ const Portfolio: React.FC = () => {
                 </div>
                 <div className="p-6">
                   <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
-                    {certificate.title}
+                    {t(`portfolio.certificates.${certificate.titleKey}.title`)}
                   </h3>
                   <div className="flex items-center justify-between mb-3">
                     <span className="text-sm text-gray-600 dark:text-gray-400">
-                      Issued: {certificate.date}
+                      {t('portfolio.issued')}: {certificate.date}
                     </span>
                   </div>
                   <p className="text-gray-600 dark:text-gray-300 mb-4 line-clamp-2">
-                    {certificate.description}
+                    {t(`portfolio.certificates.${certificate.titleKey}.description`)}
                   </p>
                   <span className="text-sm text-blue-600 dark:text-blue-400 font-medium">
-                    Click to view
+                    {t('portfolio.clickToView')}
                   </span>
                 </div>
               </motion.div>
@@ -704,7 +683,7 @@ const Portfolio: React.FC = () => {
 
                         <div className="p-4 bg-white dark:bg-gray-800 border-t border-gray-200 dark:border-gray-700">
                           <h3 className="text-xl font-bold text-gray-900 dark:text-white">
-                            {certificate.title}
+                            {t(`portfolio.certificates.${certificate.titleKey}.title`)}
                           </h3>
                           <p className="text-gray-600 dark:text-gray-300">
                             Issued by: {certificate.issuer} | {certificate.date}
@@ -764,9 +743,12 @@ const Portfolio: React.FC = () => {
                             {project.title}
                           </h3>
                           <span
-                            className={`px-3 py-1 bg-gradient-to-r ${project.color} text-white rounded-full text-sm font-medium`}
+                            className="px-3 py-1 bg-blue-600 text-white rounded-full text-sm font-medium"
                           >
-                            {project.category}
+                            {project.category === 'Web App' ? t('portfolio.categories.webApp') : 
+                             project.category === 'API' ? t('portfolio.categories.api') : 
+                             project.category === 'AI, IOT, Robotics & Automation' ? t('portfolio.categories.aiIot') : 
+                             project.category}
                           </span>
                         </div>
 
@@ -777,7 +759,7 @@ const Portfolio: React.FC = () => {
                         <div className="grid md:grid-cols-2 gap-8 mb-8">
                           <div>
                             <h4 className="font-semibold text-gray-900 dark:text-white mb-4">
-                              Technologies Used
+                              {t('portfolio.technologiesUsed')}
                             </h4>
                             <div className="flex flex-wrap gap-2">
                               {project.technologies.map((tech, index) => (
@@ -793,7 +775,7 @@ const Portfolio: React.FC = () => {
 
                           <div>
                             <h4 className="font-semibold text-gray-900 dark:text-white mb-4">
-                              Key Features
+                              {t('portfolio.keyFeatures')}
                             </h4>
                             <ul className="space-y-2">
                               {project.features.map((feature, index) => (
@@ -817,7 +799,7 @@ const Portfolio: React.FC = () => {
                             className="flex items-center gap-2 px-6 py-3 border border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-300 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors"
                           >
                             <Github className="w-5 h-5" />
-                            View Source Code
+                            {t('portfolio.viewSourceCode')}
                           </a>
                         </div>
                       </div>

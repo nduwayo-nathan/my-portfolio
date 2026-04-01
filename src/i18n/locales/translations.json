@@ -1,0 +1,2080 @@
+{
+  "loading": {
+    "initializing": {
+      "en": "Initializing...",
+      "rw": "Iri gutangira...",
+      "fr": "Initialisation...",
+      "es": "Inicializando...",
+      "de": "Initialisierung..."
+      
+    },
+    "loadingPortfolio": {
+      "en": "Loading Portfolio...",
+      "rw": "Gutunganya Porofolio...",
+      "fr": "Chargement du Portfolio...",
+      "es": "Cargando Portafolio...",
+      "de": "Portfolio Laden..."
+      
+    },
+    "preparingExperience": {
+      "en": "Preparing Experience...",
+      "rw": "Gutegura Ubumenyi...",
+      "fr": "Préparation de l'Expérience...",
+      "es": "Preparando Experiencia...",
+      "de": "Erfahrung Vorbereiten..."
+      
+    },
+    "almostReady": {
+      "en": "Almost Ready...",
+      "rw": "Bigiye gutungana...",
+      "fr": "Presque Prêt...",
+      "es": "Casi Listo...",
+      "de": "Fast Bereit..."
+      
+    }
+  },
+  "nav": {
+    "home": {
+      "en": "Home",
+      "fr": "Accueil",
+      "es": "Inicio",
+      "de": "Startseite",
+      "rw": "Ahabanza"
+    },
+    "about": {
+      "en": "About",
+      "rw": "Ibinyerekeyeho",
+      "fr": "À propos",
+      "es": "Acerca de",
+      "de": "Über mich"
+      
+    },
+    "skills": {
+      "en": "Skills",
+      "rw": "Ubumenyi",
+      "fr": "Compétences",
+      "es": "Habilidades",
+      "de": "Fähigkeiten"
+      
+    },
+    "experience": {
+      "en": "Experience",
+      "fr": "Expérience",
+      "es": "Experiencia",
+      "de": "Erfahrung",
+      "rw": "Ubumenyi bw'akazi"
+    },
+    "portfolio": {
+      "en": "Portfolio",
+      "rw": "Umwirondoro",
+      "fr": "Portfolio",
+      "es": "Portafolio",
+      "de": "Portfolio"
+      
+    },
+    "contact": {
+      "en": "Contact",
+      "fr": "Contact",
+      "es": "Contacto",
+      "de": "Kontakt",
+      "rw": "Twandikire"
+    }
+  },
+  "hero": {
+    "welcome": {
+      "en": "Welcome to my portfolio",
+      "fr": "Bienvenue sur mon portfolio",
+      "es": "Bienvenido a mi portafolio",
+      "de": "Willkommen zu meinem Portfolio",
+      "rw": "Murakaza neza "
+    },
+    "greeting": {
+      "en": "Hi, I'm",
+      "fr": "Salut, je suis",
+      "es": "Hola, soy",
+      "de": "Hallo, ich bin",
+      "rw": "Muraho, Ndi"
+    },
+    "roles": {
+      "en": [
+        "Full Stack Developer ",
+        "Frontend Developer",
+        "Backend Engineer",
+        "UI/UX Designer ",
+        "Mobile Developer "
+      ],
+       "rw": [
+        "Umuhanga mu Byiciro Byose bya Porogaramu",
+        "Umuhanga mu Gice Cy’imbere cya Porogaramu",
+        "Umuhanga mu Gice Cy’inyuma cya Porogaramu",
+        "Umushushanyi wa porogaramu (UI/UX)",
+        "Umuhanga mu Porogaramu za Telefoni"
+      ],
+      "fr": [
+        "Développeur Full Stack",
+        "Développeur Frontend",
+        "Ingénieur Backend",
+        "Designer UI/UX",
+        "Développeur Mobile"
+      ],
+      "es": [
+        "Desarrollador Full Stack",
+        "Desarrollador Frontend",
+        "Ingeniero Backend",
+        "Diseñador UI/UX",
+        "Desarrollador Móvil"
+      ],
+      "de": [
+        "Full Stack Entwickler",
+        "Frontend Entwickler",
+        "Backend Ingenieur",
+        "UI/UX Designer",
+        "Mobile Entwickler"
+      ]
+     
+    },
+    "description": {
+      "en": "Crafting exceptional digital experiences with cutting-edge technology and innovative design solutions. Transforming ideas into powerful, scalable applications.",
+      "rw": "Gukorana ubuhanga bwihariye hifashishijwe ikoranabuhanga rigezweho n'ibisubizobyizewe. Mpindura ibitekerezo bikaba porogaramu zikomeye kandi zikoreshwa.",
+      "fr": "Créer des expériences numériques exceptionnelles avec une technologie de pointe et des solutions de conception innovantes. Transformer les idées en applications puissantes et évolutives.",
+      "es": "Creando experiencias digitales excepcionales con tecnología de vanguardia y soluciones de diseño innovadoras. Transformando ideas en aplicaciones potentes y escalables.",
+      "de": "Außergewöhnliche digitale Erfahrungen mit modernster Technologie und innovativen Design-Lösungen schaffen. Ideen in leistungsstarke, skalierbare Anwendungen verwandeln."
+      
+    },
+    "viewWork": {
+      "en": "View My Work",
+      "fr": "Voir Mon Travail",
+      "es": "Ver Mi Trabajo",
+      "de": "Meine Arbeit Ansehen",
+      "rw": "Reba Imirimo yanjye"
+    },
+    "viewCV": {
+      "en": "View My CV",
+      "rw": "Reba Umwirondoro",
+      "fr": "Voir Mon CV",
+      "es": "Ver Mi CV",
+      "de": "Meinen Lebenslauf Ansehen"
+      
+    },
+    "followMe": {
+      "en": "Follow me:",
+      "rw": "Dukurikire:",
+      "fr": "Suivez-moi:",
+      "es": "Sígueme:",
+      "de": "Folgen Sie mir:"
+      
+    },
+    "scrollToExplore": {
+      "en": "Scroll to explore",
+      "rw": "Komeza",
+      "fr": "Faites défiler pour explorer",
+      "es": "Desplázate para explorar",
+      "de": "Scrollen zum Erkunden"
+      
+    },
+    "availableForWork": {
+      "en": "Available for work",
+      "rw": "Ndaboneka ku kazi",
+      "fr": "Disponible pour le travail",
+      "es": "Disponible para trabajar",
+      "de": "Verfügbar für Arbeit"
+      
+    },
+    "fullStackDeveloper": {
+      "en": "Full Stack Developer",
+      "rw": "Umuhanga mu Byiciro Byose bya Porogaramu",
+      "fr": "Développeur Full Stack",
+      "es": "Desarrollador Full Stack",
+      "de": "Full Stack Entwickler"
+      
+    },
+    "experienceYears": {
+      "en": "5+ years of experience building scalable web applications and mobile solutions",
+      "rw": "Ubumenyi bw'imyaka 5+ mu kubaka porogaramu za web ishobora kwaguka no gukemura ibibazo bya mobile",
+      "fr": "5+ années d'expérience dans la création d'applications web évolutives et de solutions mobiles",
+      "es": "5+ años de experiencia construyendo aplicaciones web escalables y soluciones móviles",
+      "de": "5+ Jahre Erfahrung im Aufbau skalierbarer Webanwendungen und mobiler Lösungen"
+    }, 
+    "projects": {
+      "en": "Projects",
+      "rw": "Imishinga",
+      "fr": "Projets",
+      "es": "Proyectos",
+      "de": "Projekte"
+      
+    },
+    "years": {
+      "en": "Years",
+      "rw": "Imyaka",
+      "fr": "Années",
+      "es": "Años",
+      "de": "Jahre"
+    },
+    "technologies": {
+      "en": "Technologies Mastered",
+      "fr": "Technologies Maîtrisées",
+      "es": "Tecnologías Dominadas",
+      "de": "Beherrschte Technologien",
+      "rw": "Ikoranabuhanga nkoresha"
+    },
+    "getInTouch": {
+      "en": "Get In Touch",
+      "rw": "Twandikire",
+      "fr": "Entrer en Contact",
+      "es": "Ponerse en Contacto",
+      "de": "Kontakt Aufnehmen"
+      
+    }
+  },
+  "experience": {
+    "journey": {
+      "en": "Journey",
+      "rw": "Urugendo",
+      "fr": "Parcours",
+      "es": "Trayectoria",
+      "de": "Reise"
+      
+    },
+    "title": {
+      "en": "My Development Journey",
+       "rw": "Urugendo Rwanjye ",
+      "fr": "Mon Parcours de Développement",
+      "es": "Mi Trayectoria de Desarrollo",
+      "de": "Meine Entwicklungsreise"
+     
+    },
+    "description": {
+      "en": "5+ years of hands-on experience through projects, freelance work, and continuous learning",
+      "rw": "Ubumenyi bw'imyaka 5+ bwo gukora sisitemu, imenyereza mwuga, no gukomeza kwiga udushya",
+      "fr": "5+ années d'expérience pratique à travers des projets, du travail freelance et un apprentissage continu",
+      "es": "5+ años de experiencia práctica a través de proyectos, trabajo freelance y aprendizaje continuo",
+      "de": "5+ Jahre praktische Erfahrung durch Projekte, Freelance-Arbeit und kontinuierliches Lernen"
+    },
+    "keyAchievements": {
+      "en": "Key Achievements",
+      "rw": "Ibyagezweho By'ingenzi",
+      "fr": "Réalisations Clés",
+      "es": "Logros Clave",
+      "de": "Wichtige Erfolge"
+      
+    },
+    "notableProjects": {
+      "en": "Notable Projects",
+      "rw": "Imishinga Ikomeye",
+      "fr": "Projets Notables",
+      "es": "Proyectos Destacados",
+      "de": "Bemerkenswerte Projekte"
+      
+    },
+    "more": {
+      "en": "more",
+      "rw": "Ibindi",
+      "fr": "plus",
+      "es": "más",
+      "de": "mehr"
+    },
+    "experiences": {
+      "student": {
+        "title": {
+          "en": "Programming Student",
+          "rw": "Umunyeshuri",
+          "fr": "Étudiant en Programmation",
+          "es": "Estudiante de Programación",
+          "de": "Programmier-Student"
+          
+        },
+        "company": {
+          "en": "School & Self-taught",
+          "rw": "Ishuri & Kwiyigisha",
+          "fr": "École et Autodidacte",
+          "es": "Escuela y Autodidacta",
+          "de": "Schule & Selbststudium"
+          
+        },
+        "location": {
+          "en": "School (in-person) & Remote (self-taught)",
+          "fr": "École (en présentiel) et À distance (autodidacte)",
+          "es": "Escuela (presencial) y Remoto (autodidacta)",
+          "de": "Schule (vor Ort) & Remote (Selbststudium)",
+          "rw": "Ishuri  & Kwigira mu Rugo"
+        },
+        "type": {
+          "en": "Learning",
+          "rw": "Kwiga",
+          "fr": "Apprentissage",
+          "es": "Aprendizaje",
+          "de": "Lernen"
+          
+        },
+        "description": {
+          "en": "Dedicated my hours to learning programming fundamentals, data structures, and algorithms. Built small projects to practice new concepts.",
+          "fr": "J'ai consacré mes heures à apprendre les fondamentaux de la programmation, les structures de données et les algorithmes. J'ai construit de petits projets pour pratiquer de nouveaux concepts.",
+          "es": "Dediqué mis horas a aprender fundamentos de programación, estructuras de datos y algoritmos. Construí pequeños proyectos para practicar nuevos conceptos.",
+          "de": "Widmete meine Stunden dem Erlernen von Programmiergrundlagen, Datenstrukturen und Algorithmen. Baute kleine Projekte, um neue Konzepte zu üben.",
+          "rw": "Nakoze amasaha yanjye kwiga ibanze bya porogaramu, imiterere y'amakuru, na algorithms. Nubaka imishinga mito kugirango nige ibitekerezo bishya."
+        },
+        "achievements": {
+          "en": [
+            "Completed online courses and class courses",
+            "Built 10+ small projects",
+            "Learned core programming concepts",
+            "Participated in coding challenges"
+          ],
+          "fr": [
+            "Terminé des cours en ligne et des cours de classe",
+            "Construit plus de 10 petits projets",
+            "Appris les concepts de programmation de base",
+            "Participé à des défis de codage"
+          ],
+          "es": [
+            "Completé cursos en línea y cursos de clase",
+            "Construí más de 10 proyectos pequeños",
+            "Aprendí conceptos básicos de programación",
+            "Participé en desafíos de codificación"
+          ],
+          "de": [
+            "Online-Kurse und Klassenkurse abgeschlossen",
+            "10+ kleine Projekte gebaut",
+            "Kern-Programmierkonzepte gelernt",
+            "An Coding-Herausforderungen teilgenommen"
+          ],
+          "rw": [
+            "Narangije amasomo ya interineti n'amasomo y'ishuri",
+            "Nubaka imishinga mito irenga 10",
+            "Nize ibitekerezo by'ibanze bya porogaramu",
+            "Nitabira ibibazo byo gukora code"
+          ]
+        }
+      },
+      "frontend": {
+        "title": {
+          "en": "Frontend Developer",
+          "fr": "Développeur Frontend",
+          "es": "Desarrollador Frontend",
+          "de": "Frontend-Entwickler",
+          "rw": "Umukozi wa Frontend"
+        },
+        "company": {
+          "en": "Personal Projects & Freelance",
+          "fr": "Projets Personnels et Freelance",
+          "es": "Proyectos Personales y Freelance",
+          "de": "Persönliche Projekte & Freelance",
+          "rw": "Imishinga Yanjye & Freelance"
+        },
+        "location": {
+          "en": "Remote",
+          "fr": "À distance",
+          "es": "Remoto",
+          "de": "Remote",
+          "rw": "Kure"
+        },
+        "type": {
+          "en": "Freelance",
+          "fr": "Freelance",
+          "es": "Freelance",
+          "de": "Freelance",
+          "rw": "Freelance"
+        },
+        "description": {
+          "en": "Worked with clients to build responsive web interfaces and implement modern frontend architectures. Collaborated with designers to create pixel-perfect UIs.",
+          "fr": "J'ai travaillé avec des clients pour créer des interfaces web réactives et implémenter des architectures frontend modernes. J'ai collaboré avec des designers pour créer des interfaces utilisateur parfaites au pixel près.",
+          "es": "Trabajé con clientes para construir interfaces web responsivas e implementar arquitecturas frontend modernas. Colaboré con diseñadores para crear interfaces de usuario perfectas.",
+          "de": "Arbeitete mit Kunden zusammen, um responsive Web-Interfaces zu erstellen und moderne Frontend-Architekturen zu implementieren. Kollaborierte mit Designern, um pixelgenaue UIs zu erstellen.",
+          "rw": "Nakoze na bakiriya kubaka interface za web zisubiza neza no gushyira mu bikorwa imiterere ya frontend igezweho. Nakoranye n'abashushanyi gukora UI nziza cyane."
+        },
+        "achievements": {
+          "en": [
+            "Delivered client projects",
+            "Improved page load speeds by 40%",
+            "Implemented responsive designs",
+            "Enhanced accessibility standards"
+          ],
+          "fr": [
+            "Livré des projets clients",
+            "Amélioré les vitesses de chargement des pages de 40%",
+            "Implémenté des designs réactifs",
+            "Amélioré les standards d'accessibilité"
+          ],
+          "es": [
+            "Entregué proyectos de clientes",
+            "Mejoré las velocidades de carga de páginas en un 40%",
+            "Implementé diseños responsivos",
+            "Mejoré los estándares de accesibilidad"
+          ],
+          "de": [
+            "Kundenprojekte geliefert",
+            "Seitenladegeschwindigkeiten um 40% verbessert",
+            "Responsive Designs implementiert",
+            "Zugänglichkeitsstandards verbessert"
+          ],
+          "rw": [
+            "Natanze imishinga ya bakiriya",
+            "Nongereye umuvuduko wo gupakira urupapuro kuri 40%",
+            "Nashyize mu bikorwa amashusho asubiza neza",
+            "Nongereye ibipimo byo kugera ku bantu bose"
+          ]
+        }
+      },
+      "backend": {
+        "title": {
+          "en": "Backend Developer",
+          "fr": "Développeur Backend",
+          "es": "Desarrollador Backend",
+          "de": "Backend-Entwickler",
+          "rw": "Umukozi wa Backend"
+        },
+        "company": {
+          "en": "Personal Projects & Freelance",
+          "fr": "Projets Personnels et Freelance",
+          "es": "Proyectos Personales y Freelance",
+          "de": "Persönliche Projekte & Freelance",
+          "rw": "Imishinga Yanjye & Freelance"
+        },
+        "location": {
+          "en": "Remote",
+          "fr": "À distance",
+          "es": "Remoto",
+          "de": "Remote",
+          "rw": "Kure"
+        },
+        "type": {
+          "en": "Freelance",
+          "fr": "Freelance",
+          "es": "Freelance",
+          "de": "Freelance",
+          "rw": "Freelance"
+        },
+        "description": {
+          "en": "Developed server-side logic, database schemas, and API endpoints for various clients. Ensured high performance and responsiveness to requests.",
+          "fr": "J'ai développé la logique côté serveur, les schémas de base de données et les points de terminaison API pour divers clients. J'ai assuré des performances élevées et une réactivité aux demandes.",
+          "es": "Desarrollé lógica del lado del servidor, esquemas de bases de datos y endpoints de API para varios clientes. Aseguré alto rendimiento y capacidad de respuesta a las solicitudes.",
+          "de": "Entwickelte serverseitige Logik, Datenbankschemas und API-Endpunkte für verschiedene Kunden. Sorgte für hohe Leistung und Reaktionsfähigkeit auf Anfragen.",
+          "rw": "Nateje logic ya server, schemas za database, na endpoints za API ku bakiriya batandukanye. Nemeje ko imikorere myinshi kandi isubiza vuba ku busabe."
+        },
+        "achievements": {
+          "en": [
+            "Created CRUD APIs with authentication",
+            "Integrated third-party APIs (payment, email)",
+            "Implemented data validation and sanitization",
+            "Reduced API response times by 40%"
+          ],
+          "fr": [
+            "Créé des API CRUD avec authentification",
+            "Intégré des API tierces (paiement, email)",
+            "Implémenté la validation et l'assainissement des données",
+            "Réduit les temps de réponse API de 40%"
+          ],
+          "es": [
+            "Creé APIs CRUD con autenticación",
+            "Integré APIs de terceros (pago, email)",
+            "Implementé validación y sanitización de datos",
+            "Reduje los tiempos de respuesta de API en un 40%"
+          ],
+          "de": [
+            "CRUD-APIs mit Authentifizierung erstellt",
+            "Drittanbieter-APIs integriert (Zahlung, E-Mail)",
+            "Datenvalidierung und -bereinigung implementiert",
+            "API-Antwortzeiten um 40% reduziert"
+          ],
+          "rw": [
+            "Nakoreye API za CRUD hamwe no kwemeza",
+            "Nahuze API z'abandi (kwishyura, email)",
+            "Nashyize mu bikorwa kugenzura no gusukura amakuru",
+            "Nagabanije igihe cyo gusubiza API kuri 40%"
+          ]
+        }
+      },
+      "sonarwa": {
+        "title": {
+          "en": "Software Engineer",
+          "fr": "Ingénieur Logiciel",
+          "es": "Ingeniero de Software",
+          "de": "Software-Ingenieur",
+          "rw": "Injeniyeri wa Software"
+        },
+        "company": {
+          "en": "Sonarwa Life Limited",
+          "fr": "Sonarwa Life Limited",
+          "es": "Sonarwa Life Limited",
+          "de": "Sonarwa Life Limited",
+          "rw": "Sonarwa Life Limited"
+        },
+        "location": {
+          "en": "Kigali, Rwanda (On-site)",
+          "fr": "Kigali, Rwanda (Sur site)",
+          "es": "Kigali, Ruanda (Presencial)",
+          "de": "Kigali, Ruanda (Vor Ort)",
+          "rw": "Kigali, Rwanda (Ahantu)"
+        },
+        "type": {
+          "en": "Internship",
+          "fr": "Stage",
+          "es": "Pasantía",
+          "de": "Praktikum",
+          "rw": "Akazi k'Amahugurwa"
+        },
+        "description": {
+          "en": "Working as a Software Engineer at Sonarwa Life Limited, handling data engineering pipelines and software development to support business operations and digital transformation.",
+          "fr": "Travaillant en tant qu'Ingénieur Logiciel chez Sonarwa Life Limited, gérant des pipelines d'ingénierie des données et le développement logiciel pour soutenir les opérations commerciales et la transformation numérique.",
+          "es": "Trabajando como Ingeniero de Software en Sonarwa Life Limited, manejando pipelines de ingeniería de datos y desarrollo de software para apoyar las operaciones comerciales y la transformación digital.",
+          "de": "Als Software-Ingenieur bei Sonarwa Life Limited tätig, Verwaltung von Datentechnik-Pipelines und Softwareentwicklung zur Unterstützung von Geschäftsbetrieb und digitaler Transformation.",
+          "rw": "Nkorera nk'Injeniyeri wa Software muri Sonarwa Life Limited, nkora imirimo yo gucunga amakuru no guteza imbere porogaramu kugirango nshyigikire ibikorwa by'ubucuruzi no guhindura ikoranabuhanga."
+        },
+        "achievements": {
+          "en": [
+            "Building and maintaining data engineering pipelines",
+            "Developing internal software tools for business operations",
+            "Contributing to digital transformation initiatives",
+            "Collaborating with cross-functional teams on software solutions"
+          ],
+          "fr": [
+            "Construction et maintenance de pipelines d'ingénierie des données",
+            "Développement d'outils logiciels internes pour les opérations commerciales",
+            "Contribution aux initiatives de transformation numérique",
+            "Collaboration avec des équipes interfonctionnelles sur des solutions logicielles"
+          ],
+          "es": [
+            "Construcción y mantenimiento de pipelines de ingeniería de datos",
+            "Desarrollo de herramientas de software internas para operaciones comerciales",
+            "Contribución a iniciativas de transformación digital",
+            "Colaboración con equipos multifuncionales en soluciones de software"
+          ],
+          "de": [
+            "Aufbau und Wartung von Datentechnik-Pipelines",
+            "Entwicklung interner Software-Tools für Geschäftsbetrieb",
+            "Beitrag zu digitalen Transformationsinitiativen",
+            "Zusammenarbeit mit funktionsübergreifenden Teams an Softwarelösungen"
+          ],
+          "rw": [
+            "Kubaka no kubungabunga imirimo yo gucunga amakuru",
+            "Guteza imbere ibikoresho bya porogaramu byo mu nzu kugirango bishyigikire ibikorwa by'ubucuruzi",
+            "Gutanga umusanzu ku bikorwa byo guhindura ikoranabuhanga",
+            "Gukorana n'amakipe atandukanye ku bisubizo bya porogaramu"
+          ]
+        }
+      },
+      "internship": {
+        "title": {
+          "en": "Software Developer",
+          "fr": "Développeur Logiciel",
+          "es": "Desarrollador de Software",
+          "de": "Software-Entwickler",
+          "rw": "Umukozi wa Software"
+        },
+        "company": {
+          "en": "Ministry of Environment",
+          "fr": "Ministère de l'Environnement",
+          "es": "Ministerio de Medio Ambiente",
+          "de": "Umweltministerium",
+          "rw": "Minisiteri y'Ibidukikije"
+        },
+        "location": {
+          "en": "Kigali, Rwanda (On-site)",
+          "fr": "Kigali, Rwanda (Sur site)",
+          "es": "Kigali, Ruanda (Presencial)",
+          "de": "Kigali, Ruanda (Vor Ort)",
+          "rw": "Kigali, Rwanda (Ahantu)"
+        },
+        "type": {
+          "en": "Internship",
+          "fr": "Stage",
+          "es": "Pasantía",
+          "de": "Praktikum",
+          "rw": "Akazi k'Amahugurwa"
+        },
+        "description": {
+          "en": "Developed a Project Management and Tracking System for the Ministry of Environment to streamline project monitoring, reporting, and resource allocation across departments.",
+          "fr": "Développé un Système de Gestion et de Suivi de Projets pour le Ministère de l'Environnement afin de rationaliser le suivi des projets, les rapports et l'allocation des ressources entre les départements.",
+          "es": "Desarrollé un Sistema de Gestión y Seguimiento de Proyectos para el Ministerio de Medio Ambiente para optimizar el monitoreo de proyectos, informes y asignación de recursos entre departamentos.",
+          "de": "Entwickelte ein Projektmanagement- und Tracking-System für das Umweltministerium zur Optimierung der Projektüberwachung, Berichterstattung und Ressourcenzuweisung zwischen Abteilungen.",
+          "rw": "Nateje Sisitemu yo Gucunga no Gukurikirana Imishinga ku Minisiteri y'Ibidukikije kugirango yoroshe gukurikirana imishinga, gutanga raporo, no kugabanya ibikoresho hagati y'amashami."
+        },
+        "achievements": {
+          "en": [
+            "Built a full Project Management and Tracking System from scratch",
+            "Implemented real-time project status dashboards for management",
+            "Designed database schema for multi-department project tracking",
+            "Delivered the system on time within the internship period"
+          ],
+          "fr": [
+            "Construit un Système de Gestion et de Suivi de Projets complet depuis zéro",
+            "Implémenté des tableaux de bord de statut de projet en temps réel pour la direction",
+            "Conçu un schéma de base de données pour le suivi de projets multi-départements",
+            "Livré le système dans les délais pendant la période de stage"
+          ],
+          "es": [
+            "Construí un Sistema de Gestión y Seguimiento de Proyectos completo desde cero",
+            "Implementé paneles de estado de proyectos en tiempo real para la gerencia",
+            "Diseñé esquema de base de datos para seguimiento de proyectos multi-departamento",
+            "Entregué el sistema a tiempo dentro del período de pasantía"
+          ],
+          "de": [
+            "Vollständiges Projektmanagement- und Tracking-System von Grund auf erstellt",
+            "Echtzeit-Projektstatus-Dashboards für das Management implementiert",
+            "Datenbankschema für abteilungsübergreifendes Projekt-Tracking entworfen",
+            "System pünktlich innerhalb der Praktikumszeit geliefert"
+          ],
+          "rw": [
+            "Nubatse Sisitemu yuzuye yo Gucunga no Gukurikirana Imishinga kuva ku ntangiriro",
+            "Nashyize mu bikorwa dashboards zo kwerekana uko imishinga igenda mu gihe nyacyo",
+            "Nashushanye schema ya database yo gukurikirana imishinga y'amashami menshi",
+            "Natanze sisitemu mu gihe gikwiye mu gihe cy'amahugurwa"
+          ]
+        }
+      },
+      "fullstack": {
+        "title": {
+          "en": "Full Stack & Mobile Developer",
+          "fr": "Développeur Full Stack et Mobile",
+          "es": "Desarrollador Full Stack y Móvil",
+          "de": "Full Stack & Mobile Entwickler",
+          "rw": "Umuhanga mu Byiciro Byose bya Porogara|"
+        },
+        "company": {
+          "en": "Personal Projects & Freelance",
+          "fr": "Projets Personnels et Freelance",
+          "es": "Proyectos Personales y Freelance",
+          "de": "Persönliche Projekte & Freelance",
+          "rw": "Imishinga Yanjye n' akazi"
+        },
+        "location": {
+          "en": "Remote",
+          "fr": "À distance",
+          "es": "Remoto",
+          "de": "Remote",
+          "rw": "Gukorera mu rugo"
+        },
+        "type": {
+          "en": "Self-employed",
+          "fr": "Travailleur indépendant",
+          "es": "Autónomo",
+          "de": "Selbstständig",
+          "rw": "Ukozi wigenga"
+        },
+        "description": {
+          "en": "Developed multiple full-stack applications and contributed to open-source projects. Gained expertise through building real-world applications and solving complex problems.",
+          "fr": "J'ai développé plusieurs applications full-stack et contribué à des projets open-source. J'ai acquis une expertise en construisant des applications du monde réel et en résolvant des problèmes complexes.",
+          "es": "Desarrollé múltiples aplicaciones full-stack y contribuí a proyectos de código abierto. Adquirí experiencia construyendo aplicaciones del mundo real y resolviendo problemas complejos.",
+          "de": "Entwickelte mehrere Full-Stack-Anwendungen und trug zu Open-Source-Projekten bei. Sammelte Expertise durch den Aufbau realer Anwendungen und das Lösen komplexer Probleme.",
+          "rw": "Nakoze porogaramu nyinshi  kandi ntanga umusanzu mwiza. Nungutse ubumenyi bwo kubaka porogaramu no gukemura ibibazo."
+        },
+        "achievements": {
+          "en": [
+            "Built full-stack applications from scratch",
+            "Implemented CI/CD pipelines for personal projects",
+            "Mastered modern web development technologies"
+          ],
+          "fr": [
+            "Construit des applications full-stack à partir de zéro",
+            "Implémenté des pipelines CI/CD pour des projets personnels",
+            "Maîtrisé les technologies de développement web modernes"
+          ],
+          "es": [
+            "Construí aplicaciones full-stack desde cero",
+            "Implementé pipelines CI/CD para proyectos personales",
+            "Dominé tecnologías modernas de desarrollo web"
+          ],
+          "de": [
+            "Full-Stack-Anwendungen von Grund auf gebaut",
+            "CI/CD-Pipelines für persönliche Projekte implementiert",
+            "Moderne Web-Entwicklungstechnologien gemeistert"
+          ],
+          "rw": [
+            "Nubaka porogaramu mu byiciro byose bya Porogaramu| kuva ku ntangiriro",
+            "Nashyize mu bikorwa uburyo bwo koroshya no kwihutisha (CI/CD) mishinga yanjye",
+            "Nkoresha ikoranabuhanga rigezweho ryo guteza imbere urubuga"
+          ]
+        }
+      }
+    }
+  },
+  "about": {
+    "title": {
+      "en": "About Me",
+      "fr": "À Propos de Moi",
+      "es": "Acerca de Mí",
+      "de": "Über Mich",
+      "rw": "Ibinyerekeyeho"
+    },
+    "subtitle": {
+      "en": "I'm a passionate full-stack developer with a love for creating innovative digital solutions. With expertise spanning frontend, backend, and mobile development, I bring ideas to life through clean, efficient code.",
+      "fr": "Je suis un développeur full-stack passionné avec un amour pour créer des solutions numériques innovantes. Avec une expertise couvrant le développement frontend, backend et mobile, je donne vie aux idées grâce à un code propre et efficace.",
+      "es": "Soy un desarrollador full-stack apasionado con amor por crear soluciones digitales innovadoras. Con experiencia que abarca desarrollo frontend, backend y móvil, doy vida a las ideas a través de código limpio y eficiente.",
+      "de": "Ich bin ein leidenschaftlicher Full-Stack-Entwickler mit einer Liebe für die Schaffung innovativer digitaler Lösungen. Mit Expertise in Frontend-, Backend- und Mobile-Entwicklung erwecke ich Ideen durch sauberen, effizienten Code zum Leben.",
+      "rw": "Ndi umuhanga wo kubaka ibice byose bya porogaramu, nshishikajwe no gukora ibisubizo bishya bya digitale. Nfite ubumenyi bwagutse mu guteza imbere frontend, backend, na mobile, nzana ibitekerezo mu buzima binyuze mu code isukuye kandi ikora neza."
+    },
+    "sectionTitle": {
+      "en": "Turning Ideas Into Reality",
+      "fr": "Transformer les Idées en Réalité",
+      "es": "Convirtiendo Ideas en Realidad",
+      "de": "Ideen in Realität Verwandeln",
+      "rw": "Guhindura Ibitekerezo mu Kuri"
+    },
+    "description1": {
+      "en": "I specialize in creating comprehensive digital solutions that combine beautiful design with powerful functionality. My approach focuses on understanding client needs and delivering products that exceed expectations.",
+      "fr": "Je me spécialise dans la création de solutions numériques complètes qui combinent un design magnifique avec une fonctionnalité puissante. Mon approche se concentre sur la compréhension des besoins des clients et la livraison de produits qui dépassent les attentes.",
+      "es": "Me especializo en crear soluciones digitales integrales que combinan diseño hermoso con funcionalidad poderosa. Mi enfoque se centra en entender las necesidades del cliente y entregar productos que superen las expectativas.",
+      "de": "Ich spezialisiere mich auf die Erstellung umfassender digitaler Lösungen, die schönes Design mit leistungsstarker Funktionalität kombinieren. Mein Ansatz konzentriert sich darauf, Kundenbedarf zu verstehen und Produkte zu liefern, die Erwartungen übertreffen.",
+      "rw": "Nshingiye ku gukora ibisubizo byuzuye bya digitale bihuza amashusho meza n'imikorere ikomeye. Uburyo bwanjye bushingiye ku gusobanukirwa ibikenewe na bakiriya no gutanga ibicuruzwa birenze ibiteganijwe."
+    },
+    "description2": {
+      "en": "From concept to deployment, I handle every aspect of the development process, ensuring seamless user experiences and robust, scalable applications that grow with your business.",
+      "fr": "Du concept au déploiement, je gère tous les aspects du processus de développement, garantissant des expériences utilisateur fluides et des applications robustes et évolutives qui grandissent avec votre entreprise.",
+      "es": "Desde el concepto hasta el despliegue, manejo todos los aspectos del proceso de desarrollo, asegurando experiencias de usuario fluidas y aplicaciones robustas y escalables que crecen con tu negocio.",
+      "de": "Vom Konzept bis zur Bereitstellung handhabe ich jeden Aspekt des Entwicklungsprozesses und sorge für nahtlose Benutzererfahrungen und robuste, skalierbare Anwendungen, die mit Ihrem Unternehmen wachsen.",
+      "rw": "Kuva ku gitekerezo kugeza ku gushyira mu bikorwa, nkora ibintu byose by'inzira yo guteza imbere, nkemeza ko abakoresha bafite uburambe bwiza kandi porogaramu zikomeye, zishobora kwaguka zikura n'ubucuruzi bwawe."
+    },
+    "yearsExperience": {
+      "en": "Years of Experience",
+      "fr": "Années d'Expérience",
+      "es": "Años de Experiencia",
+      "de": "Jahre Erfahrung",
+      "rw": "Imyaka y'Ubumenyi"
+    },
+    "stats": {
+      "projects": {
+        "en": "Projects Completed",
+        "fr": "Projets Terminés",
+        "es": "Proyectos Completados",
+        "de": "Abgeschlossene Projekte",
+        "rw": "Imishinga Yarangiye"
+      },
+      "experience": {
+        "en": "Years Experience",
+        "fr": "Années d'Expérience",
+        "es": "Años de Experiencia",
+        "de": "Jahre Erfahrung",
+        "rw": "Imyaka y'Ubumenyi"
+      },
+      "certifications": {
+        "en": "Certifications",
+        "fr": "Certifications",
+        "es": "Certificaciones",
+        "de": "Zertifizierungen",
+        "rw": "Ibyemezo"
+      },
+      "technologies": {
+        "en": "Technologies",
+        "fr": "Technologies",
+        "es": "Tecnologías",
+        "de": "Technologien",
+        "rw": "Ikoranabuhanga"
+      }
+    },
+    "highlights": {
+      "frontend": {
+        "title": {
+          "en": "Frontend Development",
+          "fr": "Développement Frontend",
+          "es": "Desarrollo Frontend",
+          "de": "Frontend-Entwicklung",
+          "rw": "Guteza Imbere Frontend"
+        },
+        "description": {
+          "en": "Creating stunning, responsive user interfaces with React, Vue.js, and modern CSS frameworks.",
+          "fr": "Créer des interfaces utilisateur époustouflantes et réactives avec React, Vue.js et des frameworks CSS modernes.",
+          "es": "Creando interfaces de usuario impresionantes y responsivas con React, Vue.js y frameworks CSS modernos.",
+          "de": "Erstellen atemberaubender, responsiver Benutzeroberflächen mit React, Vue.js und modernen CSS-Frameworks.",
+          "rw": "Gukora interface z'abakoresha zitangaje, zisubiza neza hamwe na React, Vue.js, na frameworks za CSS zigezweho."
+        }
+      },
+      "backend": {
+        "title": {
+          "en": "Backend Development",
+          "fr": "Développement Backend",
+          "es": "Desarrollo Backend",
+          "de": "Backend-Entwicklung",
+          "rw": "Guteza Imbere Backend"
+        },
+        "description": {
+          "en": "Building robust server-side applications with Node.js, Python, and cloud technologies.",
+          "fr": "Construire des applications côté serveur robustes avec Node.js, Python et les technologies cloud.",
+          "es": "Construyendo aplicaciones del lado del servidor robustas con Node.js, Python y tecnologías en la nube.",
+          "de": "Aufbau robuster serverseitiger Anwendungen mit Node.js, Python und Cloud-Technologien.",
+          "rw": "Kubaka porogaramu zikomeye za server hamwe na Node.js, Python, n'ikoranabuhanga rya cloud."
+        }
+      },
+      "mobile": {
+        "title": {
+          "en": "Mobile Development",
+          "fr": "Développement Mobile",
+          "es": "Desarrollo Móvil",
+          "de": "Mobile Entwicklung",
+          "rw": "Guteza Imbere Mobile"
+        },
+        "description": {
+          "en": "Developing cross-platform mobile apps with React Native and Flutter.",
+          "fr": "Développer des applications mobiles multiplateformes avec React Native et Flutter.",
+          "es": "Desarrollando aplicaciones móviles multiplataforma con React Native y Flutter.",
+          "de": "Entwicklung plattformübergreifender mobiler Apps mit React Native und Flutter.",
+          "rw": "Guteza imbere porogaramu za mobile zikora kuri platform nyinshi hamwe na React Native na Flutter."
+        }
+      },
+      "fullstack": {
+        "title": {
+          "en": "Full Stack Solutions",
+          "fr": "Solutions Full Stack",
+          "es": "Soluciones Full Stack",
+          "de": "Full Stack Lösungen",
+          "rw": "Ibisubizo bya Full Stack"
+        },
+        "description": {
+          "en": "End-to-end development from concept to deployment with modern tech stacks.",
+          "fr": "Développement de bout en bout du concept au déploiement avec des piles technologiques modernes.",
+          "es": "Desarrollo de extremo a extremo desde el concepto hasta el despliegue con stacks tecnológicos modernos.",
+          "de": "End-to-End-Entwicklung vom Konzept bis zur Bereitstellung mit modernen Tech-Stacks.",
+          "rw": "Guteza imbere kuva ku ntangiriro kugeza ku gushyira mu bikorwa hamwe na tech stacks zigezweho."
+        }
+      }
+    }
+  },
+  "skills": {
+    "title": {
+      "en": "Skills & Expertise",
+      "fr": "Compétences et Expertise",
+      "es": "Habilidades y Experiencia",
+      "de": "Fähigkeiten und Expertise",
+      "rw": "Ubumenyi n'Ubuhanga"
+    },
+    "subtitle": {
+      "en": "A comprehensive toolkit of modern technologies and frameworks to build exceptional digital experiences",
+      "fr": "Une boîte à outils complète de technologies et frameworks modernes pour créer des expériences numériques exceptionnelles",
+      "es": "Un conjunto completo de tecnologías y frameworks modernos para crear experiencias digitales excepcionales",
+      "de": "Ein umfassendes Toolkit moderner Technologien und Frameworks für außergewöhnliche digitale Erfahrungen",
+      "rw": "Ibikoresho byuzuye by'ikoranabuhanga na frameworks zigezweho zo kubaka uburambe bwihariye bwa digitale"
+    },
+    "categories": {
+      "frontend": {
+        "en": "Frontend Development",
+        "fr": "Développement Frontend",
+        "es": "Desarrollo Frontend",
+        "de": "Frontend-Entwicklung",
+        "rw": "Guteza Imbere Frontend"
+      },
+      "backend": {
+        "en": "Backend Development",
+        "fr": "Développement Backend",
+        "es": "Desarrollo Backend",
+        "de": "Backend-Entwicklung",
+        "rw": "Guteza Imbere Backend"
+      },
+      "tools": {
+        "en": "Tools & Technologies",
+        "fr": "Outils et Technologies",
+        "es": "Herramientas y Tecnologías",
+        "de": "Tools und Technologien",
+        "rw": "Ibikoresho n'Ikoranabuhanga"
+      }
+    },
+    "technologyStack": {
+      "en": "Technology Stack",
+      "fr": "Stack Technologique",
+      "es": "Stack Tecnológico",
+      "de": "Technologie-Stack",
+      "rw": "Stack y'Ikoranabuhanga"
+    }
+  },
+  "portfolio": {
+    "title": {
+      "en": "My Work & Achievements",
+      "fr": "Mon Travail et Réalisations",
+      "es": "Mi Trabajo y Logros",
+      "de": "Meine Arbeit und Erfolge",
+      "rw": "Imirimo Yanjye n'Ibyagezweho"
+    },
+    "subtitle": {
+      "en": "Showcasing innovative solutions, cutting-edge technologies, and professional certifications",
+      "fr": "Présentation de solutions innovantes, technologies de pointe et certifications professionnelles",
+      "es": "Mostrando soluciones innovadoras, tecnologías de vanguardia y certificaciones profesionales",
+      "de": "Präsentation innovativer Lösungen, modernster Technologien und professioneller Zertifizierungen",
+      "rw": "Kwerekana ibisubizo bishya, ikoranabuhanga rigezweho, n'ibyemezo by'umwuga"
+    },
+    "projects": {
+      "en": "Projects",
+      "fr": "Projets",
+      "es": "Proyectos",
+      "de": "Projekte",
+      "rw": "Imishinga"
+    },
+    "certificatesTab": {
+      "en": "Certificates",
+      "fr": "Certificats",
+      "es": "Certificados",
+      "de": "Zertifikate",
+      "rw": "Ibyemezo"
+    },
+    "filters": {
+      "all": {
+        "en": "All",
+        "fr": "Tous",
+        "es": "Todos",
+        "de": "Alle",
+        "rw": "Byose"
+      },
+      "webApp": {
+        "en": "Web App",
+        "fr": "Application Web",
+        "es": "Aplicación Web",
+        "de": "Web-Anwendung",
+        "rw": "Porogaramu ya Web"
+      },
+      "api": {
+        "en": "API",
+        "fr": "API",
+        "es": "API",
+        "de": "API",
+        "rw": "API"
+      },
+      "aiIot": {
+        "en": "AI, IOT, Robotics & Automation",
+        "fr": "IA, IOT, Robotique et Automatisation",
+        "es": "IA, IOT, Robótica y Automatización",
+        "de": "KI, IOT, Robotik und Automatisierung",
+        "rw": "AI, IOT, Robotike n'Automation"
+      }
+    },
+    "code": {
+      "en": "Code",
+      "fr": "Code",
+      "es": "Código",
+      "de": "Code",
+      "rw": "Code"
+    },
+    "clickToView": {
+      "en": "Click to view",
+      "fr": "Cliquer pour voir",
+      "es": "Hacer clic para ver",
+      "de": "Klicken zum Anzeigen",
+      "rw": "Kanda kugirango urebe"
+    },
+    "issued": {
+      "en": "Issued",
+      "fr": "Émis",
+      "es": "Emitido",
+      "de": "Ausgestellt",
+      "rw": "Byatanzwe"
+    },
+    "technologiesUsed": {
+      "en": "Technologies Used",
+      "fr": "Technologies Utilisées",
+      "es": "Tecnologías Utilizadas",
+      "de": "Verwendete Technologien",
+      "rw": "Ikoranabuhanga Ryakoreshejwe"
+    },
+    "keyFeatures": {
+      "en": "Key Features",
+      "fr": "Fonctionnalités Clés",
+      "es": "Características Clave",
+      "de": "Hauptmerkmale",
+      "rw": "Ibintu By'ingenzi"
+    },
+    "viewSourceCode": {
+      "en": "View Source Code",
+      "fr": "Voir le Code Source",
+      "es": "Ver Código Fuente",
+      "de": "Quellcode Anzeigen",
+      "rw": "Reba Source Code"
+    },
+    "categories": {
+      "webApp": {
+        "en": "Web App",
+        "fr": "Application Web",
+        "es": "Aplicación Web",
+        "de": "Web-Anwendung",
+        "rw": "Porogaramu ya Web"
+      },
+      "api": {
+        "en": "API",
+        "fr": "API",
+        "es": "API",
+        "de": "API",
+        "rw": "API"
+      },
+      "aiIot": {
+        "en": "AI, IOT, Robotics & Automation",
+        "fr": "IA, IOT, Robotique et Automatisation",
+        "es": "IA, IOT, Robótica y Automatización",
+        "de": "KI, IOT, Robotik und Automatisierung",
+        "rw": "AI, IOT, Robotike n'Automation"
+      }
+    },
+    "certificates": {
+      "nodeExpress": {
+        "title": {
+          "en": "Developing Back-End Apps with Node.js and Express",
+          "fr": "Développement d'Applications Back-End avec Node.js et Express",
+          "es": "Desarrollo de Aplicaciones Back-End con Node.js y Express",
+          "de": "Entwicklung von Back-End-Anwendungen mit Node.js und Express",
+          "rw": "Guteza Imbere Porogaramu za Back-End hamwe na Node.js na Express"
+        },
+        "description": {
+          "en": "Completed training in designing and building scalable back-end applications using Node.js and Express, including API development and integration.",
+          "fr": "Formation complétée en conception et construction d'applications back-end évolutives utilisant Node.js et Express, incluant le développement et l'intégration d'API.",
+          "es": "Completé entrenamiento en diseño y construcción de aplicaciones back-end escalables usando Node.js y Express, incluyendo desarrollo e integración de API.",
+          "de": "Abgeschlossene Schulung im Design und Aufbau skalierbarer Back-End-Anwendungen mit Node.js und Express, einschließlich API-Entwicklung und -Integration.",
+          "rw": "Narangije amahugurwa yo gushushanya no kubaka porogaramu za back-end zishobora kwaguka zikoresha Node.js na Express, harimo guteza imbere API no guhuza."
+        }
+      },
+      "nodeEssentials": {
+        "title": {
+          "en": "Node and Express Essentials",
+          "fr": "Éléments Essentiels de Node et Express",
+          "es": "Fundamentos de Node y Express",
+          "de": "Node und Express Grundlagen",
+          "rw": "Ibanze bya Node na Express"
+        },
+        "description": {
+          "en": "Learned core concepts of Node.js and Express, covering middleware, routing, and REST API creation for dynamic web applications.",
+          "fr": "Appris les concepts de base de Node.js et Express, couvrant les middleware, le routage et la création d'API REST pour les applications web dynamiques.",
+          "es": "Aprendí conceptos básicos de Node.js y Express, cubriendo middleware, enrutamiento y creación de API REST para aplicaciones web dinámicas.",
+          "de": "Erlernte Kernkonzepte von Node.js und Express, einschließlich Middleware, Routing und REST-API-Erstellung für dynamische Webanwendungen.",
+          "rw": "Nize ibitekerezo by'ibanze bya Node.js na Express, bikubiyemo middleware, routing, no gukora API za REST ku porogaramu za web zihindagurika."
+        }
+      },
+      "climateCrash": {
+        "title": {
+          "en": "Climate Science Crash Course",
+          "fr": "Cours Intensif de Science Climatique",
+          "es": "Curso Intensivo de Ciencia Climática",
+          "de": "Klimawissenschaft Crashkurs",
+          "rw": "Amasomo Yihuse y'Ubumenyi bw'Ikirere"
+        },
+        "description": {
+          "en": "Gained foundational knowledge on climate change, environmental science, and global sustainability challenges.",
+          "fr": "Acquis des connaissances fondamentales sur le changement climatique, les sciences environnementales et les défis de durabilité mondiale.",
+          "es": "Adquirí conocimientos fundamentales sobre cambio climático, ciencias ambientales y desafíos de sostenibilidad global.",
+          "de": "Grundlegendes Wissen über Klimawandel, Umweltwissenschaften und globale Nachhaltigkeitsherausforderungen erworben.",
+          "rw": "Nabonye ubumenyi bw'ibanze ku ihinduka ry'ikirere, ubumenyi bw'ibidukikije, n'ibibazo by'iterambere rirambye ku isi."
+        }
+      },
+      "climateOlympiad": {
+        "title": {
+          "en": "Climate Science Olympiad – Semi Finalist",
+          "fr": "Olympiade de Science Climatique – Demi-Finaliste",
+          "es": "Olimpiada de Ciencia Climática – Semifinalista",
+          "de": "Klimawissenschaft Olympiade – Halbfinalist",
+          "rw": "Olympiade y'Ubumenyi bw'Ikirere – Semifinaliste"
+        },
+        "description": {
+          "en": "Achieved Semi-Finalist status in the Climate Science Olympiad, showcasing problem-solving skills in environmental and sustainability issues.",
+          "fr": "Atteint le statut de demi-finaliste dans l'Olympiade de Science Climatique, démontrant des compétences de résolution de problèmes dans les questions environnementales et de durabilité.",
+          "es": "Logré el estatus de semifinalista en la Olimpiada de Ciencia Climática, demostrando habilidades de resolución de problemas en temas ambientales y de sostenibilidad.",
+          "de": "Halbfinalist-Status in der Klimawissenschaft Olympiade erreicht, mit Problemlösungsfähigkeiten in Umwelt- und Nachhaltigkeitsfragen.",
+          "rw": "Nageze ku rwego rwa Semifinaliste muri Olympiade y'Ubumenyi bw'Ikirere, nerekanye ubushobozi bwo gukemura ibibazo by'ibidukikije n'iterambere rirambye."
+        }
+      },
+      "springMvc": {
+        "title": {
+          "en": "Spring MVC, Spring Boot, and REST Controllers",
+          "fr": "Spring MVC, Spring Boot et Contrôleurs REST",
+          "es": "Spring MVC, Spring Boot y Controladores REST",
+          "de": "Spring MVC, Spring Boot und REST-Controller",
+          "rw": "Spring MVC, Spring Boot, na REST Controllers"
+        },
+        "description": {
+          "en": "Acquired skills in developing Spring MVC and Spring Boot applications, with a focus on building and managing RESTful APIs.",
+          "fr": "Acquis des compétences dans le développement d'applications Spring MVC et Spring Boot, avec un focus sur la construction et la gestion d'API RESTful.",
+          "es": "Adquirí habilidades en desarrollo de aplicaciones Spring MVC y Spring Boot, con enfoque en construcción y gestión de APIs RESTful.",
+          "de": "Fähigkeiten in der Entwicklung von Spring MVC und Spring Boot Anwendungen erworben, mit Fokus auf Aufbau und Verwaltung von RESTful APIs.",
+          "rw": "Nabonye ubumenyi bwo guteza imbere porogaramu za Spring MVC na Spring Boot, nshingiye ku kubaka no gucunga API za RESTful."
+        }
+      },
+      "t4eEpr": {
+        "title": {
+          "en": "Technology for Emergencies - Emergency Preparedness",
+          "fr": "Technologie pour les Urgences - Préparation aux Urgences",
+          "es": "Tecnología para Emergencias - Preparación de Emergencias",
+          "de": "Technologie für Notfälle - Notfallvorbereitung",
+          "rw": "Ikoranabuhanga ku Byihutirwa - Kwihangana ku Byihutirwa"
+        },
+        "description": {
+          "en": "Emergency preparedness and response technologies for crisis management.",
+          "fr": "Technologies de préparation et de réponse aux urgences pour la gestion de crise.",
+          "es": "Tecnologías de preparación y respuesta a emergencias para gestión de crisis.",
+          "de": "Notfallvorbereitungs- und Reaktionstechnologien für Krisenmanagement.",
+          "rw": "Ikoranabuhanga ryo kwihangana no gusubiza ku byihutirwa byo gucunga ibibazo."
+        }
+      },
+      "t4eMgt": {
+        "title": {
+          "en": "Technology for Emergencies - Management Systems",
+          "fr": "Technologie pour les Urgences - Systèmes de Gestion",
+          "es": "Tecnología para Emergencias - Sistemas de Gestión",
+          "de": "Technologie für Notfälle - Managementsysteme",
+          "rw": "Ikoranabuhanga ku Byihutirwa - Sisitemu zo Gucunga"
+        },
+        "description": {
+          "en": "Management systems and coordination technologies for emergency response.",
+          "fr": "Systèmes de gestion et technologies de coordination pour la réponse aux urgences.",
+          "es": "Sistemas de gestión y tecnologías de coordinación para respuesta a emergencias.",
+          "de": "Managementsysteme und Koordinationstechnologien für Notfallreaktion.",
+          "rw": "Sisitemu zo gucunga n'ikoranabuhanga ryo guhuza imirimo yo gusubiza ku byihutirwa."
+        }
+      },
+      "t4eMss": {
+        "title": {
+          "en": "Technology for Emergencies - Mobile Support Systems",
+          "fr": "Technologie pour les Urgences - Systèmes de Support Mobile",
+          "es": "Tecnología para Emergencias - Sistemas de Soporte Móvil",
+          "de": "Technologie für Notfälle - Mobile Unterstützungssysteme",
+          "rw": "Ikoranabuhanga ku Byihutirwa - Sisitemu zo Gufasha za Mobile"
+        },
+        "description": {
+          "en": "Mobile support systems and communication technologies for emergency teams.",
+          "fr": "Systèmes de support mobile et technologies de communication pour les équipes d'urgence.",
+          "es": "Sistemas de soporte móvil y tecnologías de comunicación para equipos de emergencia.",
+          "de": "Mobile Unterstützungssysteme und Kommunikationstechnologien für Notfallteams.",
+          "rw": "Sisitemu zo gufasha za mobile n'ikoranabuhanga ryo gutumanaho ku makipe y'ihutirwa."
+        }
+      },
+      "t4ePower": {
+        "title": {
+          "en": "Technology for Emergencies - Power Systems",
+          "fr": "Technologie pour les Urgences - Systèmes d'Énergie",
+          "es": "Tecnología para Emergencias - Sistemas de Energía",
+          "de": "Technologie für Notfälle - Energiesysteme",
+          "rw": "Ikoranabuhanga ku Byihutirwa - Sisitemu z'Ingufu"
+        },
+        "description": {
+          "en": "Power and energy systems for emergency situations and backup solutions.",
+          "fr": "Systèmes d'énergie pour situations d'urgence et solutions de secours.",
+          "es": "Sistemas de energía para situaciones de emergencia y soluciones de respaldo.",
+          "de": "Energiesysteme für Notfallsituationen und Backup-Lösungen.",
+          "rw": "Sisitemu z'ingufu ku bihe by'ihutirwa n'ibisubizo by'agateganyo."
+        }
+      },
+      "t4eMain": {
+        "title": {
+          "en": "Technology for Emergencies - Main Certification",
+          "fr": "Technologie pour les Urgences - Certification Principale",
+          "es": "Tecnología para Emergencias - Certificación Principal",
+          "de": "Technologie für Notfälle - Hauptzertifizierung",
+          "rw": "Ikoranabuhanga ku Byihutirwa - Icyemezo Nyamukuru"
+        },
+        "description": {
+          "en": "Comprehensive certification in emergency technology applications.",
+          "fr": "Certification complète dans les applications technologiques d'urgence.",
+          "es": "Certificación integral en aplicaciones tecnológicas de emergencia.",
+          "de": "Umfassende Zertifizierung in Notfall-Technologieanwendungen.",
+          "rw": "Icyemezo cyuzuye mu gukoresha ikoranabuhanga mu byihutirwa."
+        }
+      }
+    },
+    "projectDescriptions": {
+      "aimalink": {
+        "en": "A user-friendly platform facilitating easy blood donation processes, built with React and Vite.",
+        "fr": "Une plateforme conviviale facilitant les processus de don de sang, construite avec React et Vite.",
+        "es": "Una plataforma fácil de usar que facilita los procesos de donación de sangre, construida con React y Vite.",
+        "de": "Eine benutzerfreundliche Plattform, die einfache Blutspendeprozesse ermöglicht, erstellt mit React und Vite.",
+        "rw": "Urubuga rwiza rworoshya inzira zo gutanga amaraso, rwubatswe na React na Vite."
+      },
+      "quizApp": {
+        "en": "A backend quiz management system built with Spring Boot, providing APIs for quiz creation, participation, and scoring.",
+        "fr": "Un système de gestion de quiz backend construit avec Spring Boot, fournissant des API pour la création, la participation et la notation de quiz.",
+        "es": "Un sistema de gestión de cuestionarios backend construido con Spring Boot, proporcionando APIs para creación, participación y puntuación de cuestionarios.",
+        "de": "Ein Backend-Quiz-Management-System, das mit Spring Boot erstellt wurde und APIs für Quiz-Erstellung, Teilnahme und Bewertung bereitstellt.",
+        "rw": "Sisitemu yo gucunga ibibazo ya backend yubatswe na Spring Boot, itanga API zo gukora ibibazo, kwitabira, no gutanga amanota."
+      },
+      "zamaniVault": {
+        "en": "An immersive digital platform for preserving and exploring African history, culture, and heritage.",
+        "fr": "Une plateforme numérique immersive pour préserver et explorer l'histoire, la culture et le patrimoine africains.",
+        "es": "Una plataforma digital inmersiva para preservar y explorar la historia, cultura y patrimonio africanos.",
+        "de": "Eine immersive digitale Plattform zur Bewahrung und Erkundung afrikanischer Geschichte, Kultur und Erbe.",
+        "rw": "Urubuga rwa digitale rwinjiza abantu mu kubika no gucukumbura amateka, umuco, n'umurage w'Afurika."
+      },
+      "subscriptionManagement": {
+        "en": "A Django-based subscription management system for handling user plans and access control.",
+        "fr": "Un système de gestion d'abonnements basé sur Django pour gérer les plans utilisateur et le contrôle d'accès.",
+        "es": "Un sistema de gestión de suscripciones basado en Django para manejar planes de usuario y control de acceso.",
+        "de": "Ein Django-basiertes Abonnement-Management-System zur Verwaltung von Benutzerplänen und Zugriffskontrolle.",
+        "rw": "Sisitemu yo gucunga kwiyandikisha ishingiye kuri Django yo gufata gahunda z'abakoresha no kugenzura ubwinjiriro."
+      },
+      "smallChatApp": {
+        "en": "A lightweight real-time chat application using modern web technologies.",
+        "fr": "Une application de chat en temps réel légère utilisant des technologies web modernes.",
+        "es": "Una aplicación de chat en tiempo real ligera usando tecnologías web modernas.",
+        "de": "Eine leichtgewichtige Echtzeit-Chat-Anwendung mit modernen Web-Technologien.",
+        "rw": "Porogaramu yoroheje yo guganira mu gihe nyacyo ikoresheje ikoranabuhanga rigezweho rw'urubuga."
+      },
+      "bankingSystem": {
+        "en": "A secure and scalable banking system backend built with Spring Boot and PostgreSQL.",
+        "fr": "Un backend de système bancaire sécurisé et évolutif construit avec Spring Boot et PostgreSQL.",
+        "es": "Un sistema bancaire backend seguro y escalable construido con Spring Boot y PostgreSQL.",
+        "de": "Ein sicheres und skalierbares Banking-System-Backend, erstellt mit Spring Boot und PostgreSQL.",
+        "rw": "Sisitemu ya banki yizewe kandi ishobora kwaguka yubatswe na Spring Boot na PostgreSQL."
+      },
+      "autoParkingSystem": {
+        "en": "Smart parking system with automatic license plate detection and vehicle entry/exit automation.",
+        "fr": "Système de stationnement intelligent avec détection automatique de plaques d'immatriculation et automatisation d'entrée/sortie de véhicules.",
+        "es": "Sistema de estacionamiento inteligente con detección automática de placas de matrícula y automatización de entrada/salida de véhiculos.",
+        "de": "Intelligentes Parksystem mit automatischer Nummernschilderkennung und Fahrzeug-Ein-/Ausfahrt-Automatisierung.",
+        "rw": "Sisitemu yubwenge yo guhagarika ibinyabiziga ifite ubushobozi bwo kumenya plaque z'ibinyabiziga no gufunga/gufungura mu buryo bwikora."
+      },
+      "kinyaVoice": {
+        "en": "An intelligent Kinyarwanda-speaking voice assistant for real-time human-computer interaction.",
+        "fr": "Un assistant vocal intelligent parlant le kinyarwanda pour l'interaction homme-machine en temps réel.",
+        "es": "Un asistente de voz inteligente que habla kinyarwanda para interacción humano-computadora en tiempo real.",
+        "de": "Ein intelligenter Kinyarwanda-sprechender Sprachassistent für Echtzeit-Mensch-Computer-Interaktion.",
+        "rw": "Umufasha w'ijwi ubwenge uvuga ikinyarwanda wo gukorana hagati y'abantu na mudasobwa mu gihe nyacyo."
+      },
+      "yoloCarPlate": {
+        "en": "Annotated dataset of car plates in YOLO format for training object detection models.",
+        "fr": "Jeu de données annoté de plaques de voiture au format YOLO pour l'entraînement de modèles de détection d'objets.",
+        "es": "Conjunto de datos anotado de placas de automóviles en formato YOLO para entrenar modelos de detección de objetos.",
+        "de": "Annotierter Datensatz von Autokennzeichen im YOLO-Format zum Trainieren von Objekterkennungsmodellen.",
+        "rw": "Ikusanyirizo ry'amakuru y'amaplate y'imodoka mu buryo bwa YOLO bwo gutoza moderi zo kumenya ibintu."
+      },
+      "carDrivingGame": {
+        "en": "A simple 2D car driving game built with Pygame, complete with obstacles and sound effects.",
+        "fr": "Un jeu de conduite 2D simple construit avec Pygame, complet avec des obstacles et des effets sonores.",
+        "es": "Un juego de conducción 2D simple construido con Pygame, completo con obstáculos y efectos de sonido.",
+        "de": "Ein einfaches 2D-Fahrspiel, erstellt mit Pygame, komplett mit Hindernissen und Soundeffekten.",
+        "rw": "Umukino woroshye wa 2D wo gutwara imodoka wubatswe na Pygame, uzuye inzitizi n'amajwi."
+      },
+      "portfolioWebsite": {
+        "en": "A modern, responsive portfolio website showcasing projects and skills with dark/light theme support.",
+        "fr": "Un site web portfolio moderne et réactif présentant projets et compétences avec support thème sombre/clair.",
+        "es": "Un sitio web de portafolio moderno y responsivo que muestra proyectos y habilidades con soporte de tema oscuro/claro.",
+        "de": "Eine moderne, responsive Portfolio-Website, die Projekte und Fähigkeiten mit Dunkel-/Hell-Theme-Unterstützung präsentiert.",
+        "rw": "Urubuga rwa porofolio rugezweho kandi rusubiza neza rwerekana imishinga n'ubumenyi hamwe no gushyigikira insanganyamatsiko y'umwijima/urumuri."
+      },
+      "ecommerceApp": {
+        "en": "A full-stack e-commerce application with user authentication, product management, and payment integration.",
+        "fr": "Une application e-commerce full-stack avec authentification utilisateur, gestion de produits et intégration de paiement.",
+        "es": "Una aplicación de comercio electrónico full-stack con autenticación de usuario, gestión de productos e integración de pagos.",
+        "de": "Eine Full-Stack-E-Commerce-Anwendung mit Benutzerauthentifizierung, Produktverwaltung und Zahlungsintegration.",
+        "rw": "Porogaramu ya full-stack y'ubucuruzi bwa elegitoronike ifite kwemeza abakoresha, gucunga ibicuruzwa, no guhuza ubwishyu."
+      },
+      "taskManager": {
+        "en": "A collaborative task management application with real-time updates and team collaboration features.",
+        "fr": "Une application de gestion de tâches collaborative avec mises à jour en temps réel et fonctionnalités de collaboration d'équipe.",
+        "es": "Una aplicación de gestión de tareas colaborativa con actualizaciones en tiempo real y características de colaboración en equipo.",
+        "de": "Eine kollaborative Aufgabenverwaltungsanwendung mit Echtzeit-Updates und Team-Kollaborationsfunktionen.",
+        "rw": "Porogaramu yo gucunga imirimo ikorana hamwe n'amakuru agezweho mu gihe nyacyo n'ibintu byo gukorana mu kipe."
+      },
+      "weatherApp": {
+        "en": "A responsive weather application providing real-time weather data and forecasts for multiple locations.",
+        "fr": "Une application météo réactive fournissant données météo en temps réel et prévisions pour plusieurs emplacements.",
+        "es": "Una aplicación meteorológica responsiva que proporciona datos meteorológicos en tiempo real y pronósticos para múltiples ubicaciones.",
+        "de": "Eine responsive Wetter-Anwendung, die Echtzeit-Wetterdaten und Vorhersagen für mehrere Standorte bereitstellt.",
+        "rw": "Porogaramu y'ikirere isubiza neza itanga amakuru y'ikirere mu gihe nyacyo n'ubuhanuzi bw'ahantu henshi."
+      },
+      "blogPlatform": {
+        "en": "A content management system for blogging with rich text editor and user management.",
+        "fr": "Un système de gestion de contenu pour blogs avec éditeur de texte riche et gestion d'utilisateurs.",
+        "es": "Un sistema de gestión de contenido para blogs con editor de texto enriquecido y gestión de usuarios.",
+        "de": "Ein Content-Management-System für Blogs mit Rich-Text-Editor und Benutzerverwaltung.",
+        "rw": "Sisitemu yo gucunga ibirimo kuri blog hamwe na muhinduzi w'inyandiko nyinshi no gucunga abakoresha."
+      },
+      "socialMediaDashboard": {
+        "en": "A comprehensive dashboard for managing multiple social media accounts and analytics.",
+        "fr": "Un tableau de bord complet pour gérer plusieurs comptes de médias sociaux et analyses.",
+        "es": "Un panel integral para gestionar múltiples cuentas de redes sociales y análisis.",
+        "de": "Ein umfassendes Dashboard zur Verwaltung mehrerer Social-Media-Konten und Analysen.",
+        "rw": "Ikibaho cyuzuye cyo gucunga konti nyinshi z'imbuga nkoranyambaga n'isesengura."
+      },
+      "inventorySystem": {
+        "en": "An inventory management system for businesses with barcode scanning and reporting features.",
+        "fr": "Un système de gestion d'inventaire pour entreprises avec scan de codes-barres et fonctionnalités de rapport.",
+        "es": "Un sistema de gestión de inventario para empresas con escaneo de códigos de barras y características de informes.",
+        "de": "Ein Inventarverwaltungssystem für Unternehmen mit Barcode-Scanning und Berichtsfunktionen.",
+        "rw": "Sisitemu yo gucunga ibicuruzwa ku bucuruzi hamwe no gusoma barcode no gutanga raporo."
+      },
+      "fitnessTracker": {
+        "en": "A mobile fitness tracking application with workout plans and progress monitoring.",
+        "fr": "Une application mobile de suivi fitness avec plans d'entraînement et surveillance des progrès.",
+        "es": "Una aplicación móvil de seguimiento de fitness con planes de entrenamiento y monitoreo de progreso.",
+        "de": "Eine mobile Fitness-Tracking-Anwendung mit Trainingsplänen und Fortschrittsüberwachung.",
+        "rw": "Porogaramu ya mobile yo gukurikirana ubuzima hamwe na gahunda z'imyitozo no gukurikirana iterambere."
+      },
+      "recipeApp": {
+        "en": "A recipe sharing platform with ingredient tracking and meal planning capabilities.",
+        "fr": "Une plateforme de partage de recettes avec suivi d'ingrédients et capacités de planification de repas.",
+        "es": "Una plataforma de intercambio de recetas con seguimiento de ingredientes y capacidades de planificación de comidas.",
+        "de": "Eine Rezept-Sharing-Plattform mit Zutatenverfolgung und Mahlzeitplanungsfähigkeiten.",
+        "rw": "Urubuga rwo gusangira uburyo bwo guteka hamwe no gukurikirana ibigize ibiryo n'ubushobozi bwo guteganya ifunguro."
+      },
+      "expenseTracker": {
+        "en": "A personal finance management app with budget tracking and expense categorization.",
+        "fr": "Une application de gestion financière personnelle avec suivi de budget et catégorisation des dépenses.",
+        "es": "Una aplicación de gestión financiera personal con seguimiento de presupuesto y categorización de gastos.",
+        "de": "Eine persönliche Finanzmanagement-App mit Budget-Tracking und Ausgabenkategorisierung.",
+        "rw": "Porogaramu yo gucunga imari bwite hamwe no gukurikirana ingengo y'imari no gushyira mu byiciro amafaranga akoreshwa."
+      }
+    }
+  },
+  "services": {
+    "title": {
+      "en": "Services & Solutions",
+      "fr": "Services et Solutions",
+      "es": "Servicios y Soluciones",
+      "de": "Services & Lösungen",
+      "rw": "Serivisi n'Ibisubizo"
+    },
+    "subtitle": {
+      "en": "Comprehensive development services to transform your ideas into powerful digital solutions",
+      "fr": "Services de développement complets pour transformer vos idées en solutions numériques puissantes",
+      "es": "Servicios de desarrollo integrales para transformar tus ideas en soluciones digitales poderosas",
+      "de": "Umfassende Entwicklungsservices, um Ihre Ideen in leistungsstarke digitale Lösungen zu verwandeln",
+      "rw": "Serivisi zuzuye zo guteza imbere kugirango uhindure ibitekerezo byawe mu bisubizo bikomeye bya digitale"
+    },
+    "getQuote": {
+      "en": "Get Quote",
+      "fr": "Obtenir un Devis",
+      "es": "Obtener Cotización",
+      "de": "Angebot Erhalten",
+      "rw": "Boneka Igiciro"
+    },
+    "processTitle": {
+      "en": "My Development Process",
+      "fr": "Mon Processus de Développement",
+      "es": "Mi Proceso de Desarrollo",
+      "de": "Mein Entwicklungsprozess",
+      "rw": "Inzira Yanjye yo Guteza Imbere"
+    },
+    "processSubtitle": {
+      "en": "A proven methodology that ensures successful project delivery from concept to launch",
+      "fr": "Une méthodologie éprouvée qui garantit une livraison de projet réussie du concept au lancement",
+      "es": "Una metodología probada que asegura la entrega exitosa del proyecto desde el concepto hasta el lanzamiento",
+      "de": "Eine bewährte Methodik, die erfolgreiche Projektlieferung vom Konzept bis zum Launch gewährleistet",
+      "rw": "Uburyo bwemejwe bwemeza ko umushinga urangira neza kuva ku gitekerezo kugeza ku gutangiza"
+    },
+    "webDevelopment": {
+      "title": {
+        "en": "Web Development",
+        "fr": "Développement Web",
+        "es": "Desarrollo Web",
+        "de": "Web-Entwicklung",
+        "rw": "Guteza Imbere Urubuga"
+      },
+      "description": {
+        "en": "Custom web applications built with modern frameworks and best practices for optimal performance and user experience.",
+        "fr": "Applications web personnalisées construites avec des frameworks modernes et les meilleures pratiques pour des performances optimales et une expérience utilisateur.",
+        "es": "Aplicaciones web personalizadas construidas con frameworks modernos y mejores prácticas para rendimiento óptimo y experiencia de usuario.",
+        "de": "Maßgeschneiderte Webanwendungen, die mit modernen Frameworks und Best Practices für optimale Leistung und Benutzererfahrung erstellt wurden.",
+        "rw": "Porogaramu z'urubuga zihariye zubatswe na frameworks zigezweho n'uburyo bwiza bwo gukora neza no kubana neza n'abakoresha."
+      },
+      "features": {
+        "en": [
+          "React/Vue.js Development",
+          "Responsive Design",
+          "Progressive Web Apps",
+          "Performance Optimization"
+        ],
+        "fr": [
+          "Développement React/Vue.js",
+          "Design Réactif",
+          "Applications Web Progressives",
+          "Optimisation des Performances"
+        ],
+        "es": [
+          "Desarrollo React/Vue.js",
+          "Diseño Responsivo",
+          "Aplicaciones Web Progresivas",
+          "Optimización de Rendimiento"
+        ],
+        "de": [
+          "React/Vue.js Entwicklung",
+          "Responsive Design",
+          "Progressive Web Apps",
+          "Leistungsoptimierung"
+        ],
+        "rw": [
+          "Guteza Imbere React/Vue.js",
+          "Igishushanyo Kisubiza",
+          "Porogaramu za Web Ziteza Imbere",
+          "Kunoza Imikorere"
+        ]
+      }
+    },
+    "mobileDevelopment": {
+      "title": {
+        "en": "Mobile Development",
+        "fr": "Développement Mobile",
+        "es": "Desarrollo Móvil",
+        "de": "Mobile Entwicklung",
+        "rw": "Guteza Imbere Mobile"
+      },
+      "description": {
+        "en": "Cross-platform mobile applications that deliver native performance and seamless user experiences across iOS and Android.",
+        "fr": "Applications mobiles multiplateformes qui offrent des performances natives et des expériences utilisateur fluides sur iOS et Android.",
+        "es": "Aplicaciones móviles multiplataforma que ofrecen rendimiento nativo y experiencias de usuario fluidas en iOS y Android.",
+        "de": "Plattformübergreifende mobile Anwendungen, die native Leistung und nahtlose Benutzererfahrungen auf iOS und Android bieten.",
+        "rw": "Porogaramu za mobile zikora kuri platform nyinshi zitanga imikorere kavukire n'uburambe bwiza bw'abakoresha kuri iOS na Android."
+      },
+      "features": {
+        "en": [
+          "React Native",
+          "Flutter Development",
+          "App Store Deployment",
+          "Push Notifications"
+        ],
+        "fr": [
+          "React Native",
+          "Développement Flutter",
+          "Déploiement App Store",
+          "Notifications Push"
+        ],
+        "es": [
+          "React Native",
+          "Desarrollo Flutter",
+          "Despliegue en App Store",
+          "Notificaciones Push"
+        ],
+        "de": [
+          "React Native",
+          "Flutter Entwicklung",
+          "App Store Bereitstellung",
+          "Push-Benachrichtigungen"
+        ],
+        "rw": [
+          "React Native",
+          "Guteza Imbere Flutter",
+          "Gushyira mu App Store",
+          "Ubutumwa Bwihuse"
+        ]
+      }
+    },
+    "backendDevelopment": {
+      "title": {
+        "en": "Backend Development",
+        "fr": "Développement Backend",
+        "es": "Desarrollo Backend",
+        "de": "Backend-Entwicklung",
+        "rw": "Guteza Imbere Backend"
+      },
+      "description": {
+        "en": "Scalable server-side solutions with robust APIs, database design, and cloud infrastructure management.",
+        "fr": "Solutions côté serveur évolutives avec des API robustes, conception de base de données et gestion d'infrastructure cloud.",
+        "es": "Soluciones del lado del servidor escalables con APIs robustas, diseño de bases de datos y gestión de infraestructura en la nube.",
+        "de": "Skalierbare serverseitige Lösungen mit robusten APIs, Datenbankdesign und Cloud-Infrastruktur-Management.",
+        "rw": "Ibisubizo bya server bishobora kwaguka hamwe na API zikomeye, gushushanya ububiko bw'amakuru, no gucunga ibikorwa remezo bya cloud."
+      },
+      "features": {
+        "en": [
+          "RESTful APIs",
+          "Database Design",
+          "Authentication Systems",
+          "Cloud Integration"
+        ],
+        "fr": [
+          "API RESTful",
+          "Conception de Base de Données",
+          "Systèmes d'Authentification",
+          "Intégration Cloud"
+        ],
+        "es": [
+          "APIs RESTful",
+          "Diseño de Base de Datos",
+          "Sistemas de Autenticación",
+          "Integración en la Nube"
+        ],
+        "de": [
+          "RESTful APIs",
+          "Datenbankdesign",
+          "Authentifizierungssysteme",
+          "Cloud-Integration"
+        ],
+        "rw": [
+          "API za RESTful",
+          "Gushushanya Ububiko bw'Amakuru",
+          "Sisitemu zo Kwemeza",
+          "Guhuza Cloud"
+        ]
+      }
+    },
+    "uiuxDesign": {
+      "title": {
+        "en": "UI/UX Design",
+        "fr": "Design UI/UX",
+        "es": "Diseño UI/UX",
+        "de": "UI/UX Design",
+        "rw": "Igishushanyo cya UI/UX"
+      },
+      "description": {
+        "en": "User-centered design approach creating intuitive interfaces that enhance user engagement and satisfaction.",
+        "fr": "Approche de conception centrée sur l'utilisateur créant des interfaces intuitives qui améliorent l'engagement et la satisfaction des utilisateurs.",
+        "es": "Enfoque de diseño centrado en el usuario creando interfaces intuitivas que mejoran el compromiso y la satisfacción del usuario.",
+        "de": "Benutzerzentrierter Designansatz, der intuitive Schnittstellen schafft, die Benutzerengagement und -zufriedenheit verbessern.",
+        "rw": "Uburyo bwo gushushanya bushingiye ku mukoresha bukora interface zoroshye zongera ubwiyunge n'ibyishimo by'abakoresha."
+      },
+      "features": {
+        "en": [
+          "User Research",
+          "Wireframing",
+          "Prototyping",
+          "Design Systems"
+        ],
+        "fr": [
+          "Recherche Utilisateur",
+          "Wireframing",
+          "Prototypage",
+          "Systèmes de Design"
+        ],
+        "es": [
+          "Investigación de Usuario",
+          "Wireframing",
+          "Prototipado",
+          "Sistemas de Diseño"
+        ],
+        "de": [
+          "Benutzerforschung",
+          "Wireframing",
+          "Prototyping",
+          "Design-Systeme"
+        ],
+        "rw": [
+          "Ubushakashatsi ku Bakoresha",
+          "Wireframing",
+          "Prototyping",
+          "Sisitemu z'Igishushanyo"
+        ]
+      }
+    },
+    "cloudSolutions": {
+      "title": {
+        "en": "Cloud Solutions",
+        "fr": "Solutions Cloud",
+        "es": "Soluciones en la Nube",
+        "de": "Cloud-Lösungen",
+        "rw": "Ibisubizo bya Cloud"
+      },
+      "description": {
+        "en": "Comprehensive cloud infrastructure setup, deployment automation, and scalable architecture design.",
+        "fr": "Configuration complète d'infrastructure cloud, automatisation de déploiement et conception d'architecture évolutive.",
+        "es": "Configuración integral de infraestructura en la nube, automatización de despliegue y diseño de arquitectura escalable.",
+        "de": "Umfassende Cloud-Infrastruktur-Einrichtung, Bereitstellungsautomatisierung und skalierbares Architekturdesign.",
+        "rw": "Gushyiraho byuzuye ibikorwa remezo bya cloud, automation yo gushyira mu bikorwa, no gushushanya imiterere ishobora kwaguka."
+      },
+      "features": {
+        "en": [
+          "AWS/GCP Setup",
+          "CI/CD Pipelines",
+          "Docker Containers",
+          "Monitoring & Analytics"
+        ],
+        "fr": [
+          "Configuration AWS/GCP",
+          "Pipelines CI/CD",
+          "Conteneurs Docker",
+          "Surveillance et Analyses"
+        ],
+        "es": [
+          "Configuración AWS/GCP",
+          "Pipelines CI/CD",
+          "Contenedores Docker",
+          "Monitoreo y Análisis"
+        ],
+        "de": [
+          "AWS/GCP Setup",
+          "CI/CD Pipelines",
+          "Docker Container",
+          "Überwachung & Analytics"
+        ],
+        "rw": [
+          "Gushyiraho AWS/GCP",
+          "Pipelines za CI/CD",
+          "Ibikoresho bya Docker",
+          "Gukurikirana & Isesengura"
+        ]
+      }
+    },
+    "seoOptimization": {
+      "title": {
+        "en": "SEO Optimization",
+        "fr": "Optimisation SEO",
+        "es": "Optimización SEO",
+        "de": "SEO-Optimierung",
+        "rw": "Kunoza SEO"
+      },
+      "description": {
+        "en": "Technical SEO implementation and optimization strategies to improve search engine rankings and visibility.",
+        "fr": "Implémentation SEO technique et stratégies d'optimisation pour améliorer le classement et la visibilité des moteurs de recherche.",
+        "es": "Implementación de SEO técnico y estrategias de optimización para mejorar el ranking y la visibilidad en motores de búsqueda.",
+        "de": "Technische SEO-Implementierung und Optimierungsstrategien zur Verbesserung von Suchmaschinen-Rankings und Sichtbarkeit.",
+        "rw": "Gushyira mu bikorwa SEO y'ikoranabuhanga n'ingamba zo kunoza kugirango tuzamure urwego rw'ibashakisha no kugaragara."
+      },
+      "features": {
+        "en": [
+          "Technical SEO Audit",
+          "Performance Optimization",
+          "Schema Markup",
+          "Analytics Setup"
+        ],
+        "fr": [
+          "Audit SEO Technique",
+          "Optimisation des Performances",
+          "Balisage Schema",
+          "Configuration Analytics"
+        ],
+        "es": [
+          "Auditoría SEO Técnica",
+          "Optimización de Rendimiento",
+          "Marcado Schema",
+          "Configuración de Analytics"
+        ],
+        "de": [
+          "Technisches SEO-Audit",
+          "Leistungsoptimierung",
+          "Schema-Markup",
+          "Analytics-Setup"
+        ],
+        "rw": [
+          "Isuzuma rya SEO ry'Ikoranabuhanga",
+          "Kunoza Imikorere",
+          "Ikimenyetso cya Schema",
+          "Gushyiraho Analytics"
+        ]
+      }
+    },
+    "process": {
+      "discovery": {
+        "title": {
+          "en": "Discovery & Planning",
+          "fr": "Découverte et Planification",
+          "es": "Descubrimiento y Planificación",
+          "de": "Entdeckung & Planung",
+          "rw": "Guvumbura no Guteganya"
+        },
+        "description": {
+          "en": "Understanding your requirements, goals, and target audience to create a comprehensive project roadmap.",
+          "fr": "Comprendre vos exigences, objectifs et public cible pour créer une feuille de route de projet complète.",
+          "es": "Entender tus requisitos, objetivos y audiencia objetivo para crear una hoja de ruta integral del proyecto.",
+          "de": "Verstehen Ihrer Anforderungen, Ziele und Zielgruppe, um eine umfassende Projekt-Roadmap zu erstellen.",
+          "rw": "Gusobanukirwa ibisabwa byawe, intego, n'abateganijwe kugirango dukore ikarita yuzuye y'umushinga."
+        }
+      },
+      "design": {
+        "title": {
+          "en": "Design & Prototyping",
+          "fr": "Design et Prototypage",
+          "es": "Diseño y Prototipado",
+          "de": "Design & Prototyping",
+          "rw": "Igishushanyo & Prototyping"
+        },
+        "description": {
+          "en": "Creating wireframes, mockups, and interactive prototypes to visualize the final product.",
+          "fr": "Créer des wireframes, maquettes et prototypes interactifs pour visualiser le produit final.",
+          "es": "Crear wireframes, maquetas y prototipos interactivos para visualizar el producto final.",
+          "de": "Erstellen von Wireframes, Mockups und interaktiven Prototypen zur Visualisierung des Endprodukts.",
+          "rw": "Gukora wireframes, mockups, na prototypes zikorana kugirango turebe icyiciro cya nyuma."
+        }
+      },
+      "development": {
+        "title": {
+          "en": "Development & Testing",
+          "fr": "Développement et Tests",
+          "es": "Desarrollo y Pruebas",
+          "de": "Entwicklung & Testing",
+          "rw": "Guteza Imbere & Kugerageza"
+        },
+        "description": {
+          "en": "Building the solution with clean, maintainable code and thorough testing for quality assurance.",
+          "fr": "Construire la solution avec du code propre et maintenable et des tests approfondis pour l'assurance qualité.",
+          "es": "Construir la solución con código limpio y mantenible y pruebas exhaustivas para aseguramiento de calidad.",
+          "de": "Aufbau der Lösung mit sauberem, wartbarem Code und gründlichen Tests für Qualitätssicherung.",
+          "rw": "Kubaka igisubizo hamwe na code isukuye, ishobora kubungabungwa no kugerageza neza kugirango hemezwe ubuziranenge."
+        }
+      },
+      "deployment": {
+        "title": {
+          "en": "Deployment & Support",
+          "fr": "Déploiement et Support",
+          "es": "Despliegue y Soporte",
+          "de": "Bereitstellung & Support",
+          "rw": "Gushyira mu Bikorwa & Gufasha"
+        },
+        "description": {
+          "en": "Launching your project and providing ongoing maintenance and support for optimal performance.",
+          "fr": "Lancer votre projet et fournir une maintenance et un support continus pour des performances optimales.",
+          "es": "Lanzar tu proyecto y proporcionar mantenimiento y soporte continuo para rendimiento óptimo.",
+          "de": "Starten Ihres Projekts und Bereitstellung laufender Wartung und Support für optimale Leistung.",
+          "rw": "Gutangiza umushinga wawe no gutanga ubuvuzi n'ubufasha bukomeje kugirango ukore neza."
+        }
+      }
+    },
+    "cta": {
+      "title": {
+        "en": "Ready to Start Your Project?",
+        "fr": "Prêt à Commencer Votre Projet ?",
+        "es": "¿Listo para Comenzar tu Proyecto?",
+        "de": "Bereit, Ihr Projekt zu Starten?",
+        "rw": "Witeguye Gutangira Umushinga Wawe?"
+      },
+      "description": {
+        "en": "Let's discuss your ideas and create something amazing together. Get a free consultation today.",
+        "fr": "Discutons de vos idées et créons quelque chose d'incroyable ensemble. Obtenez une consultation gratuite aujourd'hui.",
+        "es": "Discutamos tus ideas y creemos algo increíble juntos. Obtén una consulta gratuita hoy.",
+        "de": "Lassen Sie uns über Ihre Ideen sprechen und gemeinsam etwas Erstaunliches schaffen. Holen Sie sich heute eine kostenlose Beratung.",
+        "rw": "Reka tuganire ku bitekerezo byawe kandi dukore ikintu gitangaje hamwe. Boneka inama y'ubuntu uyu munsi."
+      },
+      "consultation": {
+        "en": "Get Free Consultation",
+        "fr": "Obtenir une Consultation Gratuite",
+        "es": "Obtener Consulta Gratuita",
+        "de": "Kostenlose Beratung Erhalten",
+        "rw": "Boneka Inama y'Ubuntu"
+      },
+      "viewPortfolio": {
+        "en": "View Portfolio",
+        "fr": "Voir le Portfolio",
+        "es": "Ver Portafolio",
+        "de": "Portfolio Anzeigen",
+        "rw": "Reba Porofolio"
+      }
+    }
+  },
+  "contact": {
+    "title": {
+      "en": "Let's Work Together",
+      "fr": "Travaillons Ensemble",
+      "es": "Trabajemos Juntos",
+      "de": "Lassen Sie uns Zusammenarbeiten",
+      "rw": "Tukorane"
+    },
+    "subtitle": {
+      "en": "Ready to bring your ideas to life? Let's discuss your project and create something amazing together.",
+      "fr": "Prêt à donner vie à vos idées ? Discutons de votre projet et créons quelque chose d'incroyable ensemble.",
+      "es": "¿Listo para dar vida a tus ideas? Discutamos tu proyecto y creemos algo increíble juntos.",
+      "de": "Bereit, Ihre Ideen zum Leben zu erwecken? Lassen Sie uns über Ihr Projekt sprechen und gemeinsam etwas Erstaunliches schaffen.",
+      "rw": "Witeguye kuzana ibitekerezo byawe mu buzima? Reka tuganire ku mushinga wawe kandi dukore ikintu gitangaje hamwe."
+    },
+    "getInTouch": {
+      "en": "Get In Touch",
+      "fr": "Entrer en Contact",
+      "es": "Ponerse en Contacto",
+      "de": "Kontakt Aufnehmen",
+      "rw": "Twandikire"
+    },
+    "followMe": {
+      "en": "Follow Me",
+      "fr": "Suivez-moi",
+      "es": "Sígueme",
+      "de": "Folgen Sie mir",
+      "rw": "Nkomeze"
+    },
+    "sendMessage": {
+      "en": "Send Me a Message",
+      "fr": "Envoyez-moi un Message",
+      "es": "Envíame un Mensaje",
+      "de": "Senden Sie mir eine Nachricht",
+      "rw": "Noherereze Ubutumwa"
+    },
+    "info": {
+      "email": {
+        "en": "Email",
+        "fr": "Email",
+        "es": "Email",
+        "de": "Email",
+        "rw": "Email"
+      },
+      "phone": {
+        "en": "Phone",
+        "fr": "Téléphone",
+        "es": "Teléfono",
+        "de": "Telefon",
+        "rw": "Telefoni"
+      },
+      "location": {
+        "en": "Location",
+        "fr": "Localisation",
+        "es": "Ubicación",
+        "de": "Standort",
+        "rw": "Aho Ndi"
+      },
+      "availability": {
+        "en": "Availability",
+        "fr": "Disponibilité",
+        "es": "Disponibilidad",
+        "de": "Verfügbarkeit",
+        "rw": "Igihe Mboneka"
+      },
+      "availabilityValue": {
+        "en": "All days-Saturday",
+        "fr": "Tous les jours-Samedi",
+        "es": "Todos los días-Sábado",
+        "de": "Alle Tage-Samstag",
+        "rw": "Iminsi yose-Kuwa gatandatu"
+      }
+    },
+    "form": {
+      "firstName": {
+        "en": "First Name",
+        "fr": "Prénom",
+        "es": "Nombre",
+        "de": "Vorname",
+        "rw": "Izina Ryambere"
+      },
+      "lastName": {
+        "en": "Last Name",
+        "fr": "Nom de Famille",
+        "es": "Apellido",
+        "de": "Nachname",
+        "rw": "Izina Ryanyuma"
+      },
+      "email": {
+        "en": "Email",
+        "fr": "Email",
+        "es": "Email",
+        "de": "Email",
+        "rw": "Email"
+      },
+      "phone": {
+        "en": "Phone",
+        "fr": "Téléphone",
+        "es": "Teléfono",
+        "de": "Telefon",
+        "rw": "Telefoni"
+      },
+      "subject": {
+        "en": "Subject",
+        "fr": "Sujet",
+        "es": "Asunto",
+        "de": "Betreff",
+        "rw": "Ingingo"
+      },
+      "budget": {
+        "en": "Budget Range",
+        "fr": "Gamme de Budget",
+        "es": "Rango de Presupuesto",
+        "de": "Budget-Bereich",
+        "rw": "Urwego rw'Ingengo y'Imari"
+      },
+      "selectBudget": {
+        "en": "Select budget range",
+        "fr": "Sélectionner la gamme de budget",
+        "es": "Seleccionar rango de presupuesto",
+        "de": "Budget-Bereich auswählen",
+        "rw": "Hitamo urwego rw'ingengo y'imari"
+      },
+      "timeline": {
+        "en": "Timeline",
+        "fr": "Délai",
+        "es": "Cronograma",
+        "de": "Zeitplan",
+        "rw": "Igihe"
+      },
+      "selectTimeline": {
+        "en": "Select timeline",
+        "fr": "Sélectionner le délai",
+        "es": "Seleccionar cronograma",
+        "de": "Zeitplan auswählen",
+        "rw": "Hitamo igihe"
+      },
+      "message": {
+        "en": "Message",
+        "fr": "Message",
+        "es": "Mensaje",
+        "de": "Nachricht",
+        "rw": "Ubutumwa"
+      },
+      "sending": {
+        "en": "Sending...",
+        "fr": "Envoi en cours...",
+        "es": "Enviando...",
+        "de": "Senden...",
+        "rw": "Birohereza..."
+      },
+      "sendMessage": {
+        "en": "Send Message",
+        "fr": "Envoyer le Message",
+        "es": "Enviar Mensaje",
+        "de": "Nachricht Senden",
+        "rw": "Ohereza Ubutumwa"
+      },
+      "enterYour": {
+        "en": "Enter your {{field}}",
+        "fr": "Entrez votre {{field}}",
+        "es": "Ingresa tu {{field}}",
+        "de": "Geben Sie Ihre {{field}} ein",
+        "rw": "Injiza {{field}} yawe"
+      },
+      "budgetOptions": {
+        "under200": {
+          "en": "Under $200",
+          "fr": "Moins de 200$",
+          "es": "Menos de $200",
+          "de": "Unter $200",
+          "rw": "Munsi ya $200"
+        },
+        "200to500": {
+          "en": "$200 - $500",
+          "fr": "200$ - 500$",
+          "es": "$200 - $500",
+          "de": "$200 - $500",
+          "rw": "$200 - $500"
+        },
+        "500to1000": {
+          "en": "$500 - $1,000",
+          "fr": "500$ - 1 000$",
+          "es": "$500 - $1,000",
+          "de": "$500 - $1.000",
+          "rw": "$500 - $1,000"
+        },
+        "1500to2000": {
+          "en": "$1,500 - $2,000",
+          "fr": "1 500$ - 2 000$",
+          "es": "$1,500 - $2,000",
+          "de": "$1.500 - $2.000",
+          "rw": "$1,500 - $2,000"
+        },
+        "2000plus": {
+          "en": "$2,000+",
+          "fr": "2 000$+",
+          "es": "$2,000+",
+          "de": "$2.000+",
+          "rw": "$2,000+"
+        }
+      },
+      "timelineOptions": {
+        "asap": {
+          "en": "ASAP",
+          "fr": "Dès que possible",
+          "es": "Lo antes posible",
+          "de": "So schnell wie möglich",
+          "rw": "Vuba bishoboka"
+        },
+        "1to2weeks": {
+          "en": "1-2 weeks",
+          "fr": "1-2 semaines",
+          "es": "1-2 semanas",
+          "de": "1-2 Wochen",
+          "rw": "Ibyumweru 1-2"
+        },
+        "1month": {
+          "en": "1 month",
+          "fr": "1 mois",
+          "es": "1 mes",
+          "de": "1 Monat",
+          "rw": "Ukwezi 1"
+        },
+        "2to3months": {
+          "en": "2-3 months",
+          "fr": "2-3 mois",
+          "es": "2-3 meses",
+          "de": "2-3 Monate",
+          "rw": "Amezi 2-3"
+        },
+        "3plusmonths": {
+          "en": "3+ months",
+          "fr": "3+ mois",
+          "es": "3+ meses",
+          "de": "3+ Monate",
+          "rw": "Amezi 3+"
+        }
+      }
+    },
+    "success": {
+      "title": {
+        "en": "Message Sent Successfully!",
+        "fr": "Message Envoyé avec Succès !",
+        "es": "¡Mensaje Enviado Exitosamente!",
+        "de": "Nachricht Erfolgreich Gesendet!",
+        "rw": "Ubutumwa Bwoherejwe Neza!"
+      },
+      "message": {
+        "en": "Thank you for reaching out. I'll get back to you within 24 hours.",
+        "fr": "Merci de m'avoir contacté. Je vous répondrai dans les 24 heures.",
+        "es": "Gracias por contactarme. Te responderé dentro de 24 horas.",
+        "de": "Vielen Dank für Ihre Kontaktaufnahme. Ich werde Ihnen innerhalb von 24 Stunden antworten.",
+        "rw": "Urakoze kumpagira. Nzagusubiza mu masaha 24."
+      }
+    },
+    "location": {
+      "title": {
+        "en": "My Current Location",
+        "fr": "Ma Localisation Actuelle",
+        "es": "Mi Ubicación Actual",
+        "de": "Mein Aktueller Standort",
+        "rw": "Aho Ndi Ubu"
+      }
+    }
+  },
+  "testimonials": {
+    "title": {
+      "en": "Client Testimonials",
+      "fr": "Témoignages Clients",
+      "es": "Testimonios de Clientes",
+      "de": "Kundenbewertungen",
+      "rw": "Ubuhamya bwa Bakiriya"
+    },
+    "subtitle": {
+      "en": "What clients say about working with me",
+      "fr": "Ce que les clients disent de travailler avec moi",
+      "es": "Lo que los clientes dicen sobre trabajar conmigo",
+      "de": "Was Kunden über die Zusammenarbeit mit mir sagen",
+      "rw": "Icyo bakiriya bavuga ku gukorana nanjye"
+    },
+    "clients": {
+      "muhirwa": {
+        "role": {
+          "en": "Software Engineer",
+          "fr": "Ingénieur Logiciel",
+          "es": "Ingeniero de Software",
+          "de": "Software-Ingenieur",
+          "rw": "Injeniyeri wa Software"
+        },
+        "text": {
+          "en": "Nathan built a great website that did more than we asked for. He paid close attention to every detail and knew exactly what he was doing. Working with him was easy and everything went smoothly",
+          "fr": "Nathan a construit un excellent site web qui a dépassé nos attentes. Il a porté une attention particulière à chaque détail et savait exactement ce qu'il faisait. Travailler avec lui était facile et tout s'est déroulé sans problème",
+          "es": "Nathan construyó un excelente sitio web que hizo más de lo que pedimos. Prestó mucha atención a cada detalle y sabía exactamente lo que estaba haciendo. Trabajar con él fue fácil y todo salió sin problemas",
+          "de": "Nathan hat eine großartige Website erstellt, die mehr geleistet hat, als wir verlangt haben. Er achtete auf jedes Detail und wusste genau, was er tat. Die Zusammenarbeit mit ihm war einfach und alles lief reibungslos",
+          "rw": "Nathan yubatse urubuga rwiza rwakoze byinshi kuruta ibyo twasabye. Yitayeho cyane ku bintu byose kandi yari azi neza icyo akora. Gukorana nawe byari byoroshye kandi byose byagenze neza"
+        }
+      },
+      "fils": {
+        "role": {
+          "en": "Software Developer",
+          "fr": "Développeur Logiciel",
+          "es": "Desarrollador de Software",
+          "de": "Software-Entwickler",
+          "rw": "Umukozi wa Software"
+        },
+        "text": {
+          "en": "Working with Nathan was a game-changer for our startup. He built a scalable platform smoothly. Highly recommended!",
+          "fr": "Travailler avec Nathan a été un tournant pour notre startup. Il a construit une plateforme évolutive en douceur. Hautement recommandé !",
+          "es": "Trabajar con Nathan fue un cambio radical para nuestra startup. Construyó una plataforma escalable sin problemas. ¡Altamente recomendado!",
+          "de": "Die Zusammenarbeit mit Nathan war ein Wendepunkt für unser Startup. Er baute eine skalierbare Plattform reibungslos auf. Wärmstens empfohlen!",
+          "rw": "Gukorana na Nathan byahinduye startup yacu. Yubatse urubuga rushobora kwaguka mu buryo bworoshye. Birasabwa cyane!"
+        }
+      }
+    }
+  },
+  "footer": {
+    "description": {
+      "en": "Full Stack Developer passionate about creating exceptional digital experiences with modern technologies and innovative solutions.",
+      "fr": "Développeur Full Stack passionné par la création d'expériences numériques exceptionnelles avec des technologies modernes et des solutions innovantes.",
+      "es": "Desarrollador Full Stack apasionado por crear experiencias digitales excepcionales con tecnologías modernas y soluciones innovadoras.",
+      "de": "Full Stack Entwickler mit Leidenschaft für die Schaffung außergewöhnlicher digitaler Erfahrungen mit modernen Technologien und innovativen Lösungen.",
+      "rw": "Umukozi wa Full Stack ushishikajwe no gukora uburambe bwihariye bwa digitale hamwe n'ikoranabuhanga rigezweho n'ibisubizo bishya."
+    },
+    "getInTouch": {
+      "en": "Get In Touch",
+      "fr": "Entrer en Contact",
+      "es": "Ponerse en Contacto",
+      "de": "Kontakt Aufnehmen",
+      "rw": "Twandikire"
+    },
+    "madeWith": {
+      "en": "Made with",
+      "fr": "Fait avec",
+      "es": "Hecho con",
+      "de": "Gemacht mit",
+      "rw": "Byakozwe na"
+    },
+    "by": {
+      "en": "by",
+      "fr": "par",
+      "es": "por",
+      "de": "von",
+      "rw": "na"
+    },
+    "allRightsReserved": {
+      "en": "All rights reserved",
+      "fr": "Tous droits réservés",
+      "es": "Todos los derechos reservados",
+      "de": "Alle Rechte vorbehalten",
+      "rw": "Uburenganzira bwose burarinzwe"
+    }
+  }
+}

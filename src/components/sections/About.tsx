@@ -1,36 +1,34 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { CodeBracketIcon, DevicePhoneMobileIcon, GlobeAltIcon, ServerIcon } from '@heroicons/react/24/outline';
+import { useTranslation } from 'react-i18next';
 import aboutImage from '../assets/images/aboutme.png';
 
 const About: React.FC = () => {
-  const stats = [
-    { number: '10+', label: 'Projects Completed' },
-    { number: '3+', label: 'Years Experience' },
-    { number: '5+', label: 'Certifications' },
-    { number: '7+', label: 'Technologies' },
-  ];
+  const { t } = useTranslation();
+  
+  
 
   const highlights = [
     {
       icon: CodeBracketIcon,
-      title: 'Frontend Development',
-      description: 'Creating stunning, responsive user interfaces with React, Vue.js, and modern CSS frameworks.',
+      title: t('about.highlights.frontend.title'),
+      description: t('about.highlights.frontend.description'),
     },
     {
       icon: ServerIcon,
-      title: 'Backend Development',
-      description: 'Building robust server-side applications with Node.js, Python, and cloud technologies.',
+      title: t('about.highlights.backend.title'),
+      description: t('about.highlights.backend.description'),
     },
     {
       icon: DevicePhoneMobileIcon,
-      title: 'Mobile Development',
-      description: 'Developing cross-platform mobile apps with React Native and Flutter.',
+      title: t('about.highlights.mobile.title'),
+      description: t('about.highlights.mobile.description'),
     },
     {
       icon: GlobeAltIcon,
-      title: 'Full Stack Solutions',
-      description: 'End-to-end development from concept to deployment with modern tech stacks.',
+      title: t('about.highlights.fullstack.title'),
+      description: t('about.highlights.fullstack.description'),
     },
   ];
 
@@ -46,12 +44,11 @@ const About: React.FC = () => {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6">
-            About Me
+            {t('about.title')}
           </h2>
-          <div className="w-24 h-1 bg-gradient-to-r from-blue-600 to-purple-600 mx-auto mb-8"></div>
+          <div className="w-24 h-1 bg-blue-600 mx-auto mb-8"></div>
           <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto leading-relaxed">
-            I'm a passionate full-stack developer with a love for creating innovative digital solutions. 
-            With expertise spanning frontend, backend, and mobile development, I bring ideas to life through clean, efficient code.
+            {t('about.subtitle')}
           </p>
         </motion.div>
 
@@ -70,7 +67,7 @@ const About: React.FC = () => {
                 alt="Developer workspace"
                 className="w-full h-96 object-cover"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+              <div className="absolute inset-0 bg-black/50"></div>
             </div>
             
             {/* Floating Card */}
@@ -80,8 +77,8 @@ const About: React.FC = () => {
               className="absolute -bottom-6 -right-6 bg-white dark:bg-gray-900 p-6 rounded-xl shadow-xl border border-gray-200 dark:border-gray-700"
             >
               <div className="text-center">
-                <div className="text-3xl font-bold text-blue-600 dark:text-blue-400">3+</div>
-                <div className="text-sm text-gray-600 dark:text-gray-400">Years of Experience</div>
+                <div className="text-3xl font-bold text-blue-600 dark:text-blue-400">5+</div>
+                <div className="text-sm text-gray-600 dark:text-gray-400">{t('about.yearsExperience')}</div>
               </div>
             </motion.div>
           </motion.div>
@@ -95,17 +92,15 @@ const About: React.FC = () => {
             className="space-y-6"
           >
             <h3 className="text-3xl font-bold text-gray-900 dark:text-white">
-              Turning Ideas Into Reality
+              {t('about.sectionTitle')}
             </h3>
             
             <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
-              I specialize in creating comprehensive digital solutions that combine beautiful design with powerful functionality. 
-              My approach focuses on understanding client needs and delivering products that exceed expectations.
+              {t('about.description1')}
             </p>
             
             <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
-              From concept to deployment, I handle every aspect of the development process, ensuring seamless user experiences 
-              and robust, scalable applications that grow with your business.
+              {t('about.description2')}
             </p>
 
             <div className="flex flex-wrap gap-3 pt-4">
@@ -121,30 +116,7 @@ const About: React.FC = () => {
           </motion.div>
         </div>
 
-        {/* Stats */}
-        <motion.div
-          initial={{ opacity: 0, y: 50 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.8 }}
-          className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-20"
-        >
-          {stats.map((stat, index) => (
-            <motion.div
-              key={index}
-              whileHover={{ scale: 1.05 }}
-              className="text-center p-6 bg-white dark:bg-gray-900 rounded-xl shadow-lg"
-            >
-              <div className="text-4xl font-bold text-blue-600 dark:text-blue-400 mb-2">
-                {stat.number}
-              </div>
-              <div className="text-gray-600 dark:text-gray-300 font-medium">
-                {stat.label}
-              </div>
-            </motion.div>
-          ))}
-        </motion.div>
-
+        
         {/* Highlights */}
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {highlights.map((item, index) => (
@@ -157,7 +129,7 @@ const About: React.FC = () => {
               whileHover={{ y: -10 }}
               className="bg-white dark:bg-gray-900 p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300"
             >
-              <div className="w-16 h-16 bg-gradient-to-r from-blue-600 to-purple-600 rounded-lg flex items-center justify-center mb-6">
+              <div className="w-16 h-16 bg-blue-600 rounded-lg flex items-center justify-center mb-6">
                 <item.icon className="w-8 h-8 text-white" />
               </div>
               <h4 className="text-xl font-bold text-gray-900 dark:text-white mb-4">
