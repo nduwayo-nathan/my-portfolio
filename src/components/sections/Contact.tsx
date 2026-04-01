@@ -2,9 +2,6 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { useTranslation } from "react-i18next";
-import emailjs from '@emailjs/browser';
-import { EMAILJS_CONFIG } from '../../config/emailjs';
-
 import {
   Mail,
   Phone,
@@ -83,26 +80,28 @@ const Contact: React.FC = () => {
     }
 
     try {
-      await emailjs.send(
-        EMAILJS_CONFIG.SERVICE_ID,
-        EMAILJS_CONFIG.TEMPLATE_ID,
-        {
-          from_name: `${formData.firstName} ${formData.lastName}`,
-          from_email: formData.email,
+      const res = await fetch(`${import.meta.env.VITE_API_URL}/api/contact`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          firstName: formData.firstName,
+          lastName: formData.lastName,
+          email: formData.email,
           phone: formData.phone,
           subject: formData.subject,
           message: formData.message,
           budget: formData.budget,
           timeline: formData.timeline,
-        },
-        EMAILJS_CONFIG.PUBLIC_KEY
-      );
-      
+        }),
+      });
+
+      const data = await res.json();
+      if (!res.ok) throw new Error(data.message || 'Failed to send message');
+
       setIsSubmitted(true);
       resetForm();
     } catch (err: any) {
-      console.error("EmailJS error:", err);
-      setError("Failed to send message. Please try again later.");
+      setError(err.message || 'Failed to send message. Please try again later.');
     } finally {
       setIsSubmitting(false);
     }
@@ -219,7 +218,7 @@ const Contact: React.FC = () => {
           onChange={handleInputChange}
           required={required}
           rows={6}
-          className={`w-full px-4 py-3 bg-gray-50 dark:bg-gray-700 border dark:text-white ${
+          className={`w-full px-4 py-3 bg-white dark:bg-gray-700 text-gray-900 dark:text-white border dark:text-white ${
             errors[name]
               ? "border-red-500"
               : "border-gray-300 dark:border-gray-600"
@@ -233,7 +232,7 @@ const Contact: React.FC = () => {
           value={formData[name as keyof typeof formData] as string}
           onChange={handleInputChange}
           required={required}
-          className={`w-full px-4 py-3 bg-gray-50 dark:bg-gray-700 border ${
+          className={`w-full px-4 py-3 bg-white dark:bg-gray-700 text-gray-900 dark:text-white border ${
             errors[name]
               ? "border-red-500"
               : "border-gray-300 dark:border-gray-600"
@@ -391,7 +390,7 @@ const Contact: React.FC = () => {
                         name="budget"
                         value={formData.budget}
                         onChange={handleInputChange}
-                        className="w-full px-4 py-3 bg-gray-50 dark:bg-gray-600 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors"
+                        className="w-full px-4 py-3 bg-white dark:bg-gray-600 text-gray-900 dark:text-white border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors"
                       >
                         <option value="">{t('contact.form.selectBudget')}</option>
                         {budgetOptions.map((option) => (
@@ -409,7 +408,7 @@ const Contact: React.FC = () => {
                         name="timeline"
                         value={formData.timeline}
                         onChange={handleInputChange}
-                        className="w-full px-4 py-3 bg-gray-50 dark:text-white dark:bg-gray-700 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors"
+                        className="w-full px-4 py-3 bg-white dark:text-white dark:bg-gray-700 text-gray-900 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors"
                       >
                         <option value="">{t('contact.form.selectTimeline')}</option>
                         {timelineOptions.map((option) => (
